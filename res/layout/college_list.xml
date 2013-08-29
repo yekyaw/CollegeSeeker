@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <Spinner
+            android:id="@+id/statesSpinner"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:entries="@array/states"
+            android:prompt="@string/sort_prompt" />
+
+        <Spinner
+            android:id="@+id/sortSpinner"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:entries="@array/sortList"
+            android:prompt="@string/sort_prompt" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/college_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

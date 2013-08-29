@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/college_logo"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/college_logo"
+                android:padding="1dp" />
+
+            <TextView
+                android:id="@+id/college"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/type_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/college"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/type_label" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/college"
+                android:layout_toRightOf="@+id/type_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/app_fee_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/app_fee_label" />
+
+            <TextView
+                android:id="@+id/app_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type"
+                android:layout_toRightOf="@+id/app_fee_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/web_url_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app_fee"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/web_url_label" />
+
+            <TextView
+                android:id="@+id/web_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app_fee"
+                android:layout_toRightOf="@+id/web_url_label"
+                android:autoLink="web"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/adm_url_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/web_url"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/adm_url_label" />
+
+            <TextView
+                android:id="@+id/adm_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/web_url"
+                android:layout_toRightOf="@+id/adm_url_label"
+                android:autoLink="web"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/fin_url_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adm_url"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/fin_url_label" />
+
+            <TextView
+                android:id="@+id/fin_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adm_url"
+                android:layout_toRightOf="@+id/fin_url_label"
+                android:autoLink="web"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/app_url_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fin_url"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/app_url_label" />
+
+            <TextView
+                android:id="@+id/app_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fin_url"
+                android:layout_toRightOf="@+id/app_url_label"
+                android:autoLink="web"
+                android:inputType="none" />
+            
+            <TextView
+                android:id="@+id/calc_url_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app_url"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:lineSpacingExtra="15dp"
+                android:text="@string/calc_url_label" />
+
+            <TextView
+                android:id="@+id/calc_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app_url"
+                android:layout_toRightOf="@+id/app_url_label"
+                android:autoLink="web"
+                android:inputType="none"
+                android:lineSpacingExtra="15dp" />
+
+            <TextView
+                android:id="@+id/institution_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calc_url"
+                android:inputType="none"
+                android:text="@string/institution_section" />
+
+            <TextView
+                android:id="@+id/enrollment_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/institution_section"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/enrollment_label" />
+
+            <TextView
+                android:id="@+id/enrollment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/institution_section"
+                android:layout_toRightOf="@+id/enrollment_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/acceptance_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enrollment"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/acceptance_label" />
+
+            <TextView
+                android:id="@+id/acceptance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enrollment"
+                android:layout_toRightOf="@+id/acceptance_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/faculty_ratio_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/acceptance"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/faculty_ratio_label" />
+
+            <TextView
+                android:id="@+id/faculty_ratio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/acceptance"
+                android:layout_toRightOf="@+id/faculty_ratio_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/resources_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faculty_ratio"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/resources_label" />
+
+            <TextView
+                android:id="@+id/resources"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faculty_ratio"
+                android:layout_toRightOf="@+id/resources_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/endowment_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resources"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:lineSpacingExtra="15dp"
+                android:text="@string/endowment_label" />
+
+            <TextView
+                android:id="@+id/endowment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resources"
+                android:layout_toRightOf="@+id/endowment_label"
+                android:inputType="none"
+                android:lineSpacingExtra="15dp" />
+
+            <TextView
+                android:id="@+id/student_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/endowment"
+                android:inputType="none"
+                android:text="@string/student_section" />
+
+            <TextView
+                android:id="@+id/male_female_ratio_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/student_section"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/male_female_ratio_label" />
+
+            <TextView
+                android:id="@+id/male_female_ratio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/student_section"
+                android:layout_toRightOf="@+id/male_female_ratio_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/sat25_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/male_female_ratio"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/sat25_label" />
+
+            <TextView
+                android:id="@+id/sat25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/male_female_ratio"
+                android:layout_toRightOf="@+id/sat25_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/sat75_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sat25"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/sat75_label" />
+
+            <TextView
+                android:id="@+id/sat75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sat25"
+                android:layout_toRightOf="@+id/sat75_label"
+                android:inputType="none" />
+            
+            <TextView
+                android:id="@+id/act_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sat75"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/act_label" />
+
+            <TextView
+                android:id="@+id/act"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sat75"
+                android:layout_toRightOf="@+id/act_label"
+                android:inputType="none" />
+
+
+            <TextView
+                android:id="@+id/grad_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/act"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:text="@string/grad_label" />
+
+            <TextView
+                android:id="@+id/grad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/act"
+                android:layout_toRightOf="@+id/grad_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/retention_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grad"
+                android:layout_toRightOf="@+id/college_logo"
+                android:inputType="none"
+                android:lineSpacingExtra="15dp"
+                android:text="@string/retention_label" />
+
+            <TextView
+                android:id="@+id/retention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/grad"
+                android:layout_toRightOf="@+id/retention_label"
+                android:inputType="none"
+                android:lineSpacingExtra="15dp" />
+
+            <TextView
+                android:id="@+id/financial_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/retention"
+                android:inputType="none"
+                android:text="@string/financial_label" />
+
+            <TextView
+                android:id="@+id/tuition_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/financial_section"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:text="@string/tuition_label" />
+
+            <TextView
+                android:id="@+id/tuition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/financial_section"
+                android:layout_toRightOf="@+id/tuition_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/room_board_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tuition"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:text="@string/room_board_label" />
+
+            <TextView
+                android:id="@+id/room_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tuition"
+                android:layout_toRightOf="@+id/room_board_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/cost_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_board"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:lineSpacingExtra="15dp"
+                android:text="@string/cost_label" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_board"
+                android:layout_toRightOf="@+id/cost_label"
+                android:inputType="none"
+                android:lineSpacingExtra="15dp" />
+
+            <TextView
+                android:id="@+id/financial_aid_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cost"
+                android:inputType="none"
+                android:text="@string/financial_aid_section" />
+
+            <TextView
+                android:id="@+id/percent_aid_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/financial_aid_section"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:text="@string/percent_aid_label" />
+
+            <TextView
+                android:id="@+id/percent_aid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/financial_aid_section"
+                android:layout_toRightOf="@+id/percent_aid_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/percent_grant_aid_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/percent_aid"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:text="@string/percent_grant_aid_label" />
+
+            <TextView
+                android:id="@+id/percent_grant_aid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/percent_aid"
+                android:layout_toRightOf="@+id/percent_grant_aid_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/net_cost_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/percent_grant_aid"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:text="@string/net_cost_label" />
+
+            <TextView
+                android:id="@+id/net_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/percent_grant_aid"
+                android:layout_toRightOf="@+id/net_cost_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/net_cost_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_cost"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:text="@string/net_cost_section" />
+
+            <TextView
+                android:id="@+id/net_cost1_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_cost_section"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:text="@string/net_cost1_label" />
+
+            <TextView
+                android:id="@+id/net_cost1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_cost_section"
+                android:layout_toRightOf="@+id/net_cost1_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/net_cost2_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_cost1"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:text="@string/net_cost2_label" />
+
+            <TextView
+                android:id="@+id/net_cost2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_cost1"
+                android:layout_toRightOf="@+id/net_cost2_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/net_cost3_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_cost2"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:text="@string/net_cost3_label" />
+
+            <TextView
+                android:id="@+id/net_cost3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_cost2"
+                android:layout_toRightOf="@+id/net_cost3_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/net_cost4_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_cost3"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:text="@string/net_cost4_label" />
+
+            <TextView
+                android:id="@+id/net_cost4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_cost3"
+                android:layout_toRightOf="@+id/net_cost4_label"
+                android:inputType="none" />
+
+            <TextView
+                android:id="@+id/net_cost5_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_cost4"
+                android:layout_marginLeft="32dp"
+                android:inputType="none"
+                android:text="@string/net_cost5_label" />
+
+            <TextView
+                android:id="@+id/net_cost5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_cost4"
+                android:layout_toRightOf="@+id/net_cost5_label"
+                android:inputType="none" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</ScrollView>

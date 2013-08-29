@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:minHeight="64dp" >
+
+    <ImageView
+        android:id="@+id/college_logo"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:contentDescription="@string/college_logo"
+        android:padding="1dp" />
+
+    <TextView
+        android:id="@+id/college"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/college_logo"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/type_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/college"
+        android:layout_toRightOf="@+id/college_logo"
+        android:inputType="none"
+        android:text="@string/type_label" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/college"
+        android:layout_toRightOf="@+id/type_label"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/enrollment_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:layout_toRightOf="@+id/college_logo"
+        android:inputType="none"
+        android:text="@string/enrollment_label" />
+
+    <TextView
+        android:id="@+id/enrollment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:layout_toRightOf="@+id/enrollment_label"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/acceptance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enrollment"
+        android:layout_toRightOf="@+id/college_logo"
+        android:inputType="none"
+        android:text="@string/acceptance_label" />
+
+    <TextView
+        android:id="@+id/acceptance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enrollment"
+        android:layout_toRightOf="@+id/acceptance_label"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/sat25_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acceptance"
+        android:layout_toRightOf="@+id/college_logo"
+        android:inputType="none"
+        android:text="@string/sat25_label" />
+
+    <TextView
+        android:id="@+id/sat25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acceptance"
+        android:layout_toRightOf="@+id/sat25_label"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/sat75_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sat25"
+        android:layout_toRightOf="@+id/college_logo"
+        android:inputType="none"
+        android:text="@string/sat75_label" />
+
+    <TextView
+        android:id="@+id/sat75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sat25"
+        android:layout_toRightOf="@+id/sat75_label"
+        android:inputType="none" />
+    
+    <TextView
+        android:id="@+id/act_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sat75"
+        android:layout_toRightOf="@+id/college_logo"
+        android:inputType="none"
+        android:text="@string/act_label" />
+
+    <TextView
+        android:id="@+id/act"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sat75"
+        android:layout_toRightOf="@+id/act_label"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/grad_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act"
+        android:layout_toRightOf="@+id/college_logo"
+        android:inputType="none"
+        android:text="@string/grad_label" />
+
+    <TextView
+        android:id="@+id/grad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act"
+        android:layout_toRightOf="@+id/grad_label"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/cost_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grad"
+        android:layout_toRightOf="@+id/college_logo"
+        android:inputType="none"
+        android:text="@string/cost_label" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grad"
+        android:layout_toRightOf="@+id/cost_label"
+        android:inputType="none" />
+
+</RelativeLayout>

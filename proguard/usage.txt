@@ -1,0 +1,744 @@
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompatIcs
+android.support.v4.content.AsyncTaskLoader
+android.support.v4.content.AsyncTaskLoader$LoadTask
+android.support.v4.content.CursorLoader
+android.support.v4.content.IntentCompat
+android.support.v4.content.Loader:
+    android.content.Context mContext
+    90:92:public Loader(android.content.Context)
+    102:105:public void deliverResult(java.lang.Object)
+    111:111:public android.content.Context getContext()
+    118:118:public int getId()
+    157:157:public boolean isStarted()
+    166:166:public boolean isAbandoned()
+    175:175:public boolean isReset()
+    217:218:public void forceLoad()
+    225:225:protected void onForceLoad()
+    312:314:public boolean takeContentChanged()
+    326:334:public void onContentChanged()
+android.support.v4.content.Loader$ForceLoadContentObserver
+android.support.v4.content.Loader$OnLoadCompleteListener:
+    public abstract void onLoadComplete(android.support.v4.content.Loader,java.lang.Object)
+android.support.v4.content.LocalBroadcastManager
+android.support.v4.content.LocalBroadcastManager$1
+android.support.v4.content.LocalBroadcastManager$BroadcastRecord
+android.support.v4.content.LocalBroadcastManager$ReceiverRecord
+android.support.v4.content.ModernAsyncTask
+android.support.v4.content.ModernAsyncTask$1
+android.support.v4.content.ModernAsyncTask$2
+android.support.v4.content.ModernAsyncTask$3
+android.support.v4.content.ModernAsyncTask$4
+android.support.v4.content.ModernAsyncTask$AsyncTaskResult
+android.support.v4.content.ModernAsyncTask$InternalHandler
+android.support.v4.content.ModernAsyncTask$Status
+android.support.v4.content.ModernAsyncTask$WorkerRunnable
+android.support.v4.content.pm.ActivityInfoCompat
+android.support.v4.database.DatabaseUtilsCompat
+android.support.v4.os.ParcelableCompat:
+    26:42:public ParcelableCompat()
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub:
+    22:22:ParcelableCompatCreatorHoneycombMR2Stub()
+android.support.v4.util.DebugUtils:
+    25:25:public DebugUtils()
+android.support.v4.util.LruCache
+android.support.v4.util.TimeUtils
+android.support.v4.view.AccessibilityDelegateCompat
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateStubImpl
+android.support.v4.view.AccessibilityDelegateCompatIcs
+android.support.v4.view.AccessibilityDelegateCompatIcs$1
+android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge
+android.support.v4.view.KeyEventCompat:
+    25:95:public KeyEventCompat()
+    127:127:public static int normalizeMetaState(int)
+    131:131:public static boolean metaStateHasModifiers(int,int)
+    135:135:public static boolean metaStateHasNoModifiers(int)
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl:
+    private static final int META_MODIFIER_MASK
+    private static final int META_ALL_MASK
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl:
+    98:98:public int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl:
+    public abstract int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompatHoneycomb:
+    24:24:KeyEventCompatHoneycomb()
+    26:26:public static int normalizeMetaState(int)
+android.support.v4.view.MenuCompat
+android.support.v4.view.MenuCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompat
+android.support.v4.view.MenuItemCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuItemCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuItemCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompatHoneycomb
+android.support.v4.view.MotionEventCompat:
+    public static final int ACTION_MASK
+    public static final int ACTION_POINTER_DOWN
+    public static final int ACTION_POINTER_UP
+    public static final int ACTION_HOVER_MOVE
+    public static final int ACTION_SCROLL
+    public static final int ACTION_POINTER_INDEX_MASK
+    public static final int ACTION_POINTER_INDEX_SHIFT
+    25:75:public MotionEventCompat()
+    148:148:public static int getActionMasked(android.view.MotionEvent)
+android.support.v4.view.MotionEventCompatEclair:
+    24:24:MotionEventCompatEclair()
+android.support.v4.view.PagerTitleStrip
+android.support.v4.view.PagerTitleStrip$1
+android.support.v4.view.PagerTitleStrip$PageListener
+android.support.v4.view.VelocityTrackerCompat:
+    25:51:public VelocityTrackerCompat()
+    91:91:public static float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$BaseVelocityTrackerVersionImpl:
+    44:44:public float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$HoneycombVelocityTrackerVersionImpl:
+    58:58:public float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompat$VelocityTrackerVersionImpl:
+    public abstract float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.VelocityTrackerCompatHoneycomb:
+    24:24:VelocityTrackerCompatHoneycomb()
+    29:29:public static float getYVelocity(android.view.VelocityTracker,int)
+android.support.v4.view.ViewCompat:
+    public static final int OVER_SCROLL_ALWAYS
+    public static final int OVER_SCROLL_IF_CONTENT_SCROLLS
+    public static final int OVER_SCROLL_NEVER
+    28:95:public ViewCompat()
+    153:153:public static boolean canScrollVertically(android.view.View,int)
+    182:183:public static void setOverScrollMode(android.view.View,int)
+    219:220:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    252:253:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    288:289:public static void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    303:304:public static void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompat$BaseViewCompatImpl:
+    62:62:public boolean canScrollVertically(android.view.View,int)
+    69:69:public void setOverScrollMode(android.view.View,int)
+    72:72:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    75:75:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    78:78:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    81:81:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+android.support.v4.view.ViewCompat$GBViewCompatImpl:
+    91:92:public void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompat$ICSViewCompatImpl:
+    102:102:public boolean canScrollVertically(android.view.View,int)
+    106:107:public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    110:111:public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    114:115:public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    118:119:public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompat$ViewCompatImpl:
+    public abstract boolean canScrollVertically(android.view.View,int)
+    public abstract void setOverScrollMode(android.view.View,int)
+    public abstract void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    public abstract void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompatGingerbread:
+    21:21:ViewCompatGingerbread()
+    27:28:public static void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompatICS:
+    27:27:ViewCompatICS()
+    34:34:public static boolean canScrollVertically(android.view.View,int)
+    38:39:public static void setAccessibilityDelegate(android.view.View,java.lang.Object)
+    42:43:public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    46:47:public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    50:51:public static void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+android.support.v4.view.ViewConfigurationCompat
+android.support.v4.view.ViewConfigurationCompat$BaseViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompat$FroyoViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompat$ViewConfigurationVersionImpl
+android.support.v4.view.ViewConfigurationCompatFroyo
+android.support.v4.view.ViewGroupCompat
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatIcsImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatStubImpl
+android.support.v4.view.ViewGroupCompatIcs
+android.support.v4.view.ViewPager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int DEFAULT_OFFSCREEN_PAGES
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int INVALID_POINTER
+    private long mFakeDragBeginTime
+    public static final int SCROLL_STATE_IDLE
+    public static final int SCROLL_STATE_DRAGGING
+    public static final int SCROLL_STATE_SETTLING
+    271:273:public ViewPager(android.content.Context)
+    276:278:public ViewPager(android.content.Context,android.util.AttributeSet)
+    281:295:void initViewPager()
+    472:474:android.support.v4.view.ViewPager$OnPageChangeListener setInternalPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+    596:597:void smoothScrollTo(int,int)
+    1652:1668:public boolean beginFakeDrag()
+    1678:1697:public void endFakeDrag()
+    1707:1735:public void fakeDragBy(float)
+    1747:1747:public boolean isFakeDragging()
+android.support.v4.view.ViewPager$SimpleOnPageChangeListener
+android.support.v4.view.accessibility.AccessibilityEventCompat
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventIcsImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventStubImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventVersionImpl
+android.support.v4.view.accessibility.AccessibilityEventCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl$1
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerStubImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerVersionImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$1
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatIcs
+android.support.v4.view.accessibility.AccessibilityRecordCompat
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordStubImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcs
+android.support.v4.widget.EdgeEffectCompat:
+    132:134:public EdgeEffectCompat(android.content.Context)
+    204:204:public boolean onAbsorb(int)
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl:
+    60:60:public java.lang.Object newEdgeEffect(android.content.Context)
+    82:82:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl:
+    92:92:public java.lang.Object newEdgeEffect(android.content.Context)
+    116:116:public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl:
+    public abstract java.lang.Object newEdgeEffect(android.content.Context)
+    public abstract boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompatIcs:
+    28:28:EdgeEffectCompatIcs()
+    30:30:public static java.lang.Object newEdgeEffect(android.content.Context)
+    57:58:public static boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.SearchViewCompat
+android.support.v4.widget.SearchViewCompat$OnQueryTextListenerCompat
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl$1
+android.support.v4.widget.SearchViewCompat$SearchViewCompatImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatStubImpl
+android.support.v4.widget.SearchViewCompatHoneycomb
+android.support.v4.widget.SearchViewCompatHoneycomb$1
+android.support.v4.widget.SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge
+android.support.v4.widget.SimpleCursorAdapter
+android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter
+android.support.v4.widget.SimpleCursorAdapter$ViewBinder
+au.com.bytecode.opencsv.CSVParser:
+    public static final char DEFAULT_SEPARATOR
+    public static final int INITIAL_READ_SIZE
+    public static final char DEFAULT_QUOTE_CHARACTER
+    public static final char DEFAULT_ESCAPE_CHARACTER
+    public static final boolean DEFAULT_STRICT_QUOTES
+    public static final boolean DEFAULT_IGNORE_LEADING_WHITESPACE
+    public static final char NULL_CHARACTER
+    96:97:public CSVParser(char)
+    107:108:public CSVParser(char,char)
+    178:178:public java.lang.String[] parseLine(java.lang.String)
+au.com.bytecode.opencsv.CSVReader:
+    public static final int DEFAULT_SKIP_LINES
+    68:69:public CSVReader(java.io.Reader,char)
+    82:83:public CSVReader(java.io.Reader,char,char)
+    99:100:public CSVReader(java.io.Reader,char,char,boolean)
+    133:134:public CSVReader(java.io.Reader,char,char,int)
+    151:152:public CSVReader(java.io.Reader,char,char,char,int)
+    210:216:public java.util.List readAll()
+au.com.bytecode.opencsv.CSVWriter
+au.com.bytecode.opencsv.ResultSetHelper
+au.com.bytecode.opencsv.ResultSetHelperService
+cmn.Proguard
+cmn.a:
+    public void a(android.view.View)
+cmn.c:
+    public final void a(android.view.View)
+cmn.k
+cmn.l:
+    public l(android.content.Context)
+com.appbrain.AdService:
+    public abstract boolean shouldShowInterstitial(android.content.Context)
+    public abstract boolean showInterstitial(android.content.Context)
+    public abstract void showOfferWall(android.content.Context)
+com.appbrain.AppBrain:
+    private AppBrain()
+    public static com.appbrain.RemoteSettings getSettings()
+com.appbrain.AppBrainBanner
+com.appbrain.BannerListener
+com.appbrain.a.a:
+    static void a(android.content.Context,com.appbrain.e.q)
+    static void a(android.content.Context,int,java.lang.String)
+com.appbrain.a.ax:
+    final double a(boolean)
+    final int h()
+    public final synchronized boolean showInterstitial(android.content.Context)
+    public final void showOfferWall(android.content.Context)
+    public final com.appbrain.RemoteSettings m()
+    public final boolean shouldShowInterstitial(android.content.Context)
+com.appbrain.a.c
+com.appbrain.a.d
+com.appbrain.a.e
+com.appbrain.a.f
+com.appbrain.a.g
+com.appbrain.a.h
+com.appbrain.a.i
+com.appbrain.a.j
+com.appbrain.a.k
+com.appbrain.a.l
+com.appbrain.a.m
+com.appbrain.a.n
+com.appbrain.a.o
+com.appbrain.a.p
+com.appbrain.a.q
+com.appbrain.a.r
+com.appbrain.b.l
+com.appbrain.d.a
+com.appbrain.d.b
+com.appbrain.d.c:
+    public static com.appbrain.d.c a(android.content.Context,android.graphics.drawable.Drawable,android.graphics.drawable.Drawable)
+com.appbrain.d.d
+com.appbrain.d.f
+com.appbrain.e.a
+com.appbrain.e.f
+com.appbrain.g.a
+com.elencticsoft.collegeseeker.BuildConfig
+com.elencticsoft.collegeseeker.College:
+    63:65:public College(java.lang.String)
+com.elencticsoft.collegeseeker.CollegeContract
+com.elencticsoft.collegeseeker.CollegeContract$CollegeEntry
+com.elencticsoft.collegeseeker.CollegeContract$SavedCollegeEntry
+com.elencticsoft.collegeseeker.CollegeHelper:
+    public static final java.lang.String ALL_STATES
+    15:15:public CollegeHelper()
+    20:63:public static java.lang.String getIcon(java.lang.String)
+    68:92:public static com.elencticsoft.collegeseeker.College$Classification getClassification(int)
+    97:125:public static com.elencticsoft.collegeseeker.College$Locale getLocale(int)
+    130:142:public static com.elencticsoft.collegeseeker.College$Type getType(int)
+com.elencticsoft.collegeseeker.DatabaseHandler:
+    private static final int DATABASE_VERSION
+    private static final java.lang.String DATABASE_NAME
+    private static final java.lang.String TABLE_COLLEGES
+    private static final java.lang.String TABLE_SAVED_COLLEGES
+    private static final java.lang.String TEXT_TYPE_COMMA
+    private static final java.lang.String INT_TYPE
+    private static final java.lang.String INT_TYPE_COMMA
+    private static final java.lang.String DEC_TYPE
+    private static final java.lang.String DEC_TYPE_COMMA
+    private static final java.lang.String COMMA_SEP
+    139:140:public void addCollege(com.elencticsoft.collegeseeker.College)
+    198:198:public int updateCollege(com.elencticsoft.collegeseeker.College)
+    211:215:public int getCollegesCount()
+com.elencticsoft.collegeseeker.R
+com.elencticsoft.collegeseeker.R$array
+com.elencticsoft.collegeseeker.R$attr
+com.elencticsoft.collegeseeker.R$bool
+com.elencticsoft.collegeseeker.R$color
+com.elencticsoft.collegeseeker.R$dimen
+com.elencticsoft.collegeseeker.R$drawable
+com.elencticsoft.collegeseeker.R$id
+com.elencticsoft.collegeseeker.R$integer
+com.elencticsoft.collegeseeker.R$layout
+com.elencticsoft.collegeseeker.R$menu
+com.elencticsoft.collegeseeker.R$raw
+com.elencticsoft.collegeseeker.R$string
+com.elencticsoft.collegeseeker.R$style
+com.elencticsoft.collegeseeker.R$styleable
+com.elencticsoft.collegeseeker.R$xml
+com.elencticsoft.collegeseeker.SearchActivity
+com.google.ads.Ad:
+    public abstract boolean isReady()
+    public abstract void loadAd(com.google.ads.AdRequest)
+    public abstract void setAdListener(com.google.ads.AdListener)
+    public abstract void stopLoading()
+com.google.ads.AdActivity:
+    public static final java.lang.String BASE_URL_PARAM
+    public static final java.lang.String HTML_PARAM
+    public static final java.lang.String URL_PARAM
+    public static final java.lang.String CUSTOM_CLOSE_PARAM
+    public static final java.lang.String INTENT_ACTION_PARAM
+    public static final java.lang.String TYPE_PARAM
+    public static final java.lang.String COMPONENT_NAME_PARAM
+    public static final java.lang.String PACKAGE_NAME_PARAM
+    public static final java.lang.String INTENT_FLAGS_PARAM
+    public static final java.lang.String INTENT_EXTRAS_PARAM
+    public static final java.lang.String ORIENTATION_PARAM
+    313:335:public com.google.ads.internal.AdWebView getOpeningAdWebView()
+com.google.ads.AdRequest:
+    public static final java.lang.String VERSION
+    public static final java.lang.String LOGTAG
+    221:222:public com.google.ads.AdRequest setGender(com.google.ads.AdRequest$Gender)
+    230:230:public com.google.ads.AdRequest$Gender getGender()
+    243:255:public com.google.ads.AdRequest setBirthday(java.lang.String)
+    264:270:public com.google.ads.AdRequest setBirthday(java.util.Date)
+    280:286:public com.google.ads.AdRequest setBirthday(java.util.Calendar)
+    294:294:public java.util.Date getBirthday()
+    302:303:public com.google.ads.AdRequest clearBirthday()
+    320:321:public com.google.ads.AdRequest setPlusOneOptOut(boolean)
+    334:334:public boolean getPlusOneOptOut()
+    360:365:public com.google.ads.AdRequest addKeyword(java.lang.String)
+    378:383:public com.google.ads.AdRequest addKeywords(java.util.Set)
+    394:398:public java.util.Set getKeywords()
+    408:412:private synchronized com.google.ads.mediation.admob.AdMobAdapterExtras a()
+    427:428:public com.google.ads.AdRequest setExtras(java.util.Map)
+    445:451:public com.google.ads.AdRequest addExtra(java.lang.String,java.lang.Object)
+    478:479:public com.google.ads.AdRequest removeNetworkExtras(java.lang.Class)
+    502:503:public com.google.ads.AdRequest setMediationExtras(java.util.Map)
+    517:522:public com.google.ads.AdRequest addMediationExtra(java.lang.String,java.lang.Object)
+    533:534:public com.google.ads.AdRequest setLocation(android.location.Location)
+    542:542:public android.location.Location getLocation()
+    557:558:public com.google.ads.AdRequest setTesting(boolean)
+    673:678:public com.google.ads.AdRequest addTestDevice(java.lang.String)
+com.google.ads.AdSize:
+    public static final int FULL_WIDTH
+    public static final int AUTO_HEIGHT
+    public static final int LANDSCAPE_AD_HEIGHT
+    public static final int PORTRAIT_AD_HEIGHT
+    public static final int LARGE_AD_HEIGHT
+    291:291:public int getWidthInPixels(android.content.Context)
+    301:301:public int getHeightInPixels(android.content.Context)
+    317:317:public boolean isSizeAppropriate(int,int)
+    339:359:public varargs com.google.ads.AdSize findBestSize(com.google.ads.AdSize[])
+com.google.ads.AdView:
+    252:253:public void destroy()
+    542:546:public boolean isReady()
+    651:654:public void stopLoading()
+com.google.ads.InterstitialAd:
+    private com.google.ads.internal.d a
+    82:83:public InterstitialAd(android.app.Activity,java.lang.String)
+    97:99:public InterstitialAd(android.app.Activity,java.lang.String,boolean)
+    108:108:public boolean isReady()
+    120:121:public void loadAd(com.google.ads.AdRequest)
+    130:131:public void show()
+    142:143:public void setAdListener(com.google.ads.AdListener)
+    151:152:protected void setAppEventListener(com.google.ads.AppEventListener)
+    161:162:public void stopLoading()
+com.google.ads.doubleclick.DfpAdView:
+    27:28:public DfpAdView(android.app.Activity,com.google.ads.AdSize,java.lang.String)
+    38:39:public DfpAdView(android.app.Activity,com.google.ads.AdSize[],java.lang.String)
+    48:49:public DfpAdView(android.content.Context,android.util.AttributeSet)
+    59:60:public DfpAdView(android.content.Context,android.util.AttributeSet,int)
+    85:86:public void enableManualImpressions(boolean)
+    92:93:public void recordImpression()
+    101:103:public void resize(com.google.ads.AdSize)
+com.google.ads.doubleclick.DfpExtras:
+    25:30:public DfpExtras(com.google.ads.doubleclick.DfpExtras)
+    46:47:public com.google.ads.doubleclick.DfpExtras setPublisherProvidedId(java.lang.String)
+    55:56:public com.google.ads.doubleclick.DfpExtras setPlusOneOptOut(boolean)
+    61:62:public com.google.ads.doubleclick.DfpExtras setUseExactAdSize(boolean)
+    67:68:public com.google.ads.doubleclick.DfpExtras setExtras(java.util.Map)
+    79:80:public com.google.ads.doubleclick.DfpExtras addExtra(java.lang.String,java.lang.Object)
+    12:12:public bridge synthetic com.google.ads.mediation.admob.AdMobAdapterExtras addExtra(java.lang.String,java.lang.Object)
+    12:12:public bridge synthetic com.google.ads.mediation.admob.AdMobAdapterExtras setExtras(java.util.Map)
+    12:12:public bridge synthetic com.google.ads.mediation.admob.AdMobAdapterExtras setUseExactAdSize(boolean)
+    12:12:public bridge synthetic com.google.ads.mediation.admob.AdMobAdapterExtras setPlusOneOptOut(boolean)
+com.google.ads.doubleclick.DfpInterstitialAd
+com.google.ads.doubleclick.SwipeableDfpAdView:
+    22:23:public SwipeableDfpAdView(android.app.Activity,com.google.ads.AdSize,java.lang.String)
+    31:32:public SwipeableDfpAdView(android.content.Context,android.util.AttributeSet)
+    38:39:public SwipeableDfpAdView(android.content.Context,android.util.AttributeSet,int)
+    56:62:public void resize(com.google.ads.AdSize)
+com.google.ads.e:
+    113:123:public void b()
+    213:219:private boolean a(com.google.ads.h,java.lang.String)
+    225:235:public void a(com.google.ads.h,boolean)
+    240:256:public void a(com.google.ads.h,android.view.View)
+    260:269:public void a(com.google.ads.h)
+    273:282:public void b(com.google.ads.h)
+    286:295:public void c(com.google.ads.h)
+    306:315:public boolean c()
+    489:491:private com.google.ads.h e()
+    52:52:static synthetic com.google.ads.h c(com.google.ads.e)
+com.google.ads.e$2
+com.google.ads.e$3
+com.google.ads.e$4
+com.google.ads.e$5
+com.google.ads.e$6
+com.google.ads.f:
+    79:79:public java.util.List e()
+com.google.ads.h:
+    116:116:public com.google.ads.f a()
+    211:237:public synchronized void g()
+    265:265:synchronized com.google.ads.mediation.MediationAdapter i()
+    272:272:com.google.ads.e j()
+    276:277:synchronized void a(android.view.View)
+com.google.ads.h$2
+com.google.ads.internal.c:
+    644:664:protected void a()
+com.google.ads.internal.d:
+    343:354:public synchronized void b()
+    549:549:public synchronized boolean s()
+    718:721:public synchronized void a(com.google.ads.f,boolean)
+    845:862:private void b(com.google.ads.f,java.lang.Boolean)
+    942:954:public synchronized void z()
+    1073:1100:public synchronized void B()
+    1107:1116:public synchronized void C()
+com.google.ads.j:
+    private boolean b
+    34:66:public void onReceivedAd(com.google.ads.mediation.MediationBannerAdapter)
+    72:87:public void onFailedToReceiveAd(com.google.ads.mediation.MediationBannerAdapter,com.google.ads.AdRequest$ErrorCode)
+    92:95:public void onPresentScreen(com.google.ads.mediation.MediationBannerAdapter)
+    99:102:public void onDismissScreen(com.google.ads.mediation.MediationBannerAdapter)
+    106:109:public void onLeaveApplication(com.google.ads.mediation.MediationBannerAdapter)
+    113:117:public void onClick(com.google.ads.mediation.MediationBannerAdapter)
+com.google.ads.k:
+    29:40:public void onReceivedAd(com.google.ads.mediation.MediationInterstitialAdapter)
+    45:61:public void onFailedToReceiveAd(com.google.ads.mediation.MediationInterstitialAdapter,com.google.ads.AdRequest$ErrorCode)
+    66:69:public void onPresentScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    74:77:public void onDismissScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    81:84:public void onLeaveApplication(com.google.ads.mediation.MediationInterstitialAdapter)
+com.google.ads.mediation.EmptyNetworkExtras
+com.google.ads.mediation.MediationAdRequest:
+    50:50:public com.google.ads.AdRequest$Gender getGender()
+    57:57:public java.util.Date getBirthday()
+    67:81:public java.lang.Integer getAgeInYears()
+    88:92:public java.util.Set getKeywords()
+    100:104:public android.location.Location getLocation()
+    114:114:public boolean isTesting()
+com.google.ads.mediation.MediationBannerAdapter:
+    public abstract android.view.View getBannerView()
+com.google.ads.mediation.MediationBannerListener:
+    public abstract void onReceivedAd(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onFailedToReceiveAd(com.google.ads.mediation.MediationBannerAdapter,com.google.ads.AdRequest$ErrorCode)
+    public abstract void onPresentScreen(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onDismissScreen(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onLeaveApplication(com.google.ads.mediation.MediationBannerAdapter)
+    public abstract void onClick(com.google.ads.mediation.MediationBannerAdapter)
+com.google.ads.mediation.MediationInterstitialAdapter:
+    public abstract void showInterstitial()
+com.google.ads.mediation.MediationInterstitialListener:
+    public abstract void onReceivedAd(com.google.ads.mediation.MediationInterstitialAdapter)
+    public abstract void onFailedToReceiveAd(com.google.ads.mediation.MediationInterstitialAdapter,com.google.ads.AdRequest$ErrorCode)
+    public abstract void onPresentScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    public abstract void onDismissScreen(com.google.ads.mediation.MediationInterstitialAdapter)
+    public abstract void onLeaveApplication(com.google.ads.mediation.MediationInterstitialAdapter)
+com.google.ads.mediation.admob.AdMobAdapter
+com.google.ads.mediation.admob.AdMobAdapter$1
+com.google.ads.mediation.admob.AdMobAdapter$a
+com.google.ads.mediation.admob.AdMobAdapter$b
+com.google.ads.mediation.admob.AdMobAdapterExtras:
+    31:37:public AdMobAdapterExtras(com.google.ads.mediation.admob.AdMobAdapterExtras)
+    44:44:public com.google.ads.mediation.admob.AdMobAdapterExtras setPlusOneOptOut(boolean)
+    52:52:public boolean getPlusOneOptOut()
+    69:70:public com.google.ads.mediation.admob.AdMobAdapterExtras setUseExactAdSize(boolean)
+    79:79:public boolean getUseExactAdSize()
+    102:106:public com.google.ads.mediation.admob.AdMobAdapterExtras setExtras(java.util.Map)
+    128:129:public com.google.ads.mediation.admob.AdMobAdapterExtras addExtra(java.lang.String,java.lang.Object)
+com.google.ads.mediation.admob.AdMobAdapterServerParameters
+com.google.ads.mediation.customevent.CustomEvent
+com.google.ads.mediation.customevent.CustomEventAdapter
+com.google.ads.mediation.customevent.CustomEventAdapter$a
+com.google.ads.mediation.customevent.CustomEventAdapter$b
+com.google.ads.mediation.customevent.CustomEventBanner
+com.google.ads.mediation.customevent.CustomEventBannerListener
+com.google.ads.mediation.customevent.CustomEventExtras
+com.google.ads.mediation.customevent.CustomEventInterstitial
+com.google.ads.mediation.customevent.CustomEventInterstitialListener
+com.google.ads.mediation.customevent.CustomEventListener
+com.google.ads.mediation.customevent.CustomEventServerParameters
+com.google.ads.searchads.SearchAdRequest:
+    91:92:public void setQuery(java.lang.String)
+    101:108:public void setBackgroundColor(int)
+    120:127:public void setBackgroundGradient(int,int)
+    137:138:public void setHeaderTextColor(int)
+    148:149:public void setDescriptionTextColor(int)
+    159:160:public void setAnchorTextColor(int)
+    168:169:public void setFontFace(java.lang.String)
+    178:179:public void setHeaderTextSize(int)
+    189:190:public void setBorderColor(int)
+    197:198:public void setBorderType(com.google.ads.searchads.SearchAdRequest$BorderType)
+    207:208:public void setBorderThickness(int)
+    215:216:public void setCustomChannels(java.lang.String)
+com.google.ads.util.a:
+    37:38:public static void a(boolean)
+    53:55:public static void a(java.lang.Object)
+org.acra.ACRAConfiguration:
+    115:116:public void setHttpHeaders(java.util.Map)
+    134:135:public void setAdditionalDropboxTags(java.lang.String[])
+    142:143:public void setAdditionalSharedPreferences(java.lang.String[])
+    150:151:public void setConnectionTimeout(java.lang.Integer)
+    158:159:public void setCustomReportContent(org.acra.ReportField[])
+    166:167:public void setDeleteUnapprovedReportsOnApplicationStart(java.lang.Boolean)
+    173:174:public void setDeleteOldUnsentReportsOnApplicationStart(java.lang.Boolean)
+    181:182:public void setDropboxCollectionMinutes(java.lang.Integer)
+    189:190:public void setForceCloseDialogAfterToast(java.lang.Boolean)
+    202:203:public void setFormKey(java.lang.String)
+    215:216:public void setFormUri(java.lang.String)
+    223:224:public void setFormUriBasicAuthLogin(java.lang.String)
+    231:232:public void setFormUriBasicAuthPassword(java.lang.String)
+    239:240:public void setIncludeDropboxSystemTags(java.lang.Boolean)
+    247:248:public void setLogcatArguments(java.lang.String[])
+    260:261:public void setMailTo(java.lang.String)
+    268:269:public void setMaxNumberOfRequestRetries(java.lang.Integer)
+    281:283:public void setMode(org.acra.ReportingInteractionMode)
+    295:296:public void setResDialogCommentPrompt(int)
+    308:309:public void setResDialogEmailPrompt(int)
+    320:321:public void setResDialogIcon(int)
+    332:333:public void setResDialogOkToast(int)
+    344:345:public void setResDialogText(int)
+    356:357:public void setResDialogTitle(int)
+    368:369:public void setResNotifIcon(int)
+    380:381:public void setResNotifText(int)
+    393:394:public void setResNotifTickerText(int)
+    405:406:public void setResNotifTitle(int)
+    417:418:public void setResToastText(int)
+    425:426:public void setSharedPreferenceMode(java.lang.Integer)
+    433:434:public void setSharedPreferenceName(java.lang.String)
+    441:442:public void setSocketTimeout(java.lang.Integer)
+    451:452:public void setLogcatFilterByPid(java.lang.Boolean)
+    461:462:public void setSendReportsInDevMode(java.lang.Boolean)
+    472:473:public void setExcludeMatchingSharedPreferencesKeys(java.lang.String[])
+    483:484:public void setExcludeMatchingSettingsKeys(java.lang.String[])
+    493:494:public void setApplicationLogFile(java.lang.String)
+    504:505:public void setApplicationLogFileLines(int)
+    514:515:public void setDisableSSLCertValidation(boolean)
+    523:524:public void setHttpMethod(org.acra.sender.HttpSender$Method)
+    533:534:public void setReportType(org.acra.sender.HttpSender$Type)
+org.acra.ACRAConfigurationException:
+    private static final long serialVersionUID
+org.acra.ACRAConstants:
+    public static final java.lang.String REPORTFILE_EXTENSION
+    static final java.lang.String APPROVED_SUFFIX
+    static final int MAX_SEND_REPORTS
+    protected static final java.lang.String EXTRA_REPORT_FILE_NAME
+    protected static final java.lang.String EXTRA_FORCE_CANCEL
+    static final int NOTIF_CRASH_ID
+    static final int TOAST_WAIT_DURATION
+    public static final java.lang.String NULL_VALUE
+    public static final boolean DEFAULT_FORCE_CLOSE_DIALOG_AFTER_TOAST
+    public static final int DEFAULT_MAX_NUMBER_OF_REQUEST_RETRIES
+    public static final int DEFAULT_SOCKET_TIMEOUT
+    public static final int DEFAULT_CONNECTION_TIMEOUT
+    public static final boolean DEFAULT_DELETE_UNAPPROVED_REPORTS_ON_APPLICATION_START
+    public static final boolean DEFAULT_DELETE_OLD_UNSENT_REPORTS_ON_APPLICATION_START
+    public static final int DEFAULT_DROPBOX_COLLECTION_MINUTES
+    public static final boolean DEFAULT_INCLUDE_DROPBOX_SYSTEM_TAGS
+    public static final int DEFAULT_SHARED_PREFERENCES_MODE
+    public static final int DEFAULT_NOTIFICATION_ICON
+    public static final int DEFAULT_DIALOG_ICON
+    public static final int DEFAULT_RES_VALUE
+    public static final java.lang.String DEFAULT_STRING_VALUE
+    public static final int DEFAULT_LOGCAT_LINES
+    public static final int DEFAULT_BUFFER_SIZE_IN_BYTES
+    public static final boolean DEFAULT_LOGCAT_FILTER_BY_PID
+    public static final boolean DEFAULT_SEND_REPORTS_IN_DEV_MODE
+    public static final java.lang.String DEFAULT_APPLICATION_LOGFILE
+    public static final int DEFAULT_APPLICATION_LOGFILE_LINES
+    public static final java.lang.String DEFAULT_GOOGLE_FORM_URL_FORMAT
+    public static final boolean DEFAULT_DISABLE_SSL_CERT_VALIDATION
+    58:58:public ACRAConstants()
+org.acra.CrashReportDialog:
+    private static final java.lang.String STATE_EMAIL
+    private static final java.lang.String STATE_COMMENT
+org.acra.CrashReportPersister:
+    private static final int NONE
+    private static final int SLASH
+    private static final int UNICODE
+    private static final int CONTINUE
+    private static final int KEY_DONE
+    private static final int IGNORE
+    private static final java.lang.String LINE_SEPARATOR
+org.acra.ErrorReporter:
+    216:216:public static org.acra.ErrorReporter getInstance()
+    254:254:public java.lang.String putCustomData(java.lang.String,java.lang.String)
+    267:267:public java.lang.String removeCustomData(java.lang.String)
+    280:280:public java.lang.String getCustomData(java.lang.String)
+    301:302:public void removeReportSender(org.acra.sender.ReportSender)
+    311:318:public void removeReportSenders(java.lang.Class)
+    570:571:public void handleException(java.lang.Throwable,boolean)
+    583:584:public void handleException(java.lang.Throwable)
+org.acra.collector.Compatibility:
+    29:29:public Compatibility()
+org.acra.collector.ConfigurationCollector:
+    private static final java.lang.String SUFFIX_MASK
+    private static final java.lang.String FIELD_SCREENLAYOUT
+    private static final java.lang.String FIELD_UIMODE
+    private static final java.lang.String FIELD_MNC
+    private static final java.lang.String FIELD_MCC
+    private static final java.lang.String PREFIX_UI_MODE
+    private static final java.lang.String PREFIX_TOUCHSCREEN
+    private static final java.lang.String PREFIX_SCREENLAYOUT
+    private static final java.lang.String PREFIX_ORIENTATION
+    private static final java.lang.String PREFIX_NAVIGATIONHIDDEN
+    private static final java.lang.String PREFIX_NAVIGATION
+    private static final java.lang.String PREFIX_KEYBOARDHIDDEN
+    private static final java.lang.String PREFIX_KEYBOARD
+    private static final java.lang.String PREFIX_HARDKEYBOARDHIDDEN
+    42:42:public ConfigurationCollector()
+org.acra.collector.CrashReportData:
+    private static final long serialVersionUID
+org.acra.collector.CrashReportDataFactory:
+    138:138:public java.lang.String removeCustomData(java.lang.String)
+    149:149:public java.lang.String getCustomData(java.lang.String)
+org.acra.collector.DeviceFeaturesCollector:
+    32:32:DeviceFeaturesCollector()
+org.acra.collector.DisplayManagerCollector:
+    18:18:DisplayManagerCollector()
+org.acra.collector.DropBoxCollector:
+    private static final java.lang.String NO_RESULT
+    40:40:DropBoxCollector()
+org.acra.collector.DumpSysCollector:
+    34:34:DumpSysCollector()
+org.acra.collector.LogCatCollector:
+    private static final int DEFAULT_TAIL_COUNT
+    41:41:LogCatCollector()
+org.acra.collector.LogFileCollector:
+    41:42:private LogFileCollector()
+org.acra.collector.MediaCodecListCollector:
+    private static final java.lang.String COLOR_FORMAT_PREFIX
+    34:35:public MediaCodecListCollector()
+org.acra.collector.ReflectionCollector:
+    32:32:ReflectionCollector()
+org.acra.collector.SettingsCollector:
+    39:39:SettingsCollector()
+org.acra.collector.SharedPreferencesCollector:
+    33:33:SharedPreferencesCollector()
+org.acra.collector.ThreadCollector:
+    25:25:public ThreadCollector()
+org.acra.jraf.android.util.activitylifecyclecallbackscompat.ActivityLifecycleCallbacksAdapter
+org.acra.jraf.android.util.activitylifecyclecallbackscompat.ApplicationHelper:
+    38:38:public ApplicationHelper()
+    80:85:public void unregisterActivityLifecycleCallbacks(android.app.Application,org.acra.jraf.android.util.activitylifecyclecallbackscompat.ActivityLifecycleCallbacksCompat)
+    88:89:private static void preIcsUnregisterActivityLifecycleCallbacks(org.acra.jraf.android.util.activitylifecyclecallbackscompat.ActivityLifecycleCallbacksCompat)
+    93:94:private static void postIcsUnregisterActivityLifecycleCallbacks(android.app.Application,org.acra.jraf.android.util.activitylifecyclecallbackscompat.ActivityLifecycleCallbacksCompat)
+org.acra.jraf.android.util.activitylifecyclecallbackscompat.MainLifecycleDispatcher:
+    58:61:void unregisterActivityLifecycleCallbacks(org.acra.jraf.android.util.activitylifecyclecallbackscompat.ActivityLifecycleCallbacksCompat)
+org.acra.log.ACRALog:
+    public abstract int v(java.lang.String,java.lang.String)
+    public abstract int v(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract int d(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract int i(java.lang.String,java.lang.String)
+    public abstract int i(java.lang.String,java.lang.String,java.lang.Throwable)
+    public abstract int w(java.lang.String,java.lang.Throwable)
+    public abstract java.lang.String getStackTraceString(java.lang.Throwable)
+org.acra.log.AndroidLogDelegate:
+    14:14:public int v(java.lang.String,java.lang.String)
+    17:17:public int v(java.lang.String,java.lang.String,java.lang.Throwable)
+    23:23:public int d(java.lang.String,java.lang.String,java.lang.Throwable)
+    26:26:public int i(java.lang.String,java.lang.String)
+    29:29:public int i(java.lang.String,java.lang.String,java.lang.Throwable)
+    39:39:public int w(java.lang.String,java.lang.Throwable)
+    48:48:public java.lang.String getStackTraceString(java.lang.Throwable)
+org.acra.sender.GoogleFormSender:
+    65:67:public GoogleFormSender(java.lang.String)
+org.acra.sender.HttpSender:
+    173:178:public HttpSender(org.acra.sender.HttpSender$Method,org.acra.sender.HttpSender$Type,java.lang.String,java.util.Map)
+org.acra.sender.ReportSenderException:
+    49:50:public ReportSenderException(java.lang.String)
+org.acra.util.Installation:
+    private static final java.lang.String INSTALLATION
+    29:29:public Installation()
+org.acra.util.JSONReportBuilder:
+    17:17:public JSONReportBuilder()
+org.acra.util.JSONReportBuilder$JSONReportException:
+    private static final long serialVersionUID
+org.acra.util.ReportUtils:
+    24:24:public ReportUtils()
+    86:105:public static java.lang.String sparseArrayToString(android.util.SparseArray)
+org.acra.util.ToastSender:
+    15:15:public ToastSender()

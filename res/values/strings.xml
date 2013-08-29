@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="search_label">Colleges</string>
+    <string name="search_hint">Search Colleges</string>
+    <string name="app_name">CollegeSeeker</string>
+    <string name="action_about">About</string>
+    <string name="title_activity_college_list">All Colleges</string>
+    <string name="title_college_match_list">Matches</string>
+    <string name="title_saved_college_list">Saved Colleges</string>
+    <string name="button_send">Search</string>
+    <string name="sort_prompt">Sort by:</string>
+    <string name="crash_toast_text">App crashed!</string>
+    <string name="about">This application is powered by ActionBarSherlock, Apache CouchDB, ACRA,
+        and opencsv, which are licensed under the Apache License, Version 2.0. A copy
+        of the Apache license may be found at http://www.apache.org/licenses/LICENSE-2.0.html. 
+        The data used in this application was obtained from surveys conducted by the IPEDS.\n\n
+        Note: If SAT or ACT scores are provided in the Matches tab, the app attempts to match you to colleges
+        where your scores would fall roughly in the middle 50% of the student body. However, if a college
+        does not consider the writing section of the SAT, the app disregards your
+        writing score. If both SAT and ACT scores are provided, the app simply uses the higher
+        of the two.</string>
+    <string name="dialog_message">Would you like to view more details about the college or save the college?</string>
+    <string name="saved_dialog_message">Would you like to view more details about the college or remove the college from the list?</string>
+    <string name="save">Save</string>
+    <string name="remove">Remove</string>
+    <string name="view_details">View Details</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="college_label">College:</string>
+    <string name="institution_section">Institution Characteristics:</string>
+    <string name="student_section">Student Body Characteristics:</string>
+    <string name="financial_aid_section">Financial Aid:</string>
+    <string name="college_logo">Logo</string>
+    <string name="enrollment_label">Enrollment:</string>
+    <string name="acceptance_label">Acceptance Rate:</string>
+    <string name="type_label">Type:</string>
+    <string name="sat25_label">SAT 25th percentile (V/M/W):</string>
+    <string name="sat75_label">SAT 75th percentile (V/M/W):</string>
+    <string name="act_label">ACT 25th-75th percentiles:</string>
+    <string name="grad_label">Graduation Rate 4-year/6-year:</string>
+    <string name="retention_label">Retention Rate:</string>
+    <string name="cost_label">Total Cost in-state/out-of-state:</string>
+    <string name="male_female_ratio_label">Male/Female ratio:</string>
+    <string name="faculty_ratio_label">Student-Faculty Ratio:</string>
+    <string name="resources_label">Financial resources per student:</string>
+    <string name="endowment_label">Endowment:</string>
+    <string name="financial_label">Cost:</string>
+    <string name="tuition_label">Tuition in-state/out-of-state:</string>
+    <string name="room_board_label">Room and Board:</string>
+    <string name="percent_aid_label">% of students on financial aid:</string>
+    <string name="percent_grant_aid_label">% of students receiving grants from college:</string>
+    <string name="net_cost_label">Average net cost for students on financial aid:</string>
+    <string name="net_cost_section">Average net cost for families with income:</string>
+    <string name="net_cost1_label">\t&lt;30000:</string>
+    <string name="net_cost2_label">\t30001&#8211;48000:</string>
+    <string name="net_cost3_label">\t48001&#8211;75000:</string>
+    <string name="net_cost4_label">\t75001&#8211;110000:</string>
+    <string name="net_cost5_label">\t&gt;110001:</string>
+    <string name="sat_label">(Optional) SAT Scores:</string>
+    <string name="sat_ver_label">VER</string>
+    <string name="sat_mat_label">MAT</string>
+    <string name="sat_wri_label">WRI</string>
+    <string name="act_input_label">(Optional) ACT Score:</string>
+    <string name="location_label">Location:</string>
+    <string name="college_small">&lt;5000</string>
+    <string name="college_medium">5000&#8211;10000</string>
+    <string name="college_large">&gt;10000</string>
+    <string name="city">City</string>
+    <string name="suburb">Suburb</string>
+    <string name="town">Town</string>
+    <string name="rural">Rural</string>
+    <string name="public_i">Public</string>
+    <string name="private_fp">Private for-profit</string>
+    <string name="private_nfp">Private not-for-profit</string>
+    <string name="private_rel">Private religious</string>
+    <string name="web_url_label">College website:</string>
+    <string name="adm_url_label">Admissions website:</string>
+    <string name="fin_url_label">Financial Aid website:</string>
+    <string name="app_url_label">Application website:</string>
+    <string name="calc_url_label">Net price calculator:</string>
+    <string name="app_fee_label">Application fee:</string>
+
+    <string-array name="states">
+        <item>All States</item>
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>District of Columbia</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois</item>
+        <item>Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana</item>
+        <item>Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania</item>
+        <item>Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </string-array>
+    <string-array name="sortList">
+        <item>Sort by Name</item>
+        <item>4-year Grad Rate</item>
+        <item>6-year Grad Rate</item>
+        <item>Retention Rate</item>
+        <item>Total Cost (in-state)</item>
+        <item>Total Cost (out-of-state)</item>
+        <item>Average Net Cost</item>
+        <item>SAT 25th percentile</item>
+        <item>SAT 75th percentile</item>
+        <item>ACT 25th percentile</item>
+        <item>ACT 75th percentile</item>
+        <item>Student-Faculty Ratio</item>
+        <item>Financial Resources/Student</item>
+        <item>Endowment</item>
+    </string-array>
+
+</resources>
