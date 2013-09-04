@@ -1,14 +1,15 @@
 package com.elencticsoft.collegeseeker;
 
-import com.actionbarsherlock.app.SherlockFragment;
-
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.actionbarsherlock.app.SherlockFragment;
 
 public class DetailedView extends SherlockFragment {
     
@@ -104,5 +105,6 @@ public class DetailedView extends SherlockFragment {
         netCost5View.setText(String.format("$%d", college.getNetCost5()));
         resourcesView.setText(String.format("$%.0f", college.getResourcesSpent()));
         endowmentView.setText(String.format("$%.0f", college.getEndowment()));
+        Log.i("Detailed", college.getMajors().toString());
     }
 }

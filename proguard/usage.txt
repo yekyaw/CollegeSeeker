@@ -309,31 +309,51 @@ com.appbrain.e.f
 com.appbrain.g.a
 com.elencticsoft.collegeseeker.BuildConfig
 com.elencticsoft.collegeseeker.College:
-    63:65:public College(java.lang.String)
+    67:69:public College(java.lang.String)
+    96:96:public int getFirstYearEnrollment()
+    200:200:public java.lang.String getState()
+    232:232:public int getGradCohort()
+    240:240:public int getFourYrGrad()
+    248:248:public int getSixYrGrad()
+    456:456:public int getSat25()
+    464:464:public int getSat75()
+    504:506:public void addMajor(java.lang.String)
 com.elencticsoft.collegeseeker.CollegeContract
 com.elencticsoft.collegeseeker.CollegeContract$CollegeEntry
+com.elencticsoft.collegeseeker.CollegeContract$MajorEntry
+com.elencticsoft.collegeseeker.CollegeContract$MajorNameEntry
 com.elencticsoft.collegeseeker.CollegeContract$SavedCollegeEntry
 com.elencticsoft.collegeseeker.CollegeHelper:
     public static final java.lang.String ALL_STATES
-    15:15:public CollegeHelper()
-    20:63:public static java.lang.String getIcon(java.lang.String)
-    68:92:public static com.elencticsoft.collegeseeker.College$Classification getClassification(int)
-    97:125:public static com.elencticsoft.collegeseeker.College$Locale getLocale(int)
-    130:142:public static com.elencticsoft.collegeseeker.College$Type getType(int)
+    public static final java.lang.String ALL_MAJORS
+    17:17:public CollegeHelper()
+    23:66:public static java.lang.String getIcon(java.lang.String)
+    71:95:public static com.elencticsoft.collegeseeker.College$Classification getClassification(int)
+    100:128:public static com.elencticsoft.collegeseeker.College$Locale getLocale(int)
+    133:145:public static com.elencticsoft.collegeseeker.College$Type getType(int)
+    353:407:public static android.content.ContentValues createCollegeValues(com.elencticsoft.collegeseeker.College)
+    431:485:public static com.elencticsoft.collegeseeker.College parseCollege(java.lang.String[])
 com.elencticsoft.collegeseeker.DatabaseHandler:
     private static final int DATABASE_VERSION
     private static final java.lang.String DATABASE_NAME
     private static final java.lang.String TABLE_COLLEGES
     private static final java.lang.String TABLE_SAVED_COLLEGES
+    private static final java.lang.String TABLE_MAJORS
+    private static final java.lang.String TABLE_MAJOR_NAMES
+    private static final java.lang.String TEXT_TYPE
     private static final java.lang.String TEXT_TYPE_COMMA
     private static final java.lang.String INT_TYPE
     private static final java.lang.String INT_TYPE_COMMA
     private static final java.lang.String DEC_TYPE
     private static final java.lang.String DEC_TYPE_COMMA
     private static final java.lang.String COMMA_SEP
-    139:140:public void addCollege(com.elencticsoft.collegeseeker.College)
-    198:198:public int updateCollege(com.elencticsoft.collegeseeker.College)
-    211:215:public int getCollegesCount()
+    63:68:public void createDatabase(android.database.sqlite.SQLiteDatabase)
+    71:104:private void createCollegeTable(android.database.sqlite.SQLiteDatabase)
+    107:122:private void createMajorTable(android.database.sqlite.SQLiteDatabase)
+    125:130:private void createSavedTable(android.database.sqlite.SQLiteDatabase)
+    190:191:public void addCollege(android.database.sqlite.SQLiteDatabase,com.elencticsoft.collegeseeker.College)
+    262:262:public int updateCollege(com.elencticsoft.collegeseeker.College)
+    274:278:public int getCollegesCount()
 com.elencticsoft.collegeseeker.R
 com.elencticsoft.collegeseeker.R$array
 com.elencticsoft.collegeseeker.R$attr
@@ -557,6 +577,9 @@ com.google.ads.searchads.SearchAdRequest:
 com.google.ads.util.a:
     37:38:public static void a(boolean)
     53:55:public static void a(java.lang.Object)
+com.readystatesoftware.sqliteasset.SQLiteAssetHelper:
+    private static final java.lang.String ASSET_DB_PATH
+    340:341:public void setForcedUpgradeVersion(int)
 org.acra.ACRAConfiguration:
     115:116:public void setHttpHeaders(java.util.Map)
     134:135:public void setAdditionalDropboxTags(java.lang.String[])

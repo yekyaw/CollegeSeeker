@@ -9,6 +9,7 @@ package com.elencticsoft.collegeseeker;
 
 public final class R {
     public static final class array {
+        public static final int majorsList=0x7f0d0002;
         public static final int sortList=0x7f0d0001;
         public static final int states=0x7f0d0000;
     }
@@ -1006,8 +1007,8 @@ containing a value of this type.
         public static final int act_input=0x7f06008d;
         public static final int act_input_label=0x7f06008c;
         public static final int act_label=0x7f060057;
-        public static final int action_about=0x7f060092;
-        public static final int action_bar_search=0x7f060091;
+        public static final int action_about=0x7f060093;
+        public static final int action_bar_search=0x7f060092;
         public static final int adView=0x7f060033;
         public static final int adm_url=0x7f06003e;
         public static final int adm_url_label=0x7f06003d;
@@ -1015,7 +1016,7 @@ containing a value of this type.
         public static final int app_fee_label=0x7f060039;
         public static final int app_url=0x7f060042;
         public static final int app_url_label=0x7f060041;
-        public static final int button_send=0x7f060090;
+        public static final int button_send=0x7f060091;
         public static final int calc_url=0x7f060044;
         public static final int calc_url_label=0x7f060043;
         public static final int checkbox_city=0x7f06007d;
@@ -1053,6 +1054,7 @@ containing a value of this type.
         public static final int institution_section=0x7f060045;
         public static final int listMode=0x7f060002;
         public static final int location_label=0x7f06007c;
+        public static final int majorSpinner=0x7f06008f;
         public static final int male_female_ratio=0x7f060052;
         public static final int male_female_ratio_label=0x7f060051;
         public static final int net_cost=0x7f06006a;
@@ -1094,7 +1096,7 @@ containing a value of this type.
         public static final int showHome=0x7f060005;
         public static final int showTitle=0x7f060007;
         public static final int sortSpinner=0x7f060077;
-        public static final int sortSpinner2=0x7f06008f;
+        public static final int sortSpinner2=0x7f060090;
         public static final int statesSpinner=0x7f060076;
         public static final int statesSpinner2=0x7f06008e;
         public static final int student_section=0x7f060050;
@@ -1148,10 +1150,11 @@ containing a value of this type.
         public static final int main=0x7f0e0000;
     }
     public static final class raw {
-        public static final int database=0x7f050000;
+        public static final int college_majors=0x7f050000;
+        public static final int major_list=0x7f050001;
     }
     public static final class string {
-        public static final int about=0x7f0b0017;
+        public static final int about=0x7f0b0018;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abs__action_bar_home_description=0x7f0b0000;
@@ -1191,76 +1194,77 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abs__shareactionprovider_share_with_application=0x7f0b0007;
-        public static final int acceptance_label=0x7f0b0025;
-        public static final int act_input_label=0x7f0b0041;
-        public static final int act_label=0x7f0b0029;
+        public static final int acceptance_label=0x7f0b0026;
+        public static final int act_input_label=0x7f0b0042;
+        public static final int act_label=0x7f0b002a;
         public static final int action_about=0x7f0b0010;
-        public static final int adm_url_label=0x7f0b004f;
-        public static final int app_fee_label=0x7f0b0053;
+        public static final int adm_url_label=0x7f0b0050;
+        public static final int app_fee_label=0x7f0b0054;
         public static final int app_name=0x7f0b000f;
-        public static final int app_url_label=0x7f0b0051;
+        public static final int app_url_label=0x7f0b0052;
         public static final int button_send=0x7f0b0014;
-        public static final int calc_url_label=0x7f0b0052;
-        public static final int cancel=0x7f0b001e;
-        public static final int city=0x7f0b0046;
-        public static final int college_label=0x7f0b001f;
-        public static final int college_large=0x7f0b0045;
-        public static final int college_logo=0x7f0b0023;
-        public static final int college_medium=0x7f0b0044;
-        public static final int college_small=0x7f0b0043;
-        public static final int cost_label=0x7f0b002c;
-        public static final int crash_toast_text=0x7f0b0016;
-        public static final int dialog_message=0x7f0b0018;
-        public static final int endowment_label=0x7f0b0030;
-        public static final int enrollment_label=0x7f0b0024;
-        public static final int faculty_ratio_label=0x7f0b002e;
-        public static final int fin_url_label=0x7f0b0050;
-        public static final int financial_aid_section=0x7f0b0022;
-        public static final int financial_label=0x7f0b0031;
-        public static final int grad_label=0x7f0b002a;
-        public static final int institution_section=0x7f0b0020;
-        public static final int location_label=0x7f0b0042;
-        public static final int male_female_ratio_label=0x7f0b002d;
-        public static final int net_cost1_label=0x7f0b0038;
-        public static final int net_cost2_label=0x7f0b0039;
-        public static final int net_cost3_label=0x7f0b003a;
-        public static final int net_cost4_label=0x7f0b003b;
-        public static final int net_cost5_label=0x7f0b003c;
-        public static final int net_cost_label=0x7f0b0036;
-        public static final int net_cost_section=0x7f0b0037;
-        public static final int ok=0x7f0b001d;
-        public static final int percent_aid_label=0x7f0b0034;
-        public static final int percent_grant_aid_label=0x7f0b0035;
-        public static final int private_fp=0x7f0b004b;
-        public static final int private_nfp=0x7f0b004c;
-        public static final int private_rel=0x7f0b004d;
-        public static final int public_i=0x7f0b004a;
-        public static final int remove=0x7f0b001b;
-        public static final int resources_label=0x7f0b002f;
-        public static final int retention_label=0x7f0b002b;
-        public static final int room_board_label=0x7f0b0033;
-        public static final int rural=0x7f0b0049;
-        public static final int sat25_label=0x7f0b0027;
-        public static final int sat75_label=0x7f0b0028;
-        public static final int sat_label=0x7f0b003d;
-        public static final int sat_mat_label=0x7f0b003f;
-        public static final int sat_ver_label=0x7f0b003e;
-        public static final int sat_wri_label=0x7f0b0040;
-        public static final int save=0x7f0b001a;
-        public static final int saved_dialog_message=0x7f0b0019;
+        public static final int calc_url_label=0x7f0b0053;
+        public static final int cancel=0x7f0b001f;
+        public static final int city=0x7f0b0047;
+        public static final int college_label=0x7f0b0020;
+        public static final int college_large=0x7f0b0046;
+        public static final int college_logo=0x7f0b0024;
+        public static final int college_medium=0x7f0b0045;
+        public static final int college_small=0x7f0b0044;
+        public static final int cost_label=0x7f0b002d;
+        public static final int crash_toast_text=0x7f0b0017;
+        public static final int dialog_message=0x7f0b0019;
+        public static final int endowment_label=0x7f0b0031;
+        public static final int enrollment_label=0x7f0b0025;
+        public static final int faculty_ratio_label=0x7f0b002f;
+        public static final int fin_url_label=0x7f0b0051;
+        public static final int financial_aid_section=0x7f0b0023;
+        public static final int financial_label=0x7f0b0032;
+        public static final int grad_label=0x7f0b002b;
+        public static final int institution_section=0x7f0b0021;
+        public static final int location_label=0x7f0b0043;
+        public static final int major_prompt=0x7f0b0016;
+        public static final int male_female_ratio_label=0x7f0b002e;
+        public static final int net_cost1_label=0x7f0b0039;
+        public static final int net_cost2_label=0x7f0b003a;
+        public static final int net_cost3_label=0x7f0b003b;
+        public static final int net_cost4_label=0x7f0b003c;
+        public static final int net_cost5_label=0x7f0b003d;
+        public static final int net_cost_label=0x7f0b0037;
+        public static final int net_cost_section=0x7f0b0038;
+        public static final int ok=0x7f0b001e;
+        public static final int percent_aid_label=0x7f0b0035;
+        public static final int percent_grant_aid_label=0x7f0b0036;
+        public static final int private_fp=0x7f0b004c;
+        public static final int private_nfp=0x7f0b004d;
+        public static final int private_rel=0x7f0b004e;
+        public static final int public_i=0x7f0b004b;
+        public static final int remove=0x7f0b001c;
+        public static final int resources_label=0x7f0b0030;
+        public static final int retention_label=0x7f0b002c;
+        public static final int room_board_label=0x7f0b0034;
+        public static final int rural=0x7f0b004a;
+        public static final int sat25_label=0x7f0b0028;
+        public static final int sat75_label=0x7f0b0029;
+        public static final int sat_label=0x7f0b003e;
+        public static final int sat_mat_label=0x7f0b0040;
+        public static final int sat_ver_label=0x7f0b003f;
+        public static final int sat_wri_label=0x7f0b0041;
+        public static final int save=0x7f0b001b;
+        public static final int saved_dialog_message=0x7f0b001a;
         public static final int search_hint=0x7f0b000e;
         public static final int search_label=0x7f0b000d;
         public static final int sort_prompt=0x7f0b0015;
-        public static final int student_section=0x7f0b0021;
-        public static final int suburb=0x7f0b0047;
+        public static final int student_section=0x7f0b0022;
+        public static final int suburb=0x7f0b0048;
         public static final int title_activity_college_list=0x7f0b0011;
         public static final int title_college_match_list=0x7f0b0012;
         public static final int title_saved_college_list=0x7f0b0013;
-        public static final int town=0x7f0b0048;
-        public static final int tuition_label=0x7f0b0032;
-        public static final int type_label=0x7f0b0026;
-        public static final int view_details=0x7f0b001c;
-        public static final int web_url_label=0x7f0b004e;
+        public static final int town=0x7f0b0049;
+        public static final int tuition_label=0x7f0b0033;
+        public static final int type_label=0x7f0b0027;
+        public static final int view_details=0x7f0b001d;
+        public static final int web_url_label=0x7f0b004f;
     }
     public static final class style {
         /** 

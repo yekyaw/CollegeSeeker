@@ -10,6 +10,7 @@
     <string name="title_saved_college_list">Saved Colleges</string>
     <string name="button_send">Search</string>
     <string name="sort_prompt">Sort by:</string>
+    <string name="major_prompt">All Majors</string>
     <string name="crash_toast_text">App crashed!</string>
     <string name="about">This application is powered by ActionBarSherlock, Apache CouchDB, ACRA,
         and opencsv, which are licensed under the Apache License, Version 2.0. A copy
@@ -150,6 +151,1088 @@
         <item>Student-Faculty Ratio</item>
         <item>Financial Resources/Student</item>
         <item>Endowment</item>
+    </string-array>
+    <string-array name="majorsList">
+        <item>All Majors</item>
+        <item>Accounting</item>
+        <item>Accounting Technology/Technician and Bookkeeping</item>
+        <item>Accounting and Business/Management</item>
+        <item>Accounting and Computer Science</item>
+        <item>Accounting and Finance</item>
+        <item>Accounting and Related Services, Other</item>
+        <item>Acoustics</item>
+        <item>Acting</item>
+        <item>Actuarial Science</item>
+        <item>Administrative Assistant and Secretarial Science, General</item>
+        <item>Adult Development and Aging</item>
+        <item>Adult Health Nurse/Nursing</item>
+        <item>Adult and Continuing Education Administration</item>
+        <item>Adult and Continuing Education and Teaching</item>
+        <item>Advanced Legal Research/Studies, General</item>
+        <item>Advertising</item>
+        <item>Aeronautical/Aerospace Engineering Technology/Technician</item>
+        <item>Aeronautics/Aviation/Aerospace Science and Technology, General</item>
+        <item>Aerospace, Aeronautical and Astronautical/Space Engineering</item>
+        <item>African Languages, Literatures, and Linguistics</item>
+        <item>African Studies</item>
+        <item>African-American/Black Studies</item>
+        <item>Agribusiness/Agricultural Business Operations</item>
+        <item>Agricultural Animal Breeding</item>
+        <item>Agricultural Business Technology</item>
+        <item>Agricultural Business and Management, General</item>
+        <item>Agricultural Business and Management, Other</item>
+        <item>Agricultural Communication/Journalism</item>
+        <item>Agricultural Economics</item>
+        <item>Agricultural Engineering</item>
+        <item>Agricultural Mechanization, General</item>
+        <item>Agricultural Mechanization, Other</item>
+        <item>Agricultural Production Operations, General</item>
+        <item>Agricultural Public Services, Other</item>
+        <item>Agricultural Teacher Education</item>
+        <item>Agricultural and Domestic Animal Services, Other</item>
+        <item>Agricultural and Extension Education Services</item>
+        <item>Agricultural and Food Products Processing</item>
+        <item>Agricultural and Horticultural Plant Breeding</item>
+        <item>Agricultural/Farm Supplies Retailing and Wholesaling</item>
+        <item>Agriculture, Agriculture Operations and Related Sciences, Other</item>
+        <item>Agroecology and Sustainable Agriculture</item>
+        <item>Agronomy and Crop Science</item>
+        <item>Air Traffic Controller</item>
+        <item>Air Transportation, Other</item>
+        <item>Aircraft Powerplant Technology/Technician</item>
+        <item>Airframe Mechanics and Aircraft Maintenance Technology/Technician</item>
+        <item>Airline/Commercial/Professional Pilot and Flight Crew</item>
+        <item>Allied Health Diagnostic, Intervention, and Treatment Professions, Other</item>
+        <item>Allied Health and Medical Assisting Services, Other</item>
+        <item>Alternative and Complementary Medicine and Medical Systems, General</item>
+        <item>Alternative and Complementary Medicine and Medical Systems, Other</item>
+        <item>American Government and Politics (United States</item>
+        <item>American History (United States)</item>
+        <item>American Indian/Native American Languages, Literatures, and Linguistics</item>
+        <item>American Indian/Native American Studies</item>
+        <item>American Literature (United States</item>
+        <item>American Sign Language (ASL)</item>
+        <item>American/U.S. Law/Legal Studies/Jurisprudence</item>
+        <item>American/United States Studies/Civilization</item>
+        <item>Analytical Chemistry</item>
+        <item>Anatomy</item>
+        <item>Ancient Near Eastern and Biblical Languages, Literatures, and Linguistics</item>
+        <item>Ancient Studies/Civilization</item>
+        <item>Ancient/Classical Greek Language and Literature</item>
+        <item>Animal Behavior and Ethology</item>
+        <item>Animal Genetics</item>
+        <item>Animal Physiology</item>
+        <item>Animal Sciences, General</item>
+        <item>Animal Sciences, Other</item>
+        <item>Animal-Assisted Therapy</item>
+        <item>Animal/Livestock Husbandry and Production</item>
+        <item>Animation, Interactive Technology, Video Graphics and Special Effects</item>
+        <item>Anthropology</item>
+        <item>Anthropology, Other</item>
+        <item>Apparel and Accessories Marketing Operations</item>
+        <item>Apparel and Textile Manufacture</item>
+        <item>Apparel and Textile Marketing Management</item>
+        <item>Apparel and Textiles, General</item>
+        <item>Applied Behavior Analysis</item>
+        <item>Applied Economics</item>
+        <item>Applied Horticulture/Horticultural Business Services, Other</item>
+        <item>Applied Horticulture/Horticulture Operations, General</item>
+        <item>Applied Linguistics</item>
+        <item>Applied Mathematics, General</item>
+        <item>Applied Mathematics, Other</item>
+        <item>Applied Psychology</item>
+        <item>Applied and Professional Ethics</item>
+        <item>Aquaculture</item>
+        <item>Aquatic Biology/Limnology</item>
+        <item>Arabic Language and Literature</item>
+        <item>Archeology</item>
+        <item>Architectural Engineering</item>
+        <item>Architectural Engineering Technology/Technician</item>
+        <item>Architectural History and Criticism, General</item>
+        <item>Architectural Sciences and Technology, Other</item>
+        <item>Architectural Technology/Technician</item>
+        <item>Architectural and Building Sciences/Technology</item>
+        <item>Architecture</item>
+        <item>Architecture and Related Services, Other</item>
+        <item>Area Studies, Other</item>
+        <item>Art History, Criticism and Conservation</item>
+        <item>Art Teacher Education</item>
+        <item>Art Therapy/Therapist</item>
+        <item>Art/Art Studies, General</item>
+        <item>Arts, Entertainment, and Media Management, Other</item>
+        <item>Arts, Entertainment,and Media Management, General</item>
+        <item>Asian History</item>
+        <item>Asian Studies/Civilization</item>
+        <item>Asian-American Studies</item>
+        <item>Astronomy</item>
+        <item>Astronomy and Astrophysics, Other</item>
+        <item>Astrophysics</item>
+        <item>Athletic Training/Trainer</item>
+        <item>Atmospheric Sciences and Meteorology, General</item>
+        <item>Atmospheric Sciences and Meteorology, Other</item>
+        <item>Atomic/Molecular Physics</item>
+        <item>Audiology/Audiologist</item>
+        <item>Audiology/Audiologist and Speech-Language Pathology/Pathologist</item>
+        <item>Audiovisual Communications Technologies/Technicians, Other</item>
+        <item>Auditing</item>
+        <item>Autobody/Collision and Repair Technology/Technician</item>
+        <item>Automobile/Automotive Mechanics Technology/Technician</item>
+        <item>Automotive Engineering Technology/Technician</item>
+        <item>Aviation/Airway Management and Operations</item>
+        <item>Avionics Maintenance Technology/Technician</item>
+        <item>Baking and Pastry Arts/Baker/Pastry Chef</item>
+        <item>Ballet</item>
+        <item>Banking and Financial Support Services</item>
+        <item>Behavioral Aspects of Health</item>
+        <item>Behavioral Sciences</item>
+        <item>Bible/Biblical Studies</item>
+        <item>Bilingual and Multilingual Education</item>
+        <item>Bilingual, Multilingual, and Multicultural Education, Other</item>
+        <item>Biochemical Engineering</item>
+        <item>Biochemistry</item>
+        <item>Biochemistry and Molecular Biology</item>
+        <item>Biochemistry, Biophysics and Molecular Biology, Other</item>
+        <item>Bioengineering and Biomedical Engineering</item>
+        <item>Bioethics/Medical Ethics</item>
+        <item>Bioinformatics</item>
+        <item>Biological and Biomedical Sciences, Other</item>
+        <item>Biological and Physical Sciences</item>
+        <item>Biological/Biosystems Engineering</item>
+        <item>Biology Teacher Education</item>
+        <item>Biology Technician/Biotechnology Laboratory Technician</item>
+        <item>Biology/Biological Sciences, General</item>
+        <item>Biomathematics, Bioinformatics, and Computational Biology, Other</item>
+        <item>Biomedical Sciences, General</item>
+        <item>Biomedical Technology/Technician</item>
+        <item>Biometry/Biometrics</item>
+        <item>Biophysics</item>
+        <item>Biopsychology</item>
+        <item>Biostatistics</item>
+        <item>Biotechnology</item>
+        <item>Botany/Plant Biology</item>
+        <item>Botany/Plant Biology, Other</item>
+        <item>Brass Instruments</item>
+        <item>Broadcast Journalism</item>
+        <item>Building Construction Technology</item>
+        <item>Building/Construction Finishing, Management, and Inspection, Other</item>
+        <item>Building/Construction Site Management/Manager</item>
+        <item>Business Administration and Management, General</item>
+        <item>Business Administration, Management and Operations, Other</item>
+        <item>Business Family and Consumer Sciences/Human Sciences</item>
+        <item>Business Operations Support and Secretarial Services, Other</item>
+        <item>Business Statistics</item>
+        <item>Business Teacher Education</item>
+        <item>Business and Personal/Financial Services Marketing Operations</item>
+        <item>Business, Management, Marketing, and Related Support Services, Other</item>
+        <item>Business/Commerce, General</item>
+        <item>Business/Corporate Communications</item>
+        <item>Business/Managerial Economics</item>
+        <item>Business/Office Automation/Technology/Data Entry</item>
+        <item>CAD/CADD Drafting and/or Design Technology/Technician</item>
+        <item>Canadian Studies</item>
+        <item>Cardiopulmonary Technology/Technologist</item>
+        <item>Cardiovascular Technology/Technologist</item>
+        <item>Casino Management</item>
+        <item>Cell Biology and Anatomy</item>
+        <item>Cell/Cellular Biology and Anatomical Sciences, Other</item>
+        <item>Cell/Cellular Biology and Histology</item>
+        <item>Cell/Cellular and Molecular Biology</item>
+        <item>Ceramic Arts and Ceramics</item>
+        <item>Ceramic Sciences and Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Chemical Physics</item>
+        <item>Chemical Technology/Technician</item>
+        <item>Chemical and Biomolecular Engineering</item>
+        <item>Chemistry Teacher Education</item>
+        <item>Chemistry, General</item>
+        <item>Chemistry, Other</item>
+        <item>Child Care Provider/Assistant</item>
+        <item>Child Care and Support Services Management</item>
+        <item>Child Development</item>
+        <item>Children\'s and Adolescent Literature</item>
+        <item>Chinese Language and Literature</item>
+        <item>Chinese Studies</item>
+        <item>Christian Studies</item>
+        <item>Cinematography and Film/Video Production</item>
+        <item>City/Urban, Community and Regional Planning</item>
+        <item>Civil Drafting and Civil Engineering CAD/CADD</item>
+        <item>Civil Engineering Technology/Technician</item>
+        <item>Civil Engineering, General</item>
+        <item>Civil Engineering, Other</item>
+        <item>Classical, Ancient Mediterranean and Near Eastern Studies and Archaeology</item>
+        <item>Classics and Classical Languages, Literatures, and Linguistics, General</item>
+        <item>Classics and Classical Languages, Literatures, and Linguistics, Other</item>
+        <item>Clinical Child Psychology</item>
+        <item>Clinical Laboratory Science/Medical Technology/Technologist</item>
+        <item>Clinical Nurse Leader</item>
+        <item>Clinical Nurse Specialist</item>
+        <item>Clinical Nutrition/Nutritionist</item>
+        <item>Clinical Pastoral Counseling/Patient Counseling</item>
+        <item>Clinical Psychology</item>
+        <item>Clinical Research Coordinator</item>
+        <item>Clinical and Industrial Drug Development</item>
+        <item>Clinical, Counseling and Applied Psychology, Other</item>
+        <item>Clinical/Medical Laboratory Science and Allied Professions, Other</item>
+        <item>Clinical/Medical Laboratory Technician</item>
+        <item>Clinical/Medical Social Work</item>
+        <item>Cognitive Psychology and Psycholinguistics</item>
+        <item>Cognitive Science</item>
+        <item>College Student Counseling and Personnel Services</item>
+        <item>Commercial Photography</item>
+        <item>Commercial and Advertising Art</item>
+        <item>Communication Disorders Sciences and Services, Other</item>
+        <item>Communication Sciences and Disorders, General</item>
+        <item>Communication and Media Studies, Other</item>
+        <item>Communication, General</item>
+        <item>Communication, Journalism, and Related Programs, Other</item>
+        <item>Communications Systems Installation and Repair Technology</item>
+        <item>Communications Technologies/Technicians and Support Services, Other</item>
+        <item>Communications Technology/Technician</item>
+        <item>Community Health Services/Liaison/Counseling</item>
+        <item>Community Health and Preventive Medicine</item>
+        <item>Community Organization and Advocacy</item>
+        <item>Community Psychology</item>
+        <item>Comparative Literature</item>
+        <item>Computational Biology</item>
+        <item>Computational Mathematics</item>
+        <item>Computational Science</item>
+        <item>Computational and Applied Mathematics</item>
+        <item>Computer Engineering Technologies/Technicians, Other</item>
+        <item>Computer Engineering Technology/Technician</item>
+        <item>Computer Engineering, General</item>
+        <item>Computer Engineering, Other</item>
+        <item>Computer Graphics</item>
+        <item>Computer Installation and Repair Technology/Technician</item>
+        <item>Computer Programming, Other</item>
+        <item>Computer Programming, Specific Applications</item>
+        <item>Computer Programming/Programmer, General</item>
+        <item>Computer Science</item>
+        <item>Computer Software Engineering</item>
+        <item>Computer Software Technology/Technician</item>
+        <item>Computer Software and Media Applications, Other</item>
+        <item>Computer Support Specialist</item>
+        <item>Computer Systems Analysis/Analyst</item>
+        <item>Computer Systems Networking and Telecommunications</item>
+        <item>Computer Teacher Education</item>
+        <item>Computer Technology/Computer Systems Technology</item>
+        <item>Computer and Information Sciences and Support Services, Other</item>
+        <item>Computer and Information Sciences, General</item>
+        <item>Computer and Information Sciences, Other</item>
+        <item>Computer and Information Systems Security/Information Assurance</item>
+        <item>Computer/Information Technology Services Administration and Management, Other</item>
+        <item>Conducting</item>
+        <item>Conservation Biology</item>
+        <item>Construction Engineering</item>
+        <item>Construction Engineering Technology/Technician</item>
+        <item>Construction Management</item>
+        <item>Construction Trades, General</item>
+        <item>Construction Trades, Other</item>
+        <item>Consumer Economics</item>
+        <item>Consumer Merchandising/Retailing Management</item>
+        <item>Consumer Services and Advocacy</item>
+        <item>Corrections</item>
+        <item>Corrections Administration</item>
+        <item>Corrections and Criminal Justice, Other</item>
+        <item>Cosmetology/Cosmetologist, General</item>
+        <item>Costume Design</item>
+        <item>Counseling Psychology</item>
+        <item>Counselor Education/School Counseling and Guidance Services</item>
+        <item>Court Reporting/Court Reporter</item>
+        <item>Crafts/Craft Design, Folk Art and Artisanry</item>
+        <item>Creative Writing</item>
+        <item>Criminal Justice/Law Enforcement Administration</item>
+        <item>Criminal Justice/Police Science</item>
+        <item>Criminal Justice/Safety Studies</item>
+        <item>Criminalistics and Criminal Science</item>
+        <item>Criminology</item>
+        <item>Crisis/Emergency/Disaster Management</item>
+        <item>Critical Infrastructure Protection</item>
+        <item>Crop Production</item>
+        <item>Culinary Arts and Related Services, Other</item>
+        <item>Culinary Arts/Chef Training</item>
+        <item>Culinary Science/Culinology</item>
+        <item>Cultural Anthropology</item>
+        <item>Cultural Resource Management and Policy Analysis</item>
+        <item>Cultural Studies/Critical Theory and Analysis</item>
+        <item>Curriculum and Instruction</item>
+        <item>Customer Service Management</item>
+        <item>Cyber/Computer Forensics and Counterterrorism</item>
+        <item>Cytogenetics/Genetics/Clinical Genetics Technology/Technologist</item>
+        <item>Cytotechnology/Cytotechnologist</item>
+        <item>Dairy Science</item>
+        <item>Dance, General</item>
+        <item>Dance, Other</item>
+        <item>Danish Language and Literature</item>
+        <item>Data Modeling/Warehousing and Database Administration</item>
+        <item>Data Processing and Data Processing Technology/Technician</item>
+        <item>Dental Assisting/Assistant</item>
+        <item>Dental Clinical Sciences, General</item>
+        <item>Dental Hygiene/Hygienist</item>
+        <item>Dental Laboratory Technology/Technician</item>
+        <item>Dental Services and Allied Professions, Other</item>
+        <item>Design and Applied Arts, Other</item>
+        <item>Design and Visual Communications, General</item>
+        <item>Development Economics and International Development</item>
+        <item>Developmental Biology and Embryology</item>
+        <item>Developmental and Child Psychology</item>
+        <item>Diagnostic Medical Sonography/Sonographer and Ultrasound Technician</item>
+        <item>Diesel Mechanics Technology/Technician</item>
+        <item>Dietetics and Clinical Nutrition Services, Other</item>
+        <item>Dietetics/Dietitian</item>
+        <item>Digital Arts</item>
+        <item>Digital Communication and Media/Multimedia</item>
+        <item>Directing and Theatrical Production</item>
+        <item>Divinity/Ministry</item>
+        <item>Documentary Production</item>
+        <item>Drafting and Design Technology/Technician, General</item>
+        <item>Drafting/Design Engineering Technologies/Technicians, Other</item>
+        <item>Drama and Dance Teacher Education</item>
+        <item>Drama and Dramatics/Theatre Arts, General</item>
+        <item>Dramatic/Theatre Arts and Stagecraft, Other</item>
+        <item>Drawing</item>
+        <item>Dutch/Flemish Language and Literature</item>
+        <item>E-Commerce/Electronic Commerce</item>
+        <item>Early Childhood Education and Teaching</item>
+        <item>Earth Science Teacher Education</item>
+        <item>East Asian Languages, Literatures, and Linguistics, General</item>
+        <item>East Asian Languages, Literatures, and Linguistics, Other</item>
+        <item>East Asian Studies</item>
+        <item>Ecology</item>
+        <item>Ecology and Evolutionary Biology</item>
+        <item>Ecology, Evolution, Systematics and Population Biology, Other</item>
+        <item>Econometrics and Quantitative Economics</item>
+        <item>Economics, General</item>
+        <item>Economics, Other</item>
+        <item>Education, General</item>
+        <item>Education, Other</item>
+        <item>Education/Teaching of Individuals Who are Developmentally Delayed</item>
+        <item>Education/Teaching of Individuals in Early Childhood Special Education Programs</item>
+        <item>Education/Teaching of Individuals in Elementary Special Education Programs</item>
+        <item>Education/Teaching of Individuals in Junior High/Middle School Special Education</item>
+        <item>Education/Teaching of Individuals in Secondary Special Education Programs</item>
+        <item>Education/Teaching of Individuals with Autism</item>
+        <item>Education/Teaching of Individuals with Emotional Disturbances</item>
+        <item>Education/Teaching of Individuals with Hearing Impairments Including Deafness</item>
+        <item>Education/Teaching of Individuals with Mental Retardation</item>
+        <item>Education/Teaching of Individuals with Multiple Disabilities</item>
+        <item>Education/Teaching of Individuals with Orthopedic and Other Physical Health Impa</item>
+        <item>Education/Teaching of Individuals with Specific Learning Disabilities</item>
+        <item>Education/Teaching of Individuals with Speech or Language Impairments</item>
+        <item>Education/Teaching of Individuals with Vision Impairments Including Blindness</item>
+        <item>Education/Teaching of the Gifted and Talented</item>
+        <item>Educational Administration and Supervision, Other</item>
+        <item>Educational Assessment, Evaluation, and Research, Other</item>
+        <item>Educational Evaluation and Research</item>
+        <item>Educational Leadership and Administration, General</item>
+        <item>Educational Psychology</item>
+        <item>Educational, Instructional, and Curriculum Supervision</item>
+        <item>Educational/Instructional Technology</item>
+        <item>Electrical and Electronic Engineering Technologies/Technicians, Other</item>
+        <item>Electrical and Electronics Engineering</item>
+        <item>Electrical, Electronic and Communications Engineering Technology/Technician</item>
+        <item>Electrical, Electronics and Communications Engineering, Other</item>
+        <item>Electrical/Electronics Equipment Installation and Repair, General</item>
+        <item>Electrician</item>
+        <item>Electrocardiograph Technology/Technician</item>
+        <item>Electromechanical Engineering</item>
+        <item>Electromechanical Technology/Electromechanical Engineering Technology</item>
+        <item>Electromechanical and Instrumentation and Maintenance Technologies/Technicians,</item>
+        <item>Electroneurodiagnostic/Electroencephalographic Technology/Technologist</item>
+        <item>Elementary Education and Teaching</item>
+        <item>Emergency Medical Technology/Technician (EMT Paramedic)</item>
+        <item>Energy Management and Systems Technology/Technician</item>
+        <item>Energy and Biologically Based Therapies, Other</item>
+        <item>Energy, Environment, and Natural Resources Law</item>
+        <item>Engineering Chemistry</item>
+        <item>Engineering Mechanics</item>
+        <item>Engineering Physics/Applied Physics</item>
+        <item>Engineering Science</item>
+        <item>Engineering Technologies and Engineering-Related Fields, Other</item>
+        <item>Engineering Technology, General</item>
+        <item>Engineering, General</item>
+        <item>Engineering, Other</item>
+        <item>Engineering-Related Fields, Other</item>
+        <item>Engineering-Related Technologies, Other</item>
+        <item>Engineering/Industrial Management</item>
+        <item>English Language and Literature, General</item>
+        <item>English Language and Literature/Letters, Other</item>
+        <item>English Literature (British and Commonwealth</item>
+        <item>English/Language Arts Teacher Education</item>
+        <item>Entomology</item>
+        <item>Entrepreneurial and Small Business Operations, Other</item>
+        <item>Entrepreneurship/Entrepreneurial Studies</item>
+        <item>Environmental Biology</item>
+        <item>Environmental Chemistry</item>
+        <item>Environmental Control Technologies/Technicians, Other</item>
+        <item>Environmental Design/Architecture</item>
+        <item>Environmental Education</item>
+        <item>Environmental Engineering Technology/Environmental Technology</item>
+        <item>Environmental Health</item>
+        <item>Environmental Psychology</item>
+        <item>Environmental Science</item>
+        <item>Environmental Studies</item>
+        <item>Environmental Toxicology</item>
+        <item>Environmental/Environmental Health Engineering</item>
+        <item>Epidemiology</item>
+        <item>Equestrian/Equine Studies</item>
+        <item>Ethics</item>
+        <item>Ethnic Studies</item>
+        <item>Ethnic, Cultural Minority, Gender, and Group Studies, Other</item>
+        <item>European History</item>
+        <item>European Studies/Civilization</item>
+        <item>Evolutionary Biology</item>
+        <item>Executive Assistant/Executive Secretary</item>
+        <item>Exercise Physiology</item>
+        <item>Experimental Psychology</item>
+        <item>Facilities Planning and Management</item>
+        <item>Family Practice Nurse/Nursing</item>
+        <item>Family Psychology</item>
+        <item>Family Resource Management Studies, General</item>
+        <item>Family Systems</item>
+        <item>Family and Community Services</item>
+        <item>Family and Consumer Economics and Related Services, Other</item>
+        <item>Family and Consumer Sciences/Home Economics Teacher Education</item>
+        <item>Family and Consumer Sciences/Human Sciences Communication</item>
+        <item>Family and Consumer Sciences/Human Sciences, General</item>
+        <item>Family and Consumer Sciences/Human Sciences, Other</item>
+        <item>Farm/Farm and Ranch Management</item>
+        <item>Fashion Merchandising</item>
+        <item>Fashion/Apparel Design</item>
+        <item>Fiber, Textile and Weaving Arts</item>
+        <item>Filipino/Tagalog Language and Literature</item>
+        <item>Film/Cinema/Video Studies</item>
+        <item>Film/Video and Photographic Arts, Other</item>
+        <item>Finance and Financial Management Services, Other</item>
+        <item>Finance, General</item>
+        <item>Financial Forensics and Fraud Investigation</item>
+        <item>Financial Mathematics</item>
+        <item>Financial Planning and Services</item>
+        <item>Fine Arts and Art Studies, Other</item>
+        <item>Fine and Studio Arts Management</item>
+        <item>Fine/Studio Arts, General</item>
+        <item>Fire Prevention and Safety Technology/Technician</item>
+        <item>Fire Protection, Other</item>
+        <item>Fire Science/Fire-fighting</item>
+        <item>Fire Services Administration</item>
+        <item>Fire/Arson Investigation and Prevention</item>
+        <item>Fishing and Fisheries Sciences and Management</item>
+        <item>Flight Instructor</item>
+        <item>Floriculture/Floristry Operations and Management</item>
+        <item>Folklore Studies</item>
+        <item>Food Science</item>
+        <item>Food Science and Technology, Other</item>
+        <item>Food Technology and Processing</item>
+        <item>Foods, Nutrition, and Related Services, Other</item>
+        <item>Foods, Nutrition, and Wellness Studies, General</item>
+        <item>Foodservice Systems Administration/Management</item>
+        <item>Foreign Language Teacher Education</item>
+        <item>Foreign Languages and Literatures, General</item>
+        <item>Foreign Languages, Literatures, and Linguistics, Other</item>
+        <item>Forensic Chemistry</item>
+        <item>Forensic Psychology</item>
+        <item>Forensic Science and Technology</item>
+        <item>Forest Engineering</item>
+        <item>Forest Management/Forest Resources Management</item>
+        <item>Forest Resources Production and Management</item>
+        <item>Forest Sciences and Biology</item>
+        <item>Forest Technology/Technician</item>
+        <item>Forestry, General</item>
+        <item>Forestry, Other</item>
+        <item>French Language Teacher Education</item>
+        <item>French Language and Literature</item>
+        <item>French Studies</item>
+        <item>Funeral Direction/Service</item>
+        <item>Funeral Service and Mortuary Science, General</item>
+        <item>Furniture Design and Manufacturing</item>
+        <item>Game and Interactive Media Design</item>
+        <item>Gay/Lesbian Studies</item>
+        <item>Gene/Genetic Therapy</item>
+        <item>General Literature</item>
+        <item>General Merchandising, Sales, and Related Marketing Operations, Other</item>
+        <item>General Studies</item>
+        <item>Genetic Counseling/Counselor</item>
+        <item>Genetics, General</item>
+        <item>Genome Sciences/Genomics</item>
+        <item>Geochemistry</item>
+        <item>Geographic Information Science and Cartography</item>
+        <item>Geography</item>
+        <item>Geography Teacher Education</item>
+        <item>Geography, Other</item>
+        <item>Geological and Earth Sciences/Geosciences, Other</item>
+        <item>Geological/Geophysical Engineering</item>
+        <item>Geology/Earth Science, General</item>
+        <item>Geophysics and Seismology</item>
+        <item>German Language Teacher Education</item>
+        <item>German Language and Literature</item>
+        <item>German Studies</item>
+        <item>Germanic Languages, Literatures, and Linguistics, General</item>
+        <item>Germanic Languages, Literatures, and Linguistics, Other</item>
+        <item>Gerontology</item>
+        <item>Golf Course Operation and Grounds Management</item>
+        <item>Graphic Communications, General</item>
+        <item>Graphic Communications, Other</item>
+        <item>Graphic Design</item>
+        <item>Graphic and Printing Equipment Operator, General Production</item>
+        <item>Hazardous Materials Management and Waste Technology/Technician</item>
+        <item>Health Communication</item>
+        <item>Health Information/Medical Records Administration/Administrator</item>
+        <item>Health Information/Medical Records Technology/Technician</item>
+        <item>Health Occupations Teacher Education</item>
+        <item>Health Policy Analysis</item>
+        <item>Health Professions and Related Clinical Sciences, Other</item>
+        <item>Health Services Administration</item>
+        <item>Health Services/Allied Health/Health Sciences, General</item>
+        <item>Health Teacher Education</item>
+        <item>Health Unit Manager/Ward Supervisor</item>
+        <item>Health and Medical Administrative Services, Other</item>
+        <item>Health and Physical Education/Fitness, General</item>
+        <item>Health and Physical Education/Fitness, Other</item>
+        <item>Health and Wellness, General</item>
+        <item>Health/Health Care Administration/Management</item>
+        <item>Health/Medical Physics</item>
+        <item>Health/Medical Preparatory Programs, Other</item>
+        <item>Health/Medical Psychology</item>
+        <item>Heating, Air Conditioning, Ventilation and Refrigeration Maintenance Technology/</item>
+        <item>Heating, Ventilation, Air Conditioning and Refrigeration Engineering Technology/</item>
+        <item>Heavy Equipment Maintenance Technology/Technician</item>
+        <item>Hebrew Language and Literature</item>
+        <item>Higher Education/Higher Education Administration</item>
+        <item>Hispanic and Latin American Languages, Literatures, and Linguistics, General</item>
+        <item>Hispanic-American, Puerto Rican, and Mexican-American/Chicano Studies</item>
+        <item>Histologic Technology/Histotechnologist</item>
+        <item>Historic Preservation and Conservation</item>
+        <item>Historic Preservation and Conservation, Other</item>
+        <item>History Teacher Education</item>
+        <item>History and Philosophy of Science and Technology</item>
+        <item>History, General</item>
+        <item>History, Other</item>
+        <item>Holistic Health</item>
+        <item>Holocaust and Related Studies</item>
+        <item>Homeland Security</item>
+        <item>Homeland Security, Law Enforcement, Firefighting and Related Protective Services, Other</item>
+        <item>Homeland Security, Other</item>
+        <item>Horse Husbandry/Equine Science and Management</item>
+        <item>Horticultural Science</item>
+        <item>Hospital and Health Care Facilities Administration/Management</item>
+        <item>Hospitality Administration/Management, General</item>
+        <item>Hospitality Administration/Management, Other</item>
+        <item>Hospitality and Recreation Marketing Operations</item>
+        <item>Hotel, Motel, and Restaurant Management</item>
+        <item>Hotel/Motel Administration/Management</item>
+        <item>Housing and Human Environments, General</item>
+        <item>Housing and Human Environments, Other</item>
+        <item>Human Biology</item>
+        <item>Human Development and Family Studies, General</item>
+        <item>Human Development, Family Studies, and Related Services, Other</item>
+        <item>Human Nutrition</item>
+        <item>Human Resources Development</item>
+        <item>Human Resources Management and Services, Other</item>
+        <item>Human Resources Management/Personnel Administration, General</item>
+        <item>Human Services, General</item>
+        <item>Human/Medical Genetics</item>
+        <item>Humanities/Humanistic Studies</item>
+        <item>Hydraulics and Fluid Power Technology/Technician</item>
+        <item>Hydrology and Water Resources Science</item>
+        <item>Illustration</item>
+        <item>Indian/Native American Education</item>
+        <item>Industrial Electronics Technology/Technician</item>
+        <item>Industrial Engineering</item>
+        <item>Industrial Production Technologies/Technicians, Other</item>
+        <item>Industrial Safety Technology/Technician</item>
+        <item>Industrial Technology/Technician</item>
+        <item>Industrial and Organizational Psychology</item>
+        <item>Industrial and Product Design</item>
+        <item>Informatics</item>
+        <item>Information Resources Management</item>
+        <item>Information Science/Studies</item>
+        <item>Information Technology</item>
+        <item>Information Technology Project Management</item>
+        <item>Institutional Food Workers</item>
+        <item>Instrumentation Technology/Technician</item>
+        <item>Insurance</item>
+        <item>Intelligence, General</item>
+        <item>Intercultural/Multicultural and Diversity Studies</item>
+        <item>Interior Architecture</item>
+        <item>Interior Design</item>
+        <item>Intermedia/Multimedia</item>
+        <item>International Agriculture</item>
+        <item>International Business, Trade, and Tax Law</item>
+        <item>International Business/Trade/Commerce</item>
+        <item>International Economics</item>
+        <item>International Finance</item>
+        <item>International Law and Legal Studies</item>
+        <item>International Marketing</item>
+        <item>International Policy Analysis</item>
+        <item>International Public Health/International Health</item>
+        <item>International Relations and Affairs</item>
+        <item>International Relations and National Security Studies, Other</item>
+        <item>International and Comparative Education</item>
+        <item>International and Intercultural Communication</item>
+        <item>International/Global Studies</item>
+        <item>Investments and Securities</item>
+        <item>Iranian Languages, Literatures, and Linguistics</item>
+        <item>Islamic Studies</item>
+        <item>Italian Language and Literature</item>
+        <item>Italian Studies</item>
+        <item>Japanese Language and Literature</item>
+        <item>Japanese Studies</item>
+        <item>Jazz/Jazz Studies</item>
+        <item>Jewish/Judaic Studies</item>
+        <item>Journalism</item>
+        <item>Journalism, Other</item>
+        <item>Junior High/Intermediate/Middle School Education and Teaching</item>
+        <item>Juvenile Corrections</item>
+        <item>Keyboard Instruments</item>
+        <item>Kindergarten/Preschool Education and Teaching</item>
+        <item>Kinesiology and Exercise Science</item>
+        <item>Kinesiotherapy/Kinesiotherapist</item>
+        <item>Knowledge Management</item>
+        <item>Korean Language and Literature</item>
+        <item>Labor Studies</item>
+        <item>Labor and Industrial Relations</item>
+        <item>Land Use Planning and Management/Development</item>
+        <item>Landscape Architecture</item>
+        <item>Landscaping and Groundskeeping</item>
+        <item>Language Interpretation and Translation</item>
+        <item>Laser and Optical Engineering</item>
+        <item>Laser and Optical Technology/Technician</item>
+        <item>Latin American Studies</item>
+        <item>Latin American and Caribbean Studies</item>
+        <item>Latin Language and Literature</item>
+        <item>Latin Teacher Education</item>
+        <item>Law Enforcement Intelligence Analysis</item>
+        <item>Law Enforcement Investigation and Interviewing</item>
+        <item>Lay Ministry</item>
+        <item>Learning Sciences</item>
+        <item>Legal Administrative Assistant/Secretary</item>
+        <item>Legal Assistant/Paralegal</item>
+        <item>Legal Professions and Studies, Other</item>
+        <item>Legal Research and Advanced Professional Studies, Other</item>
+        <item>Legal Studies, General</item>
+        <item>Liberal Arts and Sciences, General Studies and Humanities, Other</item>
+        <item>Liberal Arts and Sciences/Liberal Studies</item>
+        <item>Library Science, Other</item>
+        <item>Library and Information Science</item>
+        <item>Licensed Practical/Vocational Nurse Training</item>
+        <item>Linguistic, Comparative, and Related Language Studies and Services, Other</item>
+        <item>Linguistics</item>
+        <item>Literature, Other</item>
+        <item>Livestock Management</item>
+        <item>Logic</item>
+        <item>Logistics, Materials, and Supply Chain Management</item>
+        <item>Long Term Care Administration/Management</item>
+        <item>Management Information Systems and Services, Other</item>
+        <item>Management Information Systems, General</item>
+        <item>Management Science</item>
+        <item>Management Sciences and Quantitative Methods, Other</item>
+        <item>Manufacturing Engineering</item>
+        <item>Manufacturing Engineering Technology/Technician</item>
+        <item>Marine Biology and Biological Oceanography</item>
+        <item>Marine Science/Merchant Marine Officer</item>
+        <item>Marine Sciences</item>
+        <item>Maritime Studies</item>
+        <item>Marketing Research</item>
+        <item>Marketing, Other</item>
+        <item>Marketing/Marketing Management, General</item>
+        <item>Marriage and Family Therapy/Counseling</item>
+        <item>Mass Communication/Media Studies</item>
+        <item>Massage Therapy/Therapeutic Massage</item>
+        <item>Materials Chemistry</item>
+        <item>Materials Engineering</item>
+        <item>Materials Science</item>
+        <item>Maternal and Child Health</item>
+        <item>Mathematical Biology</item>
+        <item>Mathematical Statistics and Probability</item>
+        <item>Mathematics Teacher Education</item>
+        <item>Mathematics and Computer Science</item>
+        <item>Mathematics and Statistics</item>
+        <item>Mathematics and Statistics, Other</item>
+        <item>Mathematics, General</item>
+        <item>Mathematics, Other</item>
+        <item>Mechanical Drafting and Mechanical Drafting CAD/CADD</item>
+        <item>Mechanical Engineering</item>
+        <item>Mechanical Engineering Related Technologies/Technicians, Other</item>
+        <item>Mechanical Engineering/Mechanical Technology/Technician</item>
+        <item>Medical Illustration/Medical Illustrator</item>
+        <item>Medical Informatics</item>
+        <item>Medical Microbiology and Bacteriology</item>
+        <item>Medical Office Management/Administration</item>
+        <item>Medical Radiologic Technology/Science - Radiation Therapist</item>
+        <item>Medical Staff Services Technology/Technician</item>
+        <item>Medical/Clinical Assistant</item>
+        <item>Medical/Health Management and Clinical Assistant/Specialist</item>
+        <item>Medicinal and Pharmaceutical Chemistry</item>
+        <item>Medieval and Renaissance Studies</item>
+        <item>Meeting and Event Planning</item>
+        <item>Mental Health Counseling/Counselor</item>
+        <item>Mental and Social Health Services and Allied Professions, Other</item>
+        <item>Merchandising and Buying Operations</item>
+        <item>Metal and Jewelry Arts</item>
+        <item>Metallurgical Engineering</item>
+        <item>Metallurgical Technology/Technician</item>
+        <item>Meteorology</item>
+        <item>Microbiological Sciences and Immunology, Other</item>
+        <item>Microbiology and Immunology</item>
+        <item>Microbiology, General</item>
+        <item>Middle/Near Eastern and Semitic Languages, Literatures, and Linguistics, General</item>
+        <item>Middle/Near Eastern and Semitic Languages, Literatures, and Linguistics, Other</item>
+        <item>Military Applied Sciences, Other</item>
+        <item>Military History</item>
+        <item>Military Systems and Maintenance Technology, Other</item>
+        <item>Military Technologies and Applied Sciences, Other</item>
+        <item>Mining Technology/Technician</item>
+        <item>Mining and Mineral Engineering</item>
+        <item>Missions/Missionary Studies and Missiology</item>
+        <item>Modeling, Virtual Environments and Simulation</item>
+        <item>Modern Greek Language and Literature</item>
+        <item>Molecular Biochemistry</item>
+        <item>Molecular Biology</item>
+        <item>Molecular Genetics</item>
+        <item>Montessori Teacher Education</item>
+        <item>Movement Therapy and Movement Education</item>
+        <item>Multi-/Interdisciplinary Studies, General</item>
+        <item>Multi-/Interdisciplinary Studies, Other</item>
+        <item>Multicultural Education</item>
+        <item>Museology/Museum Studies</item>
+        <item>Music History, Literature, and Theory</item>
+        <item>Music Management</item>
+        <item>Music Pedagogy</item>
+        <item>Music Performance, General</item>
+        <item>Music Teacher Education</item>
+        <item>Music Technology</item>
+        <item>Music Theory and Composition</item>
+        <item>Music Therapy/Therapist</item>
+        <item>Music, General</item>
+        <item>Music, Other</item>
+        <item>Musical Theatre</item>
+        <item>Musicology and Ethnomusicology</item>
+        <item>National Security Policy Studies</item>
+        <item>Natural Resource Economics</item>
+        <item>Natural Resource Recreation and Tourism</item>
+        <item>Natural Resources Conservation and Research, Other</item>
+        <item>Natural Resources Law Enforcement and Protective Services</item>
+        <item>Natural Resources Management and Policy</item>
+        <item>Natural Resources Management and Policy, Other</item>
+        <item>Natural Resources and Conservation, Other</item>
+        <item>Natural Resources/Conservation, General</item>
+        <item>Natural Sciences</item>
+        <item>Naval Architecture and Marine Engineering</item>
+        <item>Near and Middle Eastern Studies</item>
+        <item>Network and System Administration/Administrator</item>
+        <item>Neurobiology and Anatomy</item>
+        <item>Neurobiology and Behavior</item>
+        <item>Neurobiology and Neurosciences, Other</item>
+        <item>Neuroscience</item>
+        <item>Non-Profit/Public/Organizational Management</item>
+        <item>Norwegian Language and Literature</item>
+        <item>Nuclear Engineering</item>
+        <item>Nuclear Engineering Technology/Technician</item>
+        <item>Nuclear Medical Technology/Technologist</item>
+        <item>Nuclear Physics</item>
+        <item>Nuclear and Industrial Radiologic Technologies/Technicians, Other</item>
+        <item>Nuclear/Nuclear Power Technology/Technician</item>
+        <item>Nursing Administration</item>
+        <item>Nursing Education</item>
+        <item>Nursing Practice</item>
+        <item>Nursing Science</item>
+        <item>Nutrition Sciences</item>
+        <item>Occupational Health and Industrial Hygiene</item>
+        <item>Occupational Safety and Health Technology/Technician</item>
+        <item>Occupational Therapy/Therapist</item>
+        <item>Ocean Engineering</item>
+        <item>Oceanography, Chemical and Physical</item>
+        <item>Office Management and Supervision</item>
+        <item>Operations Management and Supervision</item>
+        <item>Operations Research</item>
+        <item>Ophthalmic and Optometric Support Services and Allied Professions, Other</item>
+        <item>Optics/Optical Sciences</item>
+        <item>Organizational Behavior Studies</item>
+        <item>Organizational Communication, General</item>
+        <item>Organizational Leadership</item>
+        <item>Ornamental Horticulture</item>
+        <item>Orthotist/Prosthetist</item>
+        <item>Outdoor Education</item>
+        <item>Pacific Area/Pacific Rim Studies</item>
+        <item>Packaging Science</item>
+        <item>Painting</item>
+        <item>Paleontology</item>
+        <item>Palliative Care Nursing</item>
+        <item>Paper Science and Engineering</item>
+        <item>Parks, Recreation and Leisure Facilities Management, General</item>
+        <item>Parks, Recreation and Leisure Facilities Management, Other</item>
+        <item>Parks, Recreation and Leisure Studies</item>
+        <item>Parks, Recreation, Leisure, and Fitness Studies, Other</item>
+        <item>Parts, Warehousing, and Inventory Management Operations</item>
+        <item>Pastoral Counseling and Specialized Ministries, Other</item>
+        <item>Pastoral Studies/Counseling</item>
+        <item>Pathology/Experimental Pathology</item>
+        <item>Pathology/Pathologist Assistant</item>
+        <item>Peace Studies and Conflict Resolution</item>
+        <item>Percussion Instruments</item>
+        <item>Personal and Culinary Services, Other</item>
+        <item>Personality Psychology</item>
+        <item>Petroleum Engineering</item>
+        <item>Petroleum Technology/Technician</item>
+        <item>Pharmaceutical Marketing and Management</item>
+        <item>Pharmaceutical Sciences</item>
+        <item>Pharmaceutics and Drug Design</item>
+        <item>Pharmacology</item>
+        <item>Pharmacology and Toxicology</item>
+        <item>Pharmacy</item>
+        <item>Pharmacy Technician/Assistant</item>
+        <item>Pharmacy, Pharmaceutical Sciences, and Administration, Other</item>
+        <item>Philosophy</item>
+        <item>Philosophy and Religious Studies, General</item>
+        <item>Philosophy and Religious Studies, Other</item>
+        <item>Philosophy, Other</item>
+        <item>Photographic and Film/Video Technology/Technician and Assistant</item>
+        <item>Photography</item>
+        <item>Photojournalism</item>
+        <item>Physical Chemistry</item>
+        <item>Physical Education Teaching and Coaching</item>
+        <item>Physical Fitness Technician</item>
+        <item>Physical Science Technologies/Technicians, Other</item>
+        <item>Physical Sciences</item>
+        <item>Physical Sciences, Other</item>
+        <item>Physical Therapy Technician/Assistant</item>
+        <item>Physical Therapy/Therapist</item>
+        <item>Physical and Biological Anthropology</item>
+        <item>Physician Assistant</item>
+        <item>Physics Teacher Education</item>
+        <item>Physics, General</item>
+        <item>Physics, Other</item>
+        <item>Physiological Psychology/Psychobiology</item>
+        <item>Physiology, General</item>
+        <item>Planetary Astronomy and Science</item>
+        <item>Plant Genetics</item>
+        <item>Plant Nursery Operations and Management</item>
+        <item>Plant Pathology/Phytopathology</item>
+        <item>Plant Protection and Integrated Pest Management</item>
+        <item>Plant Sciences, General</item>
+        <item>Plant Sciences, Other</item>
+        <item>Plastics and Polymer Engineering Technology/Technician</item>
+        <item>Playwriting and Screenwriting</item>
+        <item>Polish Language and Literature</item>
+        <item>Political Communication</item>
+        <item>Political Economy</item>
+        <item>Political Science and Government, General</item>
+        <item>Political Science and Government, Other</item>
+        <item>Polymer Chemistry</item>
+        <item>Polymer/Plastics Engineering</item>
+        <item>Portuguese Language and Literature</item>
+        <item>Poultry Science</item>
+        <item>Practical Nursing, Vocational Nursing and Nursing Assistants, Other</item>
+        <item>Pre-Dentistry Studies</item>
+        <item>Pre-Engineering</item>
+        <item>Pre-Law Studies</item>
+        <item>Pre-Medicine/Pre-Medical Studies</item>
+        <item>Pre-Nursing Studies</item>
+        <item>Pre-Occupational Therapy Studies</item>
+        <item>Pre-Optometry Studies</item>
+        <item>Pre-Pharmacy Studies</item>
+        <item>Pre-Physical Therapy Studies</item>
+        <item>Pre-Theology/Pre-Ministerial Studies</item>
+        <item>Pre-Veterinary Studies</item>
+        <item>Prepress/Desktop Publishing and Digital Imaging Design</item>
+        <item>Printing Management</item>
+        <item>Printing Press Operator</item>
+        <item>Printmaking</item>
+        <item>Professional, Technical, Business, and Scientific Writing</item>
+        <item>Project Management</item>
+        <item>Psychiatric/Mental Health Services Technician</item>
+        <item>Psychology Teacher Education</item>
+        <item>Psychology, General</item>
+        <item>Psychology, Other</item>
+        <item>Psychometrics and Quantitative Psychology</item>
+        <item>Public Administration</item>
+        <item>Public Administration and Social Service Professions, Other</item>
+        <item>Public Finance</item>
+        <item>Public Health Education and Promotion</item>
+        <item>Public Health, General</item>
+        <item>Public Health, Other</item>
+        <item>Public Health/Community Nurse/Nursing</item>
+        <item>Public Policy Analysis, General</item>
+        <item>Public Policy Analysis, Other</item>
+        <item>Public Relations, Advertising, and Applied Communication</item>
+        <item>Public Relations, Advertising, and Applied Communication, Other</item>
+        <item>Public Relations/Image Management</item>
+        <item>Public/Applied History</item>
+        <item>Publishing</item>
+        <item>Purchasing, Procurement/Acquisitions and Contracts Management</item>
+        <item>Quality Control Technology/Technician</item>
+        <item>Quality Control and Safety Technologies/Technicians, Other</item>
+        <item>Radiation Biology/Radiobiology</item>
+        <item>Radiation Protection/Health Physics Technician</item>
+        <item>Radio and Television</item>
+        <item>Radio and Television Broadcasting Technology/Technician</item>
+        <item>Radio, Television, and Digital Communication, Other</item>
+        <item>Radiologic Technology/Science - Radiographer</item>
+        <item>Range Science and Management</item>
+        <item>Reading Teacher Education</item>
+        <item>Real Estate</item>
+        <item>Recording Arts Technology/Technician</item>
+        <item>Regional Studies (U.S., Canadian, Foreign)</item>
+        <item>Registered Nursing, Nursing Administration, Nursing Research and Clinical Nursin</item>
+        <item>Registered Nursing/Registered Nurse</item>
+        <item>Rehabilitation Science</item>
+        <item>Rehabilitation and Therapeutic Professions, Other</item>
+        <item>Religion/Religious Studies</item>
+        <item>Religion/Religious Studies, Other</item>
+        <item>Religious Education</item>
+        <item>Religious/Sacred Music</item>
+        <item>Reproductive Biology</item>
+        <item>Research Methodology and Quantitative Methods</item>
+        <item>Research and Experimental Psychology, Other</item>
+        <item>Resort Management</item>
+        <item>Respiratory Care Therapy/Therapist</item>
+        <item>Respiratory Therapy Technician/Assistant</item>
+        <item>Restaurant, Culinary, and Catering Management/Manager</item>
+        <item>Restaurant/Food Services Management</item>
+        <item>Retail Management</item>
+        <item>Retailing and Retail Operations</item>
+        <item>Rhetoric and Composition</item>
+        <item>Rhetoric and Composition/Writing Studies, Other</item>
+        <item>Robotics Technology/Technician</item>
+        <item>Romance Languages, Literatures, and Linguistics, General</item>
+        <item>Romance Languages, Literatures, and Linguistics, Other</item>
+        <item>Romanian Language and Literature</item>
+        <item>Rural Sociology</item>
+        <item>Russian Language and Literature</item>
+        <item>Russian Studies</item>
+        <item>Russian, Central European, East European and Eurasian Studies</item>
+        <item>Sales and Marketing Operations/Marketing and Distribution Teacher Education</item>
+        <item>Sales, Distribution, and Marketing Operations, General</item>
+        <item>Sanskrit and Classical Indian Languages, Literatures, and Linguistics</item>
+        <item>Scandinavian Languages, Literatures, and Linguistics</item>
+        <item>Scandinavian Studies</item>
+        <item>School Librarian/School Library Media Specialist</item>
+        <item>Science Teacher Education/General Science Teacher Education</item>
+        <item>Science Technologies/Technicians, General</item>
+        <item>Science Technologies/Technicians, Other</item>
+        <item>Science, Technology and Society</item>
+        <item>Sculpture</item>
+        <item>Secondary Education and Teaching</item>
+        <item>Securities Services Administration/Management</item>
+        <item>Security and Loss Prevention Services</item>
+        <item>Selling Skills and Sales Operations</item>
+        <item>Sign Language Interpretation and Translation</item>
+        <item>Slavic Languages, Literatures, and Linguistics, General</item>
+        <item>Slavic Studies</item>
+        <item>Slavic, Baltic, and Albanian Languages, Literatures, and Linguistics, Other</item>
+        <item>Small Business Administration/Management</item>
+        <item>Social Psychology</item>
+        <item>Social Science Teacher Education</item>
+        <item>Social Sciences, General</item>
+        <item>Social Sciences, Other</item>
+        <item>Social Studies Teacher Education</item>
+        <item>Social Work</item>
+        <item>Social Work, Other</item>
+        <item>Social and Philosophical Foundations of Education</item>
+        <item>Sociology</item>
+        <item>Sociology and Anthropology</item>
+        <item>Soil Chemistry and Physics</item>
+        <item>Soil Science and Agronomy, General</item>
+        <item>Soil Sciences, Other</item>
+        <item>Solar Energy Technology/Technician</item>
+        <item>South Asian Languages, Literatures, and Linguistics, General</item>
+        <item>South Asian Studies</item>
+        <item>Southeast Asian Studies</item>
+        <item>Spanish Language Teacher Education</item>
+        <item>Spanish Language and Literature</item>
+        <item>Spanish and Iberian Studies</item>
+        <item>Special Education and Teaching, General</item>
+        <item>Special Education and Teaching, Other</item>
+        <item>Special Products Marketing Operations</item>
+        <item>Specialized Merchandising, Sales, and Marketing Operations, Other</item>
+        <item>Speech Communication and Rhetoric</item>
+        <item>Speech Teacher Education</item>
+        <item>Speech-Language Pathology Assistant</item>
+        <item>Speech-Language Pathology/Pathologist</item>
+        <item>Sport and Fitness Administration/Management</item>
+        <item>Sports Communication</item>
+        <item>Sports Studies</item>
+        <item>Statistics, General</item>
+        <item>Statistics, Other</item>
+        <item>Stringed Instruments</item>
+        <item>Structural Engineering</item>
+        <item>Student Counseling and Personnel Services, Other</item>
+        <item>Substance Abuse/Addiction Counseling</item>
+        <item>Surgical Technology/Technologist</item>
+        <item>Surveying Engineering</item>
+        <item>Surveying Technology/Surveying</item>
+        <item>Sustainability Studies</item>
+        <item>Swedish Language and Literature</item>
+        <item>System, Networking, and LAN/WAN Management/Manager</item>
+        <item>Systems Engineering</item>
+        <item>Systems Science and Theory</item>
+        <item>Teacher Assistant/Aide</item>
+        <item>Teacher Education and Professional Development, Specific Levels and Methods, Oth</item>
+        <item>Teacher Education and Professional Development, Specific Subject Areas, Other</item>
+        <item>Teacher Education, Multiple Levels</item>
+        <item>Teaching English as a Second or Foreign Language/ESL Language Instructor</item>
+        <item>Teaching English or French as a Second or Foreign Language, Other</item>
+        <item>Teaching French as a Second or Foreign Language</item>
+        <item>Technical Teacher Education</item>
+        <item>Technical Theatre/Theatre Design and Technology</item>
+        <item>Technical and Scientific Communication</item>
+        <item>Technology Teacher Education/Industrial Arts Teacher Education</item>
+        <item>Telecommunications Engineering</item>
+        <item>Telecommunications Management</item>
+        <item>Telecommunications Technology/Technician</item>
+        <item>Textile Sciences and Engineering</item>
+        <item>Theatre Literature, History and Criticism</item>
+        <item>Theatre/Theatre Arts Management</item>
+        <item>Theological and Ministerial Studies, Other</item>
+        <item>Theology and Religious Vocations, Other</item>
+        <item>Theology/Theological Studies</item>
+        <item>Theoretical and Mathematical Physics</item>
+        <item>Therapeutic Recreation/Recreational Therapy</item>
+        <item>Tibetan Studies</item>
+        <item>Tool and Die Technology/Technician</item>
+        <item>Tourism Promotion Operations</item>
+        <item>Tourism and Travel Services Management</item>
+        <item>Tourism and Travel Services Marketing Operations</item>
+        <item>Toxicology</item>
+        <item>Trade and Industrial Teacher Education</item>
+        <item>Transportation and Materials Moving, Other</item>
+        <item>Transportation/Mobility Management</item>
+        <item>Turf and Turfgrass Management</item>
+        <item>Turkish Language and Literature</item>
+        <item>Uralic Languages, Literatures, and Linguistics</item>
+        <item>Urban Education and Leadership</item>
+        <item>Urban Forestry</item>
+        <item>Urban Ministry</item>
+        <item>Urban Studies/Affairs</item>
+        <item>Vehicle Maintenance and Repair Technologies, Other</item>
+        <item>Veterinary Microbiology and Immunobiology</item>
+        <item>Veterinary Sciences/Veterinary Clinical Sciences, General</item>
+        <item>Veterinary/Animal Health Technology/Technician and Veterinary Assistant</item>
+        <item>Vision Science/Physiological Optics</item>
+        <item>Visual and Performing Arts, General</item>
+        <item>Visual and Performing Arts, Other</item>
+        <item>Viticulture and Enology</item>
+        <item>Vocational Rehabilitation Counseling/Counselor</item>
+        <item>Voice and Opera</item>
+        <item>Water Quality and Wastewater Treatment Management and Recycling Technology/Techn</item>
+        <item>Water Resources Engineering</item>
+        <item>Water, Wetlands, and Marine Resources Management</item>
+        <item>Web Page, Digital/Multimedia and Information Resources Design</item>
+        <item>Web/Multimedia Management and Webmaster</item>
+        <item>Welding Engineering Technology/Technician</item>
+        <item>Welding Technology/Welder</item>
+        <item>Western European Studies</item>
+        <item>Wildlife Biology</item>
+        <item>Wildlife, Fish and Wildlands Science and Management</item>
+        <item>Women\'s Studies</item>
+        <item>Wood Science and Wood Products/Pulp and Paper Technology</item>
+        <item>Woodwind Instruments</item>
+        <item>Woodworking, General</item>
+        <item>Work and Family Studies</item>
+        <item>Writing, General</item>
+        <item>Youth Ministry</item>
+        <item>Youth Services/Administration</item>
+        <item>Zoology/Animal Biology</item>
+        <item>Zoology/Animal Biology, Other</item>
     </string-array>
 
 </resources>

@@ -5609,6 +5609,7 @@ com.elencticsoft.collegeseeker.MainActivity
 com.elencticsoft.collegeseeker.MainActivity: MainActivity()
 com.elencticsoft.collegeseeker.MyApplication
 com.elencticsoft.collegeseeker.MyApplication: MyApplication()
+com.elencticsoft.collegeseeker.R$array: int majorsList
 com.elencticsoft.collegeseeker.R$array: int sortList
 com.elencticsoft.collegeseeker.R$array: int states
 com.elencticsoft.collegeseeker.R$attr: int actionBarDivider
@@ -5991,6 +5992,7 @@ com.elencticsoft.collegeseeker.R$id: int homeAsUp
 com.elencticsoft.collegeseeker.R$id: int institution_section
 com.elencticsoft.collegeseeker.R$id: int listMode
 com.elencticsoft.collegeseeker.R$id: int location_label
+com.elencticsoft.collegeseeker.R$id: int majorSpinner
 com.elencticsoft.collegeseeker.R$id: int male_female_ratio
 com.elencticsoft.collegeseeker.R$id: int male_female_ratio_label
 com.elencticsoft.collegeseeker.R$id: int net_cost
@@ -6078,7 +6080,8 @@ com.elencticsoft.collegeseeker.R$layout: int saved_college_list
 com.elencticsoft.collegeseeker.R$layout: int sherlock_spinner_dropdown_item
 com.elencticsoft.collegeseeker.R$layout: int sherlock_spinner_item
 com.elencticsoft.collegeseeker.R$menu: int main
-com.elencticsoft.collegeseeker.R$raw: int database
+com.elencticsoft.collegeseeker.R$raw: int college_majors
+com.elencticsoft.collegeseeker.R$raw: int major_list
 com.elencticsoft.collegeseeker.R$string: int about
 com.elencticsoft.collegeseeker.R$string: int abs__action_bar_home_description
 com.elencticsoft.collegeseeker.R$string: int abs__action_bar_up_description
@@ -6122,6 +6125,7 @@ com.elencticsoft.collegeseeker.R$string: int financial_label
 com.elencticsoft.collegeseeker.R$string: int grad_label
 com.elencticsoft.collegeseeker.R$string: int institution_section
 com.elencticsoft.collegeseeker.R$string: int location_label
+com.elencticsoft.collegeseeker.R$string: int major_prompt
 com.elencticsoft.collegeseeker.R$string: int male_female_ratio_label
 com.elencticsoft.collegeseeker.R$string: int net_cost1_label
 com.elencticsoft.collegeseeker.R$string: int net_cost2_label

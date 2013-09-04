@@ -10,11 +10,14 @@ import com.elencticsoft.collegeseeker.College.Classification;
 import com.elencticsoft.collegeseeker.College.Locale;
 import com.elencticsoft.collegeseeker.College.Type;
 import com.elencticsoft.collegeseeker.CollegeContract.CollegeEntry;
+import com.elencticsoft.collegeseeker.CollegeContract.MajorEntry;
+import com.elencticsoft.collegeseeker.CollegeContract.MajorNameEntry;
 import com.elencticsoft.collegeseeker.CollegeContract.SavedCollegeEntry;
 
 public class CollegeHelper {
-    private static Map<String, Integer> columnIndexes;
+    private static Map<String, Integer> collegeColumnIndexes;
     public static final String ALL_STATES = "All States";
+    public static final String ALL_MAJORS = "All Majors";
     
     public static String getIcon(String name) {
         if (name.equals("Harvard University")) return "harvard";
@@ -145,7 +148,7 @@ public class CollegeHelper {
     public static boolean isGoodMatch(boolean small, boolean medium, boolean large,
             boolean city, boolean suburb, boolean town, boolean rural,
             boolean public_i, boolean private_fp, boolean private_nfp, boolean private_rel,
-            Integer ver, Integer mat, Integer wri, Integer act, College college) {
+            String major, int ver, int mat, int wri, int act, College college) {
         
         if (!small && (college.getTotalEnrolled() < 5000)) return false;
         if (!medium && ((college.getTotalEnrolled() >= 5000) && (college.getTotalEnrolled() <= 10000))) return false;
@@ -176,13 +179,15 @@ public class CollegeHelper {
         default:
             break;     
         }
+        
+        if ((!major.equals(ALL_MAJORS)) && (!college.getMajors().contains(major))) return false;
    
-        if ((ver == null) && (mat == null) && (wri == null) && (act == null)) return true;
-        if ((ver == null) || (mat == null) || (wri == null)) {
-            if (act != null) return isACTMatch(act, college);
+        if ((ver == -1) && (mat == -1) && (wri == -1) && (act == -1)) return true;
+        if ((ver == -1) || (mat == -1) || (wri == -1)) {
+            if (act != -1) return isACTMatch(act, college);
             return false;
         }
-        if (act == null) return isSATMatch(ver, mat, wri, college);
+        if (act == -1) return isSATMatch(ver, mat, wri, college);
         return isSATACTMatch(ver, mat, wri, act, college);
     }
     
@@ -284,62 +289,62 @@ public class CollegeHelper {
     }
     
     public static College convertToCollege(Cursor cursor) {
-        if (columnIndexes == null) columnIndexes = getColumnIndexes(cursor);
+        if (collegeColumnIndexes == null) collegeColumnIndexes = getColumnIndexes(cursor);
         
         College college = new College();
-        college.setAct25(cursor.getInt(columnIndexes.get(CollegeEntry.ACT25)));
-        college.setAct75(cursor.getInt(columnIndexes.get(CollegeEntry.ACT75)));
-        college.setAdmits(cursor.getInt(columnIndexes.get(CollegeEntry.ADMITS)));
-        college.setApplicants(cursor.getInt(columnIndexes.get(CollegeEntry.APPLICANTS)));
-        college.setApplicationFee(cursor.getInt(columnIndexes.get(CollegeEntry.APPLICATION_FEE)));
-        college.setClassification(Classification.values()[cursor.getInt(columnIndexes.get(CollegeEntry.CLASSIFICATION))]);
-        college.setFacultyRatio(cursor.getInt(columnIndexes.get(CollegeEntry.FACULTY_RATIO)));
-        college.setFirstYearEnrollment(cursor.getInt(columnIndexes.get(CollegeEntry.FIRST_YR_ENROLLMENT)));
-        college.setFourYrGrad(cursor.getInt(columnIndexes.get(CollegeEntry.FOUR_YR_GRAD)));
-        college.setFourYrGradRate(cursor.getInt(columnIndexes.get(CollegeEntry.FOUR_YR_GRAD_RATE)));
-        college.setGradCohort(cursor.getInt(columnIndexes.get(CollegeEntry.GRAD_COHORT)));
-        college.setIcon(cursor.getString(columnIndexes.get(CollegeEntry.ICON)));
-        college.setId(cursor.getInt(columnIndexes.get(CollegeEntry.ID)));
-        college.setLocale(Locale.values()[cursor.getInt(columnIndexes.get(CollegeEntry.LOCALE))]);
-        college.setMat25(cursor.getInt(columnIndexes.get(CollegeEntry.MAT25)));
-        college.setMat75(cursor.getInt(columnIndexes.get(CollegeEntry.MAT75)));
-        college.setName(cursor.getString(columnIndexes.get(CollegeEntry.NAME)));
-        college.setRetentionRate(cursor.getInt(columnIndexes.get(CollegeEntry.RETENTION_RATE)));
-        college.setRoomAndBoard(cursor.getInt(columnIndexes.get(CollegeEntry.ROOM_AND_BOARD)));
-        college.setSixYrGrad(cursor.getInt(columnIndexes.get(CollegeEntry.SIX_YR_GRAD)));
-        college.setSixYrGradRate(cursor.getInt(columnIndexes.get(CollegeEntry.SIX_YR_GRAD_RATE)));
-        college.setState(cursor.getString(columnIndexes.get(CollegeEntry.STATE)));
-        college.setStateAbbr(cursor.getString(columnIndexes.get(CollegeEntry.STATE_ABBR)));
-        college.setType(Type.values()[cursor.getInt(columnIndexes.get(CollegeEntry.TYPE))]);
-        college.setVer25(cursor.getInt(columnIndexes.get(CollegeEntry.VER25)));
-        college.setVer75(cursor.getInt(columnIndexes.get(CollegeEntry.VER75)));
-        college.setWri25(cursor.getInt(columnIndexes.get(CollegeEntry.WRI25)));
-        college.setWri75(cursor.getInt(columnIndexes.get(CollegeEntry.WRI75)));
-        college.setSat25(cursor.getInt(columnIndexes.get(CollegeEntry.SAT25)));
-        college.setSat75(cursor.getInt(columnIndexes.get(CollegeEntry.SAT75)));
-        college.setTotalEnrolled(cursor.getInt(columnIndexes.get(CollegeEntry.TOTAL_ENROLLED)));
-        college.setPercentFinAid(cursor.getInt(columnIndexes.get(CollegeEntry.PERCENT_FIN_AID)));
-        college.setPercentGrantAid(cursor.getInt(columnIndexes.get(CollegeEntry.PERCENT_GRANT_AID)));
-        college.setNetCost(cursor.getInt(columnIndexes.get(CollegeEntry.NET_COST)));
-        college.setNetCost1(cursor.getInt(columnIndexes.get(CollegeEntry.NET_COST_1)));
-        college.setNetCost2(cursor.getInt(columnIndexes.get(CollegeEntry.NET_COST_2)));
-        college.setNetCost3(cursor.getInt(columnIndexes.get(CollegeEntry.NET_COST_3)));
-        college.setNetCost4(cursor.getInt(columnIndexes.get(CollegeEntry.NET_COST_4)));
-        college.setNetCost5(cursor.getInt(columnIndexes.get(CollegeEntry.NET_COST_5)));
-        college.setTuitionInState(cursor.getInt(columnIndexes.get(CollegeEntry.TUITION_IN_STATE)));
-        college.setTuitionOutState(cursor.getInt(columnIndexes.get(CollegeEntry.TUITION_OUT_STATE)));
-        college.setTotalInState(cursor.getInt(columnIndexes.get(CollegeEntry.TOTAL_IN_STATE)));
-        college.setTotalOutState(cursor.getInt(columnIndexes.get(CollegeEntry.TOTAL_OUT_STATE)));
-        college.setMaleRatio(cursor.getInt(columnIndexes.get(CollegeEntry.MALE_RATIO)));
-        college.setFemaleRatio(cursor.getInt(columnIndexes.get(CollegeEntry.FEMALE_RATIO)));
-        college.setCity(cursor.getString(columnIndexes.get(CollegeEntry.CITY)));
-        college.setWebUrl(cursor.getString(columnIndexes.get(CollegeEntry.WEB_URL)));
-        college.setAdmUrl(cursor.getString(columnIndexes.get(CollegeEntry.ADM_URL)));
-        college.setFinUrl(cursor.getString(columnIndexes.get(CollegeEntry.FIN_URL)));
-        college.setAppUrl(cursor.getString(columnIndexes.get(CollegeEntry.APP_URL)));
-        college.setCalcUrl(cursor.getString(columnIndexes.get(CollegeEntry.CALC_URL)));
-        college.setResourcesSpent(cursor.getDouble(columnIndexes.get(CollegeEntry.RESOURCES_SPENT)));
-        college.setEndowment(cursor.getDouble(columnIndexes.get(CollegeEntry.ENDOWMENT)));
+        college.setAct25(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.ACT25)));
+        college.setAct75(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.ACT75)));
+        college.setAdmits(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.ADMITS)));
+        college.setApplicants(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.APPLICANTS)));
+        college.setApplicationFee(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.APPLICATION_FEE)));
+        college.setClassification(Classification.values()[cursor.getInt(collegeColumnIndexes.get(CollegeEntry.CLASSIFICATION))]);
+        college.setFacultyRatio(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.FACULTY_RATIO)));
+        college.setFirstYearEnrollment(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.FIRST_YR_ENROLLMENT)));
+        college.setFourYrGrad(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.FOUR_YR_GRAD)));
+        college.setFourYrGradRate(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.FOUR_YR_GRAD_RATE)));
+        college.setGradCohort(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.GRAD_COHORT)));
+        college.setIcon(cursor.getString(collegeColumnIndexes.get(CollegeEntry.ICON)));
+        college.setId(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.ID)));
+        college.setLocale(Locale.values()[cursor.getInt(collegeColumnIndexes.get(CollegeEntry.LOCALE))]);
+        college.setMat25(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.MAT25)));
+        college.setMat75(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.MAT75)));
+        college.setName(cursor.getString(collegeColumnIndexes.get(CollegeEntry.NAME)));
+        college.setRetentionRate(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.RETENTION_RATE)));
+        college.setRoomAndBoard(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.ROOM_AND_BOARD)));
+        college.setSixYrGrad(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.SIX_YR_GRAD)));
+        college.setSixYrGradRate(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.SIX_YR_GRAD_RATE)));
+        college.setState(cursor.getString(collegeColumnIndexes.get(CollegeEntry.STATE)));
+        college.setStateAbbr(cursor.getString(collegeColumnIndexes.get(CollegeEntry.STATE_ABBR)));
+        college.setType(Type.values()[cursor.getInt(collegeColumnIndexes.get(CollegeEntry.TYPE))]);
+        college.setVer25(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.VER25)));
+        college.setVer75(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.VER75)));
+        college.setWri25(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.WRI25)));
+        college.setWri75(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.WRI75)));
+        college.setSat25(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.SAT25)));
+        college.setSat75(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.SAT75)));
+        college.setTotalEnrolled(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.TOTAL_ENROLLED)));
+        college.setPercentFinAid(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.PERCENT_FIN_AID)));
+        college.setPercentGrantAid(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.PERCENT_GRANT_AID)));
+        college.setNetCost(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.NET_COST)));
+        college.setNetCost1(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.NET_COST_1)));
+        college.setNetCost2(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.NET_COST_2)));
+        college.setNetCost3(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.NET_COST_3)));
+        college.setNetCost4(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.NET_COST_4)));
+        college.setNetCost5(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.NET_COST_5)));
+        college.setTuitionInState(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.TUITION_IN_STATE)));
+        college.setTuitionOutState(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.TUITION_OUT_STATE)));
+        college.setTotalInState(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.TOTAL_IN_STATE)));
+        college.setTotalOutState(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.TOTAL_OUT_STATE)));
+        college.setMaleRatio(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.MALE_RATIO)));
+        college.setFemaleRatio(cursor.getInt(collegeColumnIndexes.get(CollegeEntry.FEMALE_RATIO)));
+        college.setCity(cursor.getString(collegeColumnIndexes.get(CollegeEntry.CITY)));
+        college.setWebUrl(cursor.getString(collegeColumnIndexes.get(CollegeEntry.WEB_URL)));
+        college.setAdmUrl(cursor.getString(collegeColumnIndexes.get(CollegeEntry.ADM_URL)));
+        college.setFinUrl(cursor.getString(collegeColumnIndexes.get(CollegeEntry.FIN_URL)));
+        college.setAppUrl(cursor.getString(collegeColumnIndexes.get(CollegeEntry.APP_URL)));
+        college.setCalcUrl(cursor.getString(collegeColumnIndexes.get(CollegeEntry.CALC_URL)));
+        college.setResourcesSpent(cursor.getDouble(collegeColumnIndexes.get(CollegeEntry.RESOURCES_SPENT)));
+        college.setEndowment(cursor.getDouble(collegeColumnIndexes.get(CollegeEntry.ENDOWMENT)));
 
         return college;
     }
@@ -408,6 +413,19 @@ public class CollegeHelper {
         return values;
     }
     
+    public static ContentValues createMajorValues(int collegeId, int major) {
+        ContentValues values = new ContentValues();
+        values.put(MajorEntry.COLLEGE_ID, collegeId);
+        values.put(MajorEntry.MAJOR, major);
+        return values;
+    }
+    
+    public static ContentValues createMajorNameValues(int id, String major) {
+        ContentValues values = new ContentValues();
+        values.put(MajorNameEntry.ID, id);
+        values.put(MajorNameEntry.NAME, major);
+        return values;
+    }
     
     public static College parseCollege(String[] v) {
         College college = new College();

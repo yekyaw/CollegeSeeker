@@ -229,13 +229,20 @@
                 android:prompt="@string/sort_prompt" />
 
             <Spinner
-                android:id="@+id/sortSpinner2"
+                android:id="@+id/majorSpinner"
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
-                android:entries="@array/sortList"
-                android:prompt="@string/sort_prompt" />
+                android:entries="@array/majorsList"
+                android:prompt="@string/major_prompt" />
         </LinearLayout>
+
+        <Spinner
+            android:id="@+id/sortSpinner2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/sortList"
+            android:prompt="@string/sort_prompt" />
 
         <Button
             android:id="@+id/button_send"

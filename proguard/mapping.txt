@@ -2469,7 +2469,7 @@ com.actionbarsherlock.internal.ActionBarSherlockCompat -> com.actionbarsherlock.
     273:277:boolean dispatchOpenOptionsMenu() -> dispatchOpenOptionsMenu
     284:291:boolean dispatchCloseOptionsMenu() -> dispatchCloseOptionsMenu
     298:305:void dispatchPostCreate(android.os.Bundle) -> dispatchPostCreate
-    313:313:boolean dispatchCreateOptionsMenu(android.view.Menu) -> dispatchCreateOptionsMenu
+    310:313:boolean dispatchCreateOptionsMenu(android.view.Menu) -> dispatchCreateOptionsMenu
     320:345:boolean dispatchPrepareOptionsMenu(android.view.Menu) -> dispatchPrepareOptionsMenu
     350:350:boolean dispatchOptionsItemSelected(android.view.MenuItem) -> dispatchOptionsItemSelected
     357:364:boolean dispatchMenuOpened(int,android.view.Menu) -> dispatchMenuOpened
@@ -7308,114 +7308,110 @@ com.elencticsoft.collegeseeker.College -> com.elencticsoft.collegeseeker.c:
     double resourcesSpent -> Y
     double endowment -> Z
     java.lang.String stateAbbr -> aa
-    68:68:int getId() -> a
-    72:73:void setId(int) -> a
-    76:76:java.lang.String getName() -> b
-    80:81:void setName(java.lang.String) -> a
-    84:84:java.lang.String getIcon() -> c
-    88:89:void setIcon(java.lang.String) -> b
-    92:92:int getFirstYearEnrollment() -> d
-    96:97:void setFirstYearEnrollment(int) -> b
-    100:100:com.elencticsoft.collegeseeker.College$Type getType() -> e
-    104:105:void setType(com.elencticsoft.collegeseeker.College$Type) -> a
-    108:108:int getApplicants() -> f
-    112:113:void setApplicants(int) -> c
-    116:116:int getAdmits() -> g
-    120:121:void setAdmits(int) -> d
-    124:124:int getVer25() -> h
-    128:129:void setVer25(int) -> e
-    132:132:int getVer75() -> i
-    136:137:void setVer75(int) -> f
-    140:140:int getMat25() -> j
-    144:145:void setMat25(int) -> g
-    148:148:int getMat75() -> k
-    152:153:void setMat75(int) -> h
-    156:156:int getWri25() -> l
-    160:161:void setWri25(int) -> i
-    164:164:int getWri75() -> m
-    168:169:void setWri75(int) -> j
-    172:172:int getAct25() -> n
-    176:177:void setAct25(int) -> k
-    180:180:int getAct75() -> o
-    184:185:void setAct75(int) -> l
-    188:188:com.elencticsoft.collegeseeker.College$Classification getClassification() -> p
-    192:193:void setClassification(com.elencticsoft.collegeseeker.College$Classification) -> a
-    196:196:java.lang.String getState() -> q
-    200:201:void setState(java.lang.String) -> c
-    204:204:com.elencticsoft.collegeseeker.College$Locale getLocale() -> r
-    208:209:void setLocale(com.elencticsoft.collegeseeker.College$Locale) -> a
-    212:212:int getApplicationFee() -> s
-    216:217:void setApplicationFee(int) -> m
-    220:220:int getRoomAndBoard() -> t
-    224:225:void setRoomAndBoard(int) -> n
-    228:228:int getGradCohort() -> u
-    232:233:void setGradCohort(int) -> o
-    236:236:int getFourYrGrad() -> v
-    240:241:void setFourYrGrad(int) -> p
-    244:244:int getSixYrGrad() -> w
-    248:249:void setSixYrGrad(int) -> q
-    252:252:int getTotalEnrolled() -> x
-    256:257:void setTotalEnrolled(int) -> r
-    260:260:int getPercentFinAid() -> y
-    264:265:void setPercentFinAid(int) -> s
-    268:268:int getPercentGrantAid() -> z
-    272:273:void setPercentGrantAid(int) -> t
-    276:276:int getNetCost() -> A
-    280:281:void setNetCost(int) -> u
-    284:284:int getNetCost1() -> B
-    288:289:void setNetCost1(int) -> v
-    292:292:int getNetCost2() -> C
-    296:297:void setNetCost2(int) -> w
-    300:300:int getNetCost3() -> D
-    304:305:void setNetCost3(int) -> x
-    308:308:int getNetCost4() -> E
-    312:313:void setNetCost4(int) -> y
-    316:316:int getNetCost5() -> F
-    320:321:void setNetCost5(int) -> z
-    324:324:int getRetentionRate() -> G
-    328:329:void setRetentionRate(int) -> A
-    332:332:int getFacultyRatio() -> H
-    336:337:void setFacultyRatio(int) -> B
-    340:340:int getTuitionInState() -> I
-    344:345:void setTuitionInState(int) -> C
-    348:348:int getTuitionOutState() -> J
-    352:353:void setTuitionOutState(int) -> D
-    356:356:int getTotalInState() -> K
-    360:361:void setTotalInState(int) -> E
-    364:364:int getTotalOutState() -> L
-    368:369:void setTotalOutState(int) -> F
-    372:372:int getMaleRatio() -> M
-    376:377:void setMaleRatio(int) -> G
-    380:380:int getFemaleRatio() -> N
-    384:385:void setFemaleRatio(int) -> H
-    388:388:java.lang.String getCity() -> O
-    392:393:void setCity(java.lang.String) -> d
-    396:396:java.lang.String getWebUrl() -> P
-    400:401:void setWebUrl(java.lang.String) -> e
-    404:404:java.lang.String getAdmUrl() -> Q
-    408:409:void setAdmUrl(java.lang.String) -> f
-    412:412:java.lang.String getFinUrl() -> R
-    416:417:void setFinUrl(java.lang.String) -> g
-    420:420:java.lang.String getAppUrl() -> S
-    424:425:void setAppUrl(java.lang.String) -> h
-    428:428:double getResourcesSpent() -> T
-    432:433:void setResourcesSpent(double) -> a
-    436:436:double getEndowment() -> U
-    440:441:void setEndowment(double) -> b
-    444:444:java.lang.String getStateAbbr() -> V
-    448:449:void setStateAbbr(java.lang.String) -> i
-    452:452:int getSat25() -> W
-    456:457:void setSat25(int) -> I
-    460:460:int getSat75() -> X
-    464:465:void setSat75(int) -> J
-    468:468:int getFourYrGradRate() -> Y
-    472:473:void setFourYrGradRate(int) -> K
-    476:476:int getSixYrGradRate() -> Z
-    480:481:void setSixYrGradRate(int) -> L
-    484:484:java.lang.String getCalcUrl() -> aa
-    488:489:void setCalcUrl(java.lang.String) -> j
-    537:537:int compareTo(com.elencticsoft.collegeseeker.College) -> a
-    542:542:java.lang.String toString() -> toString
+    java.util.List majors -> ab
+    72:72:int getId() -> a
+    76:77:void setId(int) -> a
+    80:80:java.lang.String getName() -> b
+    84:85:void setName(java.lang.String) -> a
+    88:88:java.lang.String getIcon() -> c
+    92:93:void setIcon(java.lang.String) -> b
+    100:101:void setFirstYearEnrollment(int) -> b
+    104:104:com.elencticsoft.collegeseeker.College$Type getType() -> d
+    108:109:void setType(com.elencticsoft.collegeseeker.College$Type) -> a
+    112:112:int getApplicants() -> e
+    116:117:void setApplicants(int) -> c
+    120:120:int getAdmits() -> f
+    124:125:void setAdmits(int) -> d
+    128:128:int getVer25() -> g
+    132:133:void setVer25(int) -> e
+    136:136:int getVer75() -> h
+    140:141:void setVer75(int) -> f
+    144:144:int getMat25() -> i
+    148:149:void setMat25(int) -> g
+    152:152:int getMat75() -> j
+    156:157:void setMat75(int) -> h
+    160:160:int getWri25() -> k
+    164:165:void setWri25(int) -> i
+    168:168:int getWri75() -> l
+    172:173:void setWri75(int) -> j
+    176:176:int getAct25() -> m
+    180:181:void setAct25(int) -> k
+    184:184:int getAct75() -> n
+    188:189:void setAct75(int) -> l
+    192:192:com.elencticsoft.collegeseeker.College$Classification getClassification() -> o
+    196:197:void setClassification(com.elencticsoft.collegeseeker.College$Classification) -> a
+    204:205:void setState(java.lang.String) -> c
+    208:208:com.elencticsoft.collegeseeker.College$Locale getLocale() -> p
+    212:213:void setLocale(com.elencticsoft.collegeseeker.College$Locale) -> a
+    216:216:int getApplicationFee() -> q
+    220:221:void setApplicationFee(int) -> m
+    224:224:int getRoomAndBoard() -> r
+    228:229:void setRoomAndBoard(int) -> n
+    236:237:void setGradCohort(int) -> o
+    244:245:void setFourYrGrad(int) -> p
+    252:253:void setSixYrGrad(int) -> q
+    256:256:int getTotalEnrolled() -> s
+    260:261:void setTotalEnrolled(int) -> r
+    264:264:int getPercentFinAid() -> t
+    268:269:void setPercentFinAid(int) -> s
+    272:272:int getPercentGrantAid() -> u
+    276:277:void setPercentGrantAid(int) -> t
+    280:280:int getNetCost() -> v
+    284:285:void setNetCost(int) -> u
+    288:288:int getNetCost1() -> w
+    292:293:void setNetCost1(int) -> v
+    296:296:int getNetCost2() -> x
+    300:301:void setNetCost2(int) -> w
+    304:304:int getNetCost3() -> y
+    308:309:void setNetCost3(int) -> x
+    312:312:int getNetCost4() -> z
+    316:317:void setNetCost4(int) -> y
+    320:320:int getNetCost5() -> A
+    324:325:void setNetCost5(int) -> z
+    328:328:int getRetentionRate() -> B
+    332:333:void setRetentionRate(int) -> A
+    336:336:int getFacultyRatio() -> C
+    340:341:void setFacultyRatio(int) -> B
+    344:344:int getTuitionInState() -> D
+    348:349:void setTuitionInState(int) -> C
+    352:352:int getTuitionOutState() -> E
+    356:357:void setTuitionOutState(int) -> D
+    360:360:int getTotalInState() -> F
+    364:365:void setTotalInState(int) -> E
+    368:368:int getTotalOutState() -> G
+    372:373:void setTotalOutState(int) -> F
+    376:376:int getMaleRatio() -> H
+    380:381:void setMaleRatio(int) -> G
+    384:384:int getFemaleRatio() -> I
+    388:389:void setFemaleRatio(int) -> H
+    392:392:java.lang.String getCity() -> J
+    396:397:void setCity(java.lang.String) -> d
+    400:400:java.lang.String getWebUrl() -> K
+    404:405:void setWebUrl(java.lang.String) -> e
+    408:408:java.lang.String getAdmUrl() -> L
+    412:413:void setAdmUrl(java.lang.String) -> f
+    416:416:java.lang.String getFinUrl() -> M
+    420:421:void setFinUrl(java.lang.String) -> g
+    424:424:java.lang.String getAppUrl() -> N
+    428:429:void setAppUrl(java.lang.String) -> h
+    432:432:double getResourcesSpent() -> O
+    436:437:void setResourcesSpent(double) -> a
+    440:440:double getEndowment() -> P
+    444:445:void setEndowment(double) -> b
+    448:448:java.lang.String getStateAbbr() -> Q
+    452:453:void setStateAbbr(java.lang.String) -> i
+    460:461:void setSat25(int) -> I
+    468:469:void setSat75(int) -> J
+    472:472:int getFourYrGradRate() -> R
+    476:477:void setFourYrGradRate(int) -> K
+    480:480:int getSixYrGradRate() -> S
+    484:485:void setSixYrGradRate(int) -> L
+    488:488:java.lang.String getCalcUrl() -> T
+    492:493:void setCalcUrl(java.lang.String) -> j
+    496:496:java.util.List getMajors() -> U
+    500:501:void setMajors(java.util.List) -> a
+    554:554:int compareTo(com.elencticsoft.collegeseeker.College) -> a
+    559:559:java.lang.String toString() -> toString
     1:1:int compareTo(java.lang.Object) -> compareTo
 com.elencticsoft.collegeseeker.College$Classification -> com.elencticsoft.collegeseeker.d:
     com.elencticsoft.collegeseeker.College$Classification RESEARCH_UNI -> a
@@ -7425,7 +7421,7 @@ com.elencticsoft.collegeseeker.College$Classification -> com.elencticsoft.colleg
     com.elencticsoft.collegeseeker.College$Classification ENGINEERING -> e
     java.lang.String name -> f
     com.elencticsoft.collegeseeker.College$Classification[] ENUM$VALUES -> g
-    517:517:java.lang.String toString() -> toString
+    534:534:java.lang.String toString() -> toString
     1:1:com.elencticsoft.collegeseeker.College$Classification[] values() -> values
     1:1:com.elencticsoft.collegeseeker.College$Classification valueOf(java.lang.String) -> valueOf
 com.elencticsoft.collegeseeker.College$Locale -> com.elencticsoft.collegeseeker.e:
@@ -7435,7 +7431,7 @@ com.elencticsoft.collegeseeker.College$Locale -> com.elencticsoft.collegeseeker.
     com.elencticsoft.collegeseeker.College$Locale RURAL -> d
     java.lang.String name -> e
     com.elencticsoft.collegeseeker.College$Locale[] ENUM$VALUES -> f
-    531:531:java.lang.String toString() -> toString
+    548:548:java.lang.String toString() -> toString
     1:1:com.elencticsoft.collegeseeker.College$Locale[] values() -> values
     1:1:com.elencticsoft.collegeseeker.College$Locale valueOf(java.lang.String) -> valueOf
 com.elencticsoft.collegeseeker.College$Type -> com.elencticsoft.collegeseeker.f:
@@ -7445,7 +7441,7 @@ com.elencticsoft.collegeseeker.College$Type -> com.elencticsoft.collegeseeker.f:
     com.elencticsoft.collegeseeker.College$Type PRIVATE_REL -> d
     java.lang.String name -> e
     com.elencticsoft.collegeseeker.College$Type[] ENUM$VALUES -> f
-    502:502:java.lang.String toString() -> toString
+    519:519:java.lang.String toString() -> toString
     1:1:com.elencticsoft.collegeseeker.College$Type[] values() -> values
     1:1:com.elencticsoft.collegeseeker.College$Type valueOf(java.lang.String) -> valueOf
 com.elencticsoft.collegeseeker.CollegeAdapter -> com.elencticsoft.collegeseeker.g:
@@ -7477,21 +7473,21 @@ com.elencticsoft.collegeseeker.CollegeDialogBox$3 -> com.elencticsoft.collegesee
     com.elencticsoft.collegeseeker.CollegeDialogBox this$0 -> a
     45:46:void onClick(android.content.DialogInterface,int) -> onClick
 com.elencticsoft.collegeseeker.CollegeHelper -> com.elencticsoft.collegeseeker.m:
-    java.util.Map columnIndexes -> a
+    java.util.Map collegeColumnIndexes -> a
     int[] $SWITCH_TABLE$com$elencticsoft$collegeseeker$College$Locale -> b
     int[] $SWITCH_TABLE$com$elencticsoft$collegeseeker$College$Type -> c
-    150:186:boolean isGoodMatch(boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,com.elencticsoft.collegeseeker.College) -> a
-    191:202:boolean isSATMatch(int,int,int,com.elencticsoft.collegeseeker.College) -> a
-    206:207:boolean isACTMatch(int,com.elencticsoft.collegeseeker.College) -> a
-    212:224:boolean isSATACTMatch(int,int,int,int,com.elencticsoft.collegeseeker.College) -> a
-    228:283:java.util.Map getColumnIndexes(android.database.Cursor) -> b
-    287:344:com.elencticsoft.collegeseeker.College convertToCollege(android.database.Cursor) -> a
-    348:402:android.content.ContentValues createCollegeValues(com.elencticsoft.collegeseeker.College) -> a
-    406:408:android.content.ContentValues createSavedCollegeValues(int) -> a
-    413:467:com.elencticsoft.collegeseeker.College parseCollege(java.lang.String[]) -> a
-    471:486:java.lang.String getSortClause(java.lang.String) -> a
-    15:15:int[] $SWITCH_TABLE$com$elencticsoft$collegeseeker$College$Locale() -> a
-    15:15:int[] $SWITCH_TABLE$com$elencticsoft$collegeseeker$College$Type() -> b
+    153:191:boolean isGoodMatch(boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,java.lang.String,int,int,int,int,com.elencticsoft.collegeseeker.College) -> a
+    196:207:boolean isSATMatch(int,int,int,com.elencticsoft.collegeseeker.College) -> a
+    211:212:boolean isACTMatch(int,com.elencticsoft.collegeseeker.College) -> a
+    217:229:boolean isSATACTMatch(int,int,int,int,com.elencticsoft.collegeseeker.College) -> a
+    233:288:java.util.Map getColumnIndexes(android.database.Cursor) -> b
+    292:349:com.elencticsoft.collegeseeker.College convertToCollege(android.database.Cursor) -> a
+    411:413:android.content.ContentValues createSavedCollegeValues(int) -> a
+    417:420:android.content.ContentValues createMajorValues(int,int) -> a
+    424:427:android.content.ContentValues createMajorNameValues(int,java.lang.String) -> a
+    489:504:java.lang.String getSortClause(java.lang.String) -> a
+    17:17:int[] $SWITCH_TABLE$com$elencticsoft$collegeseeker$College$Locale() -> a
+    17:17:int[] $SWITCH_TABLE$com$elencticsoft$collegeseeker$College$Type() -> b
 com.elencticsoft.collegeseeker.CollegeList -> com.elencticsoft.collegeseeker.n:
     android.widget.ListView listView -> a
     android.widget.Spinner stateSpinner -> b
@@ -7554,25 +7550,25 @@ com.elencticsoft.collegeseeker.DatabaseHandler -> com.elencticsoft.collegeseeker
     com.elencticsoft.collegeseeker.DatabaseHandler instance -> a
     android.database.sqlite.SQLiteDatabase db -> b
     android.content.Context context -> c
-    39:40:com.elencticsoft.collegeseeker.DatabaseHandler getInstance(android.content.Context) -> a
-    51:53:void close() -> close
-    58:64:void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
-    67:98:void createCollegeTable(android.database.sqlite.SQLiteDatabase) -> a
-    101:111:void readFromCsv(android.database.sqlite.SQLiteDatabase) -> b
-    117:121:void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
-    126:130:void onDowngrade(android.database.sqlite.SQLiteDatabase,int,int) -> onDowngrade
-    143:144:void saveCollege(int) -> a
-    147:150:android.database.Cursor getSavedColleges() -> a
-    154:158:android.database.Cursor getSavedColleges(java.lang.String) -> a
-    163:170:com.elencticsoft.collegeseeker.College getCollege(int) -> b
-    175:176:android.database.Cursor getAllColleges(java.lang.String) -> b
-    182:192:android.database.Cursor getMatchColleges(java.lang.String,java.lang.String,java.lang.String) -> a
-    204:206:void deleteCollege(int) -> c
-    219:223:android.database.Cursor getCollegesByState(java.lang.String,java.lang.String) -> a
+    45:46:com.elencticsoft.collegeseeker.DatabaseHandler getInstance(android.content.Context) -> a
+    57:59:void close() -> close
+    152:173:void populateMajorTable(android.database.sqlite.SQLiteDatabase) -> a
+    178:182:void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+    195:197:void addMajor(android.database.sqlite.SQLiteDatabase,int,int) -> a
+    201:203:void addMajorName(android.database.sqlite.SQLiteDatabase,int,java.lang.String) -> a
+    206:207:void saveCollege(int) -> a
+    210:213:android.database.Cursor getSavedColleges() -> a
+    217:221:android.database.Cursor getSavedColleges(java.lang.String) -> a
+    226:234:com.elencticsoft.collegeseeker.College getCollege(int) -> b
+    239:240:android.database.Cursor getAllColleges(java.lang.String) -> b
+    246:256:android.database.Cursor getMatchColleges(java.lang.String,java.lang.String,java.lang.String) -> a
+    268:270:void deleteCollege(int) -> c
+    282:286:android.database.Cursor getCollegesByState(java.lang.String,java.lang.String) -> a
+    290:299:java.util.List getMajors(int) -> d
 com.elencticsoft.collegeseeker.DetailedView -> com.elencticsoft.collegeseeker.y:
-    16:20:com.elencticsoft.collegeseeker.DetailedView newInstance(int) -> a
-    25:25:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
-    30:107:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
+    17:21:com.elencticsoft.collegeseeker.DetailedView newInstance(int) -> a
+    26:26:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    31:109:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
 com.elencticsoft.collegeseeker.MainActivity -> com.elencticsoft.collegeseeker.MainActivity:
     com.actionbarsherlock.app.ActionBar actionBar -> a
     23:47:void onCreate(android.os.Bundle) -> onCreate
@@ -7589,28 +7585,29 @@ com.elencticsoft.collegeseeker.MainActivity -> com.elencticsoft.collegeseeker.Ma
 com.elencticsoft.collegeseeker.MyApplication -> com.elencticsoft.collegeseeker.MyApplication:
     21:24:void onCreate() -> onCreate
 com.elencticsoft.collegeseeker.Profile -> com.elencticsoft.collegeseeker.z:
-    android.widget.EditText verView -> c
-    android.widget.EditText matView -> d
-    android.widget.EditText wriView -> e
-    android.widget.EditText actView -> f
-    android.widget.CheckBox college_small -> g
-    android.widget.CheckBox college_medium -> h
-    android.widget.CheckBox college_large -> i
-    android.widget.CheckBox city -> j
-    android.widget.CheckBox suburb -> k
-    android.widget.CheckBox town -> l
-    android.widget.CheckBox rural -> m
-    android.widget.CheckBox public_i -> n
-    android.widget.CheckBox private_fp -> o
-    android.widget.CheckBox private_nfp -> p
-    android.widget.CheckBox private_rel -> q
+    android.widget.EditText verView -> d
+    android.widget.EditText matView -> e
+    android.widget.EditText wriView -> f
+    android.widget.EditText actView -> g
+    android.widget.CheckBox college_small -> h
+    android.widget.CheckBox college_medium -> i
+    android.widget.CheckBox college_large -> j
+    android.widget.CheckBox city -> k
+    android.widget.CheckBox suburb -> l
+    android.widget.CheckBox town -> m
+    android.widget.CheckBox rural -> n
+    android.widget.CheckBox public_i -> o
+    android.widget.CheckBox private_fp -> p
+    android.widget.CheckBox private_nfp -> q
+    android.widget.CheckBox private_rel -> r
     android.widget.Spinner stateSpinner -> a
     android.widget.Spinner sortSpinner -> b
-    30:55:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
-    60:62:java.lang.Integer parseInt(java.lang.String) -> b
-    68:92:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
+    android.widget.Spinner majorSpinner -> c
+    30:56:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    61:63:int parseInt(java.lang.String) -> b
+    69:94:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
     20:20:android.widget.EditText access$0(com.elencticsoft.collegeseeker.Profile) -> a
-    58:58:java.lang.Integer access$1(java.lang.String) -> a
+    59:59:int access$1(java.lang.String) -> a
     20:20:android.widget.EditText access$2(com.elencticsoft.collegeseeker.Profile) -> b
     20:20:android.widget.EditText access$3(com.elencticsoft.collegeseeker.Profile) -> c
     20:20:android.widget.EditText access$4(com.elencticsoft.collegeseeker.Profile) -> d
@@ -7627,7 +7624,7 @@ com.elencticsoft.collegeseeker.Profile -> com.elencticsoft.collegeseeker.z:
     23:23:android.widget.CheckBox access$15(com.elencticsoft.collegeseeker.Profile) -> o
 com.elencticsoft.collegeseeker.Profile$1 -> com.elencticsoft.collegeseeker.aa:
     com.elencticsoft.collegeseeker.Profile this$0 -> a
-    35:52:void onClick(android.view.View) -> onClick
+    35:53:void onClick(android.view.View) -> onClick
 com.elencticsoft.collegeseeker.SavedCollegeList -> com.elencticsoft.collegeseeker.ab:
     19:19:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
     24:35:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
@@ -9141,6 +9138,32 @@ com.google.ads.y -> com.google.ads.ce:
 com.google.ads.z -> com.google.ads.cf:
     com.google.ads.AdActivity$StaticMethodWrapper a -> a
     48:67:void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.readystatesoftware.sqliteasset.SQLiteAssetException -> com.a.a.a:
+com.readystatesoftware.sqliteasset.SQLiteAssetHelper -> com.a.a.b:
+    java.lang.String TAG -> a
+    android.content.Context mContext -> b
+    java.lang.String mName -> c
+    android.database.sqlite.SQLiteDatabase$CursorFactory mFactory -> d
+    int mNewVersion -> e
+    android.database.sqlite.SQLiteDatabase mDatabase -> f
+    boolean mIsInitializing -> g
+    java.lang.String mDatabasePath -> h
+    java.lang.String mArchivePath -> i
+    java.lang.String mUpgradePathFormat -> j
+    int mForcedUpgradeVersion -> k
+    154:223:android.database.sqlite.SQLiteDatabase getWritableDatabase() -> getWritableDatabase
+    248:280:android.database.sqlite.SQLiteDatabase getReadableDatabase() -> getReadableDatabase
+    288:294:void close() -> close
+    300:300:void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    305:337:void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+    344:357:android.database.sqlite.SQLiteDatabase createOrOpenDatabase(boolean) -> a
+    363:368:android.database.sqlite.SQLiteDatabase returnDatabase() -> a
+    373:397:void copyDatabaseFromAssets() -> b
+    400:406:java.io.InputStream getUpgradeSQLStream(int,int) -> a
+    415:434:void getUpgradeFilePaths(int,int,int,java.util.ArrayList) -> a
+    437:445:void writeExtractedFileToDisk(java.util.zip.ZipInputStream,java.io.OutputStream) -> a
+    448:454:java.util.zip.ZipInputStream getFileFromZip(java.io.InputStream) -> a
+    458:458:java.lang.String convertStreamToString(java.io.InputStream) -> b
 org.acra.ACRA -> org.acra.ACRA:
     boolean DEV_LOGGING -> DEV_LOGGING
     java.lang.String LOG_TAG -> LOG_TAG

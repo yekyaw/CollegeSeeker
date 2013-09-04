@@ -60,10 +60,24 @@ public class CollegeContract {
         public static final String ENDOWMENT = "endowment";
         
         public static final String NAME_INDEX = "name_idx";
+        public static final String STATE_INDEX = "state_idx";
     }
     
     public static class SavedCollegeEntry {
         public static final String ID = "_id";
         public static final String COLLEGE_ID = "college_id";
+    }
+    
+    public static class MajorEntry {
+        public static final String ID = "_id";
+        public static final String COLLEGE_ID = "college_id";
+        public static final String MAJOR = "major";
+        public static final String COLLEGE_INDEX = "college_idx";
+        public static final String MAJOR_INDEX = "major_idx";
+    }
+    
+    public static class MajorNameEntry {
+        public static final String ID = "_id";
+        public static final String NAME = "major_name";
     }
 }

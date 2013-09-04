@@ -1,5 +1,8 @@
 package com.elencticsoft.collegeseeker;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class College implements Comparable<College> {
     private int id;
     private String name;
@@ -57,6 +60,7 @@ public class College implements Comparable<College> {
     private double resourcesSpent;
     private double endowment;
     private String stateAbbr;
+    private List<String> majors;
     
     public College() { }
     
@@ -486,6 +490,19 @@ public class College implements Comparable<College> {
 
     public void setCalcUrl(String calcUrl) {
         this.calcUrl = calcUrl;
+    }
+
+    public List<String> getMajors() {
+        return majors;
+    }
+
+    public void setMajors(List<String> majors) {
+        this.majors = majors;
+    }
+    
+    public void addMajor(String major) {
+        if (majors == null) majors = new ArrayList<String>();
+        majors.add(major);
     }
 
     public enum Type {

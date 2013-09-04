@@ -2,29 +2,35 @@ package com.elencticsoft.collegeseeker;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import au.com.bytecode.opencsv.CSVReader;
 
 import com.elencticsoft.collegeseeker.CollegeContract.CollegeEntry;
+import com.elencticsoft.collegeseeker.CollegeContract.MajorEntry;
+import com.elencticsoft.collegeseeker.CollegeContract.MajorNameEntry;
 import com.elencticsoft.collegeseeker.CollegeContract.SavedCollegeEntry;
+import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
  
-public class DatabaseHandler extends SQLiteOpenHelper {
+public class DatabaseHandler extends SQLiteAssetHelper {
     private static DatabaseHandler instance;
  
     // All Static variables
     // Database Version
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
  
     // Database Name
     private static final String DATABASE_NAME = "collegesManager";
  
-    // Contacts table name
     private static final String TABLE_COLLEGES = "colleges";
     private static final String TABLE_SAVED_COLLEGES = "saved_colleges";
+    private static final String TABLE_MAJORS = "majors";
+    private static final String TABLE_MAJOR_NAMES = "major_names";
+    private static final String TEXT_TYPE = " TEXT";
     private static final String TEXT_TYPE_COMMA = " TEXT,";
     private static final String INT_TYPE = " INTEGER";
     private static final String INT_TYPE_COMMA = " INTEGER,";
@@ -53,16 +59,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
  
     // Creating Tables
-    @Override
-    public void onCreate(SQLiteDatabase db) {
+    public void createDatabase(SQLiteDatabase db) {
         createCollegeTable(db);
-        String CREATE_SAVED_COLLEGES_TABLE = "CREATE TABLE " + TABLE_SAVED_COLLEGES + "(" +
-        SavedCollegeEntry.ID + INT_TYPE + " PRIMARY KEY AUTOINCREMENT" + COMMA_SEP + SavedCollegeEntry.COLLEGE_ID +
-        INT_TYPE + " UNIQUE NOT NULL," + "FOREIGN KEY(" + SavedCollegeEntry.COLLEGE_ID + ") REFERENCES " +
-        TABLE_COLLEGES + "(" + CollegeEntry.ID + "))";
-        db.execSQL(CREATE_SAVED_COLLEGES_TABLE);
+        createSavedTable(db);
+        createMajorTable(db);
+//        populateCollegeTable(db);
+        populateMajorTable(db);
     }
-    
+
     private void createCollegeTable(SQLiteDatabase db) {
         String CREATE_COLLEGES_TABLE = "CREATE TABLE " + TABLE_COLLEGES + "("
                 + CollegeEntry.ID + INT_TYPE + " PRIMARY KEY" + COMMA_SEP + CollegeEntry.ACT25 + 
@@ -94,17 +98,75 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         String index = "CREATE INDEX " + CollegeEntry.NAME_INDEX + " ON " + TABLE_COLLEGES +
                 "(" + CollegeEntry.NAME + ")";
         db.execSQL(index);
-        readFromCsv(db);
+        index = "CREATE INDEX " + CollegeEntry.STATE_INDEX + " ON " + TABLE_COLLEGES +
+                "(" + CollegeEntry.STATE + ")";
+        db.execSQL(index);
     }
-    
-    private void readFromCsv(SQLiteDatabase db) {
-        CSVReader csv = new CSVReader(new InputStreamReader(context.getResources().openRawResource(R.raw.database)));
 
+    private void createMajorTable(SQLiteDatabase db) {
+        String CREATE_MAJOR_NAME_TABLE = "CREATE TABLE " + TABLE_MAJOR_NAMES + "(" +
+                MajorNameEntry.ID + INT_TYPE + " PRIMARY KEY" + COMMA_SEP + MajorNameEntry.NAME + TEXT_TYPE + ")";
+        db.execSQL(CREATE_MAJOR_NAME_TABLE);
+        String CREATE_MAJORS_TABLE = "CREATE TABLE " + TABLE_MAJORS + "(" +
+                MajorEntry.ID + INT_TYPE + " PRIMARY KEY AUTOINCREMENT" + COMMA_SEP + MajorEntry.COLLEGE_ID +
+                INT_TYPE_COMMA + MajorEntry.MAJOR + INT_TYPE_COMMA + 
+                "FOREIGN KEY(" + MajorEntry.MAJOR + ") REFERENCES " + TABLE_MAJOR_NAMES + "(" + MajorNameEntry.ID + ")" + COMMA_SEP
+                + "FOREIGN KEY(" + MajorEntry.COLLEGE_ID + ") REFERENCES " + TABLE_COLLEGES + "(" + CollegeEntry.ID + "))";
+        db.execSQL(CREATE_MAJORS_TABLE);
+        String index = "CREATE INDEX " + MajorEntry.COLLEGE_INDEX + " ON " + TABLE_MAJORS +
+                "(" + MajorEntry.COLLEGE_ID + ")";
+        db.execSQL(index);
+        index = "CREATE INDEX " + MajorEntry.MAJOR_INDEX + " ON " + TABLE_MAJORS +
+                "(" + MajorEntry.MAJOR + ")";
+        db.execSQL(index);
+    }
+
+    private void createSavedTable(SQLiteDatabase db) {
+        String CREATE_SAVED_COLLEGES_TABLE = "CREATE TABLE " + TABLE_SAVED_COLLEGES + "(" +
+                SavedCollegeEntry.ID + INT_TYPE + " PRIMARY KEY AUTOINCREMENT" + COMMA_SEP + SavedCollegeEntry.COLLEGE_ID +
+                INT_TYPE + " UNIQUE NOT NULL," + "FOREIGN KEY(" + SavedCollegeEntry.COLLEGE_ID + ") REFERENCES " +
+                TABLE_COLLEGES + "(" + CollegeEntry.ID + "))";
+        db.execSQL(CREATE_SAVED_COLLEGES_TABLE);
+    }
+
+//    private void populateCollegeTable(SQLiteDatabase db) {
+//        CSVReader csv;
+//        String[] v;
+//
+//        try {
+//            csv = new CSVReader(new InputStreamReader(context.getResources().openRawResource(R.raw.database)));
+//            while ((v = csv.readNext()) != null) {
+//                College college = CollegeHelper.parseCollege(v);
+//                addCollege(db, college);
+//            }
+//            csv.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
+    private void populateMajorTable(SQLiteDatabase db) {
+        CSVReader csv;
         String[] v;
         try {
+            csv = new CSVReader(new InputStreamReader(context.getResources().openRawResource(R.raw.major_list)));
             while ((v = csv.readNext()) != null) {
-                db.insert(TABLE_COLLEGES, null, CollegeHelper.createCollegeValues(CollegeHelper.parseCollege(v)));
+                addMajorName(db, Integer.parseInt(v[0]), v[1]);
             }
+            csv.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            csv = new CSVReader(new InputStreamReader(context.getResources().openRawResource(R.raw.college_majors)));
+            while ((v = csv.readNext()) != null) {
+                int collegeId = Integer.parseInt(v[0]);
+                String[] majors = v[1].split(";");
+                for (String major: majors)
+                    addMajor(db, collegeId, Integer.parseInt(major));
+            }
+            csv.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -113,30 +175,31 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Upgrading database
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Drop older table if existed
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_COLLEGES);
- 
-        // Create tables again
-        createCollegeTable(db);
-    }
-    
-    @Override
-    public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Drop older table if existed
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_COLLEGES);
- 
-        // Create tables again
-        createCollegeTable(db);
+        super.onUpgrade(db, oldVersion, newVersion);
+        if ((oldVersion == 1) && (newVersion == 2)) {
+            populateMajorTable(db);
+        }
     }
  
     /**
      * All CRUD(Create, Read, Update, Delete) Operations
      */
- 
-    // Adding new college
-    public void addCollege(College college) {
+    
+    public void addCollege(SQLiteDatabase db, College college) {
         // Inserting Row
         db.insert(TABLE_COLLEGES, null, CollegeHelper.createCollegeValues(college));
+    }
+    
+    public void addMajor(SQLiteDatabase db, int collegeId, int major) {
+        // Inserting Row
+        db.insert(TABLE_MAJORS, null, CollegeHelper.createMajorValues(collegeId,
+                major));
+    }
+    
+    public void addMajorName(SQLiteDatabase db, int id, String name) {
+        // Inserting Row
+        db.insert(TABLE_MAJOR_NAMES, null, CollegeHelper.createMajorNameValues(id,
+                name));
     }
     
     public void saveCollege(int collegeId) {
@@ -166,6 +229,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
             cursor.moveToFirst();
         
         College college = CollegeHelper.convertToCollege(cursor);
+        college.setMajors(getMajors(id));
         cursor.close();
         return college;
     }
@@ -205,7 +269,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 new String[] { Integer.toString(id) });
     }
  
- 
     // Getting colleges Count
     public int getCollegesCount() {
         Cursor cursor = db.query(TABLE_COLLEGES, null, null, null, null, null, null);
@@ -221,6 +284,19 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 new String[] { state }, null, null, CollegeHelper.getSortClause(sort), null);
         
         return cursor;
+    }
+
+    public List<String> getMajors(int id) {
+        List<String> majors = new ArrayList<String>();
+        String query = "SELECT b." + MajorNameEntry.NAME + " FROM " + TABLE_MAJORS + " a INNER JOIN " +
+                TABLE_MAJOR_NAMES + " b ON a." + MajorEntry.MAJOR + "=b." + MajorNameEntry.ID +
+                " WHERE a." + MajorEntry.COLLEGE_ID + "=?";
+        Cursor cursor = db.rawQuery(query, new String[] { String.valueOf(id) });
+        while (cursor.moveToNext()) {
+            majors.add(cursor.getString(0));
+        }
+        cursor.close();
+        return majors;
     }
  
 }
