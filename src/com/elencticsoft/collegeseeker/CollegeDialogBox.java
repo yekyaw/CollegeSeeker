@@ -10,10 +10,11 @@ import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockDialogFragment;
 
 public class CollegeDialogBox extends SherlockDialogFragment {
-    public static CollegeDialogBox newInstance(int collegeId) {
+    public static CollegeDialogBox newInstance(int collegeId, String tag) {
         CollegeDialogBox box = new CollegeDialogBox();
         Bundle args = new Bundle();
         args.putInt("college", collegeId);
+        args.putString("tag", tag);
         box.setArguments(args);
         return box;
     }
@@ -21,13 +22,14 @@ public class CollegeDialogBox extends SherlockDialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         final int collegeId = getArguments().getInt("college");
+        final String tag = getArguments().getString("tag");
         // Use the Builder class for convenient dialog construction
         AlertDialog.Builder builder = new AlertDialog.Builder(getSherlockActivity());
         builder.setMessage(R.string.dialog_message)
                .setPositiveButton(R.string.view_details, new DialogInterface.OnClickListener() {
                    public void onClick(DialogInterface dialog, int id) {
                        MainActivity activity = (MainActivity) getSherlockActivity();
-                       activity.updateDetailedView(collegeId);
+                       activity.updateDetailedView(collegeId, tag);
                    }
                })
                .setNeutralButton(R.string.save, new DialogInterface.OnClickListener() {

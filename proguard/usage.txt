@@ -347,13 +347,13 @@ com.elencticsoft.collegeseeker.DatabaseHandler:
     private static final java.lang.String DEC_TYPE
     private static final java.lang.String DEC_TYPE_COMMA
     private static final java.lang.String COMMA_SEP
-    63:68:public void createDatabase(android.database.sqlite.SQLiteDatabase)
-    71:104:private void createCollegeTable(android.database.sqlite.SQLiteDatabase)
-    107:122:private void createMajorTable(android.database.sqlite.SQLiteDatabase)
-    125:130:private void createSavedTable(android.database.sqlite.SQLiteDatabase)
-    190:191:public void addCollege(android.database.sqlite.SQLiteDatabase,com.elencticsoft.collegeseeker.College)
-    262:262:public int updateCollege(com.elencticsoft.collegeseeker.College)
-    274:278:public int getCollegesCount()
+    74:79:public void createDatabase(android.database.sqlite.SQLiteDatabase)
+    82:115:private void createCollegeTable(android.database.sqlite.SQLiteDatabase)
+    118:133:private void createMajorTable(android.database.sqlite.SQLiteDatabase)
+    136:141:private void createSavedTable(android.database.sqlite.SQLiteDatabase)
+    201:202:public void addCollege(android.database.sqlite.SQLiteDatabase,com.elencticsoft.collegeseeker.College)
+    273:273:public int updateCollege(com.elencticsoft.collegeseeker.College)
+    285:289:public int getCollegesCount()
 com.elencticsoft.collegeseeker.R
 com.elencticsoft.collegeseeker.R$array
 com.elencticsoft.collegeseeker.R$attr
@@ -370,7 +370,6 @@ com.elencticsoft.collegeseeker.R$string
 com.elencticsoft.collegeseeker.R$style
 com.elencticsoft.collegeseeker.R$styleable
 com.elencticsoft.collegeseeker.R$xml
-com.elencticsoft.collegeseeker.SearchActivity
 com.google.ads.Ad:
     public abstract boolean isReady()
     public abstract void loadAd(com.google.ads.AdRequest)

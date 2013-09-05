@@ -1,10 +1,9 @@
 package com.elencticsoft.collegeseeker;
 
-import java.util.List;
-
 import android.app.SearchManager;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
@@ -17,6 +16,10 @@ import com.actionbarsherlock.widget.SearchView;
 import com.appbrain.AppBrain;
 
 public class MainActivity extends SherlockFragmentActivity implements SearchView.OnQueryTextListener {
+    public static final String firstTab = "profile";
+    public static final String secondTab = "savedList";
+    public static final String thirdTab = "collegeList";
+    
     ActionBar actionBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,22 +29,20 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionBar.setDisplayShowTitleEnabled(false);
 
-        if (savedInstanceState == null) {
-            Tab tab = actionBar.newTab()
-                    .setText(R.string.title_college_match_list)
-                    .setTabListener(new TabListener<Profile>(this, "profile", Profile.class));
-            actionBar.addTab(tab);
+        Tab tab = actionBar.newTab()
+                .setText(R.string.title_college_match_list)
+                .setTabListener(new TabListener<Profile>(this, firstTab, Profile.class));
+        actionBar.addTab(tab);
 
-            tab = actionBar.newTab()
-                    .setText(R.string.title_saved_college_list)
-                    .setTabListener(new TabListener<SavedCollegeList>(this, "savedList", SavedCollegeList.class));
-            actionBar.addTab(tab);
+        tab = actionBar.newTab()
+                .setText(R.string.title_saved_college_list)
+                .setTabListener(new TabListener<SavedCollegeList>(this, secondTab, SavedCollegeList.class));
+        actionBar.addTab(tab);
 
-            tab = actionBar.newTab()
-                    .setText(R.string.title_activity_college_list)
-                    .setTabListener(new TabListener<CollegeList>(this, "collegeList", CollegeList.class));
-            actionBar.addTab(tab);
-        }
+        tab = actionBar.newTab()
+                .setText(R.string.title_activity_college_list)
+                .setTabListener(new TabListener<CollegeList>(this, thirdTab, CollegeList.class));
+        actionBar.addTab(tab);
 
         setContentView(R.layout.activity_main);
     }
@@ -92,46 +93,47 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
         return true;
     }
 
-    public void updateDetailedView(int collegeId) {
+    public void updateDetailedView(int collegeId, String tag) {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        CollegeList collegeList = (CollegeList) fm.findFragmentByTag("collegeList");
-        CollegeMatchList matchList = (CollegeMatchList) fm.findFragmentByTag("matchList");
-        SavedCollegeList savedList = (SavedCollegeList) fm.findFragmentByTag("savedList");
-        if ((collegeList != null) && (collegeList.isVisible())) ft.detach(collegeList);
-        else if ((matchList != null) && (matchList.isVisible())) ft.detach(matchList);
-        else if ((savedList != null) && (savedList.isVisible())) ft.detach(savedList);
-        ft.add(R.id.fragment, DetailedView.newInstance(collegeId), "detailedView");
+        ft.replace(R.id.fragment, DetailedView.newInstance(collegeId), tag);
         ft.addToBackStack(null);
         ft.commit();
     }
 
     public void updateSavedList() {
         DatabaseHandler handler = DatabaseHandler.getInstance(this);
-        SavedCollegeList savedList = (SavedCollegeList) getSupportFragmentManager().findFragmentByTag("savedList");
+        SavedCollegeList savedList = (SavedCollegeList) getSupportFragmentManager().findFragmentByTag(secondTab);
         ((CollegeAdapter)savedList.getListAdapter()).changeCursor(handler.getSavedColleges());
     }
 
-    public void updateMatchList(List<College> colleges) {
+    public void updateMatchList(String state, String sort, boolean small, boolean medium, boolean large,
+            boolean city, boolean suburb, boolean town, boolean rural,
+            boolean public_i, boolean private_fp, boolean private_nfp, boolean private_rel,
+            String major, int ver, int mat, int wri, int act) {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        Profile profile = (Profile) getSupportFragmentManager().findFragmentByTag("profile");
-        if ((profile != null) && (profile.isVisible())) ft.detach(profile);
-        CollegeMatchList matchList = new CollegeMatchList();
-        CollegeMatchAdapter adapter = new CollegeMatchAdapter(this, R.layout.college_list_item, colleges);
-        matchList.setListAdapter(adapter);
-        ft.add(R.id.fragment, matchList, "matchList");
+        CollegeMatchList matchList = CollegeMatchList.getInstance(state, sort, small, medium, large, city, suburb, 
+                town, rural, public_i, private_fp, private_nfp, private_rel, major, ver, mat, wri, act);
+        ft.replace(R.id.fragment, matchList, firstTab);
         ft.addToBackStack(null);
         ft.commit();
     }
 
     private void filterList(String query) {
         FragmentManager fm = getSupportFragmentManager();
-        CollegeList collegeList = (CollegeList) fm.findFragmentByTag("collegeList");
-        CollegeMatchList matchList = (CollegeMatchList) fm.findFragmentByTag("matchList");
-        SavedCollegeList savedList = (SavedCollegeList) fm.findFragmentByTag("savedList");
-        if ((collegeList != null) && (collegeList.isVisible())) collegeList.filterList(query);
-        else if ((matchList != null) && (matchList.isVisible())) matchList.filterList(query);
-        else if ((savedList != null) && (savedList.isVisible())) savedList.filterList(query);
+        Fragment fragment = fm.findFragmentById(R.id.fragment);
+        if (fragment instanceof CollegeMatchList) {
+            CollegeMatchList matchList = (CollegeMatchList) fragment;
+            matchList.filterList(query);
+        }
+        else if (fragment instanceof SavedCollegeList) {
+            SavedCollegeList savedList = (SavedCollegeList) fragment;
+            savedList.filterList(query);
+        }
+        else if (fragment instanceof CollegeList) {
+            CollegeList collegeList = (CollegeList) fragment;
+            collegeList.filterList(query);
+        }
     }
     
     @Override

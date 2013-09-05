@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
     xmlns:tools="http://schemas.android.com/tools"
+    android:name="@+id/main"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
@@ -14,11 +15,10 @@
         ads:adUnitId="ca-app-pub-5892015390893257/4801549729"
         ads:loadAdOnCreate="true" />
 
-    <LinearLayout
+    <FrameLayout 
         android:id="@+id/fragment"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-    </LinearLayout>
+        android:orientation="vertical" />
 
 </LinearLayout>

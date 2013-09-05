@@ -24,7 +24,7 @@ public class SavedDialogBox extends SherlockDialogFragment {
                .setPositiveButton(R.string.view_details, new DialogInterface.OnClickListener() {
                    public void onClick(DialogInterface dialog, int id) {
                        MainActivity activity = (MainActivity) getSherlockActivity();
-                       activity.updateDetailedView(collegeId);
+                       activity.updateDetailedView(collegeId, MainActivity.secondTab);
                    }
                })
                .setNeutralButton(R.string.remove, new DialogInterface.OnClickListener() {

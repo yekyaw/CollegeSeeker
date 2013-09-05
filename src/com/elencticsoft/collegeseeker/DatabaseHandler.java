@@ -8,6 +8,7 @@ import java.util.List;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
 import au.com.bytecode.opencsv.CSVReader;
 
 import com.elencticsoft.collegeseeker.CollegeContract.CollegeEntry;
@@ -41,14 +42,24 @@ public class DatabaseHandler extends SQLiteAssetHelper {
     private SQLiteDatabase db;
     private Context context;
     
-    public static DatabaseHandler getInstance(Context context) {
-        if (instance == null) instance = new DatabaseHandler(context);
+    public static synchronized DatabaseHandler getInstance(Context context) {
+        if (instance == null) {
+            instance = new DatabaseHandler(context);
+        }
+        try {
+            instance.open();
+        } catch (SQLiteException e) {
+            e.printStackTrace();
+        }
         return instance;
     }
  
     private DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         this.context = context;
+    }
+    
+    public void open() {
         if (db == null) db = getWritableDatabase();
     }
     
