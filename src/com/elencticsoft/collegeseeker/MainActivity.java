@@ -20,12 +20,11 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
     public static final String secondTab = "savedList";
     public static final String thirdTab = "collegeList";
     
-    ActionBar actionBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        actionBar = getSupportActionBar();
+        ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionBar.setDisplayShowTitleEnabled(false);
 
