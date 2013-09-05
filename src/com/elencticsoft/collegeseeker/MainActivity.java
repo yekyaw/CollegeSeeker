@@ -1,5 +1,6 @@
 package com.elencticsoft.collegeseeker;
 
+import android.app.ProgressDialog;
 import android.app.SearchManager;
 import android.content.Context;
 import android.os.Bundle;
@@ -19,6 +20,7 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
     public static final String firstTab = "profile";
     public static final String secondTab = "savedList";
     public static final String thirdTab = "collegeList";
+    private ProgressDialog pd;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +44,23 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
                 .setText(R.string.title_activity_college_list)
                 .setTabListener(new TabListener<CollegeList>(this, thirdTab, CollegeList.class));
         actionBar.addTab(tab);
+      
+        if (savedInstanceState != null)
+            actionBar.setSelectedNavigationItem(savedInstanceState.getInt("tab"));
 
         setContentView(R.layout.activity_main);
+    }
+    
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("tab", getSupportActionBar().getSelectedNavigationIndex());
+    }
+    
+    @Override
+    protected void onPause() {
+        super.onPause();
+        dismissProgress();
     }
 
     @Override
@@ -96,7 +113,7 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.fragment, DetailedView.newInstance(collegeId), tag);
-        ft.addToBackStack(null);
+        ft.addToBackStack(tag);
         ft.commit();
     }
 
@@ -114,7 +131,7 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
         CollegeMatchList matchList = CollegeMatchList.getInstance(state, sort, small, medium, large, city, suburb, 
                 town, rural, public_i, private_fp, private_nfp, private_rel, major, ver, mat, wri, act);
         ft.replace(R.id.fragment, matchList, firstTab);
-        ft.addToBackStack(null);
+        ft.addToBackStack(firstTab);
         ft.commit();
     }
 
@@ -139,5 +156,18 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
     public void onBackPressed() {
         AppBrain.getAds().maybeShowInterstitial(this);
         super.onBackPressed();
+    }
+    
+    public void showProgress() {
+        pd = new ProgressDialog(this);
+        pd.setTitle("Searching...");
+        pd.setMessage("Please wait.");
+        pd.setCancelable(false);
+        pd.setIndeterminate(true);
+        pd.show();
+    }
+    
+    public void dismissProgress() {
+        if ((pd != null) && (pd.isShowing())) pd.dismiss();
     }
 }

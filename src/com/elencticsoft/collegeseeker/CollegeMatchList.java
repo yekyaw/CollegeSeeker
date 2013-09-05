@@ -87,8 +87,8 @@ public class CollegeMatchList extends SherlockListFragment {
     }
     
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
+    public void onPause() {
+        super.onPause();
         if (dbTask != null) dbTask.cancel(true);
     }
     
@@ -98,6 +98,11 @@ public class CollegeMatchList extends SherlockListFragment {
     }
     
     private class DbTask extends AsyncTask<Object, Void, List<College>> {
+        @Override
+        protected void onPreExecute() {
+            ((MainActivity)getSherlockActivity()).showProgress();
+        }
+        
         @Override
         protected List<College> doInBackground(Object... params) {
             DatabaseHandler handler = DatabaseHandler.getInstance(getSherlockActivity());
@@ -120,6 +125,12 @@ public class CollegeMatchList extends SherlockListFragment {
             CollegeMatchAdapter adapter = new CollegeMatchAdapter(getSherlockActivity(), 
                     R.layout.college_list_item, colleges);
             setListAdapter(adapter);
+            ((MainActivity)getSherlockActivity()).dismissProgress();
+        }
+        
+        @Override
+        protected void onCancelled(List<College> result) {
+            ((MainActivity)getSherlockActivity()).dismissProgress();
         }
     }
 }

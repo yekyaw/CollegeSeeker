@@ -22,6 +22,11 @@ public class CollegeList extends SherlockFragment {
     
     private class DbTask extends AsyncTask<String, Void, Cursor> {
         @Override
+        protected void onPreExecute() {
+            ((MainActivity)getSherlockActivity()).showProgress();
+        }
+        
+        @Override
         protected Cursor doInBackground(String... params) {
             DatabaseHandler handler = DatabaseHandler.getInstance(getSherlockActivity());
             Cursor cursor = handler.getCollegesByState(params[0], params[1]);
@@ -60,6 +65,14 @@ public class CollegeList extends SherlockFragment {
                 @Override
                 public void onNothingSelected(AdapterView<?> arg0) { }
             });
+            ((MainActivity)getSherlockActivity()).dismissProgress();
+        }
+        
+        @Override
+        protected void onCancelled(Cursor result) {
+            if ((result != null) && (!result.isClosed())) result.close();
+            if (getSherlockActivity() != null)
+                ((MainActivity)getSherlockActivity()).dismissProgress();
         }
     }
     
@@ -84,8 +97,8 @@ public class CollegeList extends SherlockFragment {
     }
     
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
+    public void onPause() {
+        super.onPause();
         if (dbTask != null) dbTask.cancel(true);
     }
     

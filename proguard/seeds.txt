@@ -5992,6 +5992,7 @@ com.elencticsoft.collegeseeker.R$id: int homeAsUp
 com.elencticsoft.collegeseeker.R$id: int institution_section
 com.elencticsoft.collegeseeker.R$id: int listMode
 com.elencticsoft.collegeseeker.R$id: int location_label
+com.elencticsoft.collegeseeker.R$id: int main
 com.elencticsoft.collegeseeker.R$id: int majorSpinner
 com.elencticsoft.collegeseeker.R$id: int male_female_ratio
 com.elencticsoft.collegeseeker.R$id: int male_female_ratio_label

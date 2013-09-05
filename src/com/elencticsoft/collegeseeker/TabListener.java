@@ -10,7 +10,6 @@ import com.actionbarsherlock.app.ActionBar.Tab;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 
 public class TabListener<T extends Fragment> implements ActionBar.TabListener {
-    private Fragment mFragment;
     private final Activity mActivity;
     private final String mTag;
     private final Class<T> mClass;
@@ -27,23 +26,26 @@ public class TabListener<T extends Fragment> implements ActionBar.TabListener {
     }
 
     /* The following are each of the ActionBar.TabListener callbacks */
-
+    
     public void onTabSelected(Tab tab, FragmentTransaction ft) {
         // Check if the fragment is already initialized
-        if (mFragment == null) {
-            // If not, instantiate and add it to the activity
-            mFragment = Fragment.instantiate(mActivity, mClass.getName());
-            ft.replace(R.id.fragment, mFragment, mTag);
-        } else {
+        FragmentManager fm = ((SherlockFragmentActivity) mActivity).getSupportFragmentManager();
+        Fragment mFragment = fm.findFragmentByTag(mTag);
+        if (mFragment != null) {
             // If it exists, simply attach it in order to show it
             ft.attach(mFragment);
+        }
+        else {
+         // If not, instantiate and add it to the activity
+            mFragment = Fragment.instantiate(mActivity, mClass.getName());
+            ft.add(R.id.fragment, mFragment, mTag);
         }
     }
 
     public void onTabUnselected(Tab tab, FragmentTransaction ft) {
         FragmentManager fm = ((SherlockFragmentActivity) mActivity).getSupportFragmentManager();
-        fm.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-//        mFragment = fm.findFragmentByTag(mTag);
+        fm.popBackStackImmediate(mTag, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+        Fragment mFragment = fm.findFragmentByTag(mTag);
         if (mFragment != null) {
             // Detach the fragment, because another one is being attached
             ft.detach(mFragment);

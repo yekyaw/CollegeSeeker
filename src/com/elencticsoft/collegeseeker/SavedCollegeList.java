@@ -30,8 +30,8 @@ public class SavedCollegeList extends SherlockListFragment {
     }
     
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
+    public void onPause() {
+        super.onPause();
         if (dbTask != null) dbTask.cancel(true);
     }
     
@@ -54,6 +54,11 @@ public class SavedCollegeList extends SherlockListFragment {
     
     private class DbTask extends AsyncTask<Void, Void, Cursor> {
         @Override
+        protected void onPreExecute() {
+            ((MainActivity)getSherlockActivity()).showProgress();
+        }
+        
+        @Override
         protected Cursor doInBackground(Void... params) {
             final DatabaseHandler handler = DatabaseHandler.getInstance(getSherlockActivity());
             Cursor cursor = handler.getSavedColleges();
@@ -70,6 +75,13 @@ public class SavedCollegeList extends SherlockListFragment {
                     SavedDialogBox.newInstance(college.getId()).show(getFragmentManager(), "savedDialog");
                 }
             });
+            ((MainActivity)getSherlockActivity()).dismissProgress();
+        }
+        
+        @Override
+        protected void onCancelled(Cursor result) {
+            if ((result != null) && (!result.isClosed())) result.close();
+            ((MainActivity)getSherlockActivity()).dismissProgress();
         }
     }
 }

@@ -58,13 +58,13 @@
 # view res/layout/abs__search_view.xml #generated:84
 -keep class com.actionbarsherlock.widget.SearchView$SearchAutoComplete { <init>(...); }
 
-# view AndroidManifest.xml #generated:40
+# view AndroidManifest.xml #generated:39
 -keep class com.appbrain.AppBrainActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:44
+# view AndroidManifest.xml #generated:43
 -keep class com.appbrain.AppBrainService { <init>(...); }
 
-# view AndroidManifest.xml #generated:46
+# view AndroidManifest.xml #generated:45
 -keep class com.appbrain.ReferrerReceiver { <init>(...); }
 
 # view AndroidManifest.xml #generated:20
@@ -73,7 +73,7 @@
 # view AndroidManifest.xml #generated:14
 -keep class com.elencticsoft.collegeseeker.MyApplication { <init>(...); }
 
-# view AndroidManifest.xml #generated:37
+# view AndroidManifest.xml #generated:36
 -keep class com.google.ads.AdActivity { <init>(...); }
 
 # view res/layout/activity_main.xml #generated:10

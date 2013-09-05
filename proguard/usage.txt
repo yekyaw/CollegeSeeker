@@ -354,6 +354,10 @@ com.elencticsoft.collegeseeker.DatabaseHandler:
     201:202:public void addCollege(android.database.sqlite.SQLiteDatabase,com.elencticsoft.collegeseeker.College)
     273:273:public int updateCollege(com.elencticsoft.collegeseeker.College)
     285:289:public int getCollegesCount()
+com.elencticsoft.collegeseeker.MainActivity:
+    public static final java.lang.String firstTab
+    public static final java.lang.String secondTab
+    public static final java.lang.String thirdTab
 com.elencticsoft.collegeseeker.R
 com.elencticsoft.collegeseeker.R$array
 com.elencticsoft.collegeseeker.R$attr

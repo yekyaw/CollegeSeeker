@@ -7459,19 +7459,20 @@ com.elencticsoft.collegeseeker.CollegeAdapter$ViewHolder -> com.elencticsoft.col
     android.widget.TextView gradView -> i
     android.widget.TextView costView -> j
 com.elencticsoft.collegeseeker.CollegeDialogBox -> com.elencticsoft.collegeseeker.i:
-    14:18:com.elencticsoft.collegeseeker.CollegeDialogBox newInstance(int) -> a
-    23:49:android.app.Dialog onCreateDialog(android.os.Bundle) -> onCreateDialog
+    14:19:com.elencticsoft.collegeseeker.CollegeDialogBox newInstance(int,java.lang.String) -> a
+    24:51:android.app.Dialog onCreateDialog(android.os.Bundle) -> onCreateDialog
 com.elencticsoft.collegeseeker.CollegeDialogBox$1 -> com.elencticsoft.collegeseeker.j:
     com.elencticsoft.collegeseeker.CollegeDialogBox this$0 -> a
     int val$collegeId -> b
-    29:31:void onClick(android.content.DialogInterface,int) -> onClick
+    java.lang.String val$tag -> c
+    31:33:void onClick(android.content.DialogInterface,int) -> onClick
 com.elencticsoft.collegeseeker.CollegeDialogBox$2 -> com.elencticsoft.collegeseeker.k:
     com.elencticsoft.collegeseeker.CollegeDialogBox this$0 -> a
     int val$collegeId -> b
-    36:41:void onClick(android.content.DialogInterface,int) -> onClick
+    38:43:void onClick(android.content.DialogInterface,int) -> onClick
 com.elencticsoft.collegeseeker.CollegeDialogBox$3 -> com.elencticsoft.collegeseeker.l:
     com.elencticsoft.collegeseeker.CollegeDialogBox this$0 -> a
-    45:46:void onClick(android.content.DialogInterface,int) -> onClick
+    47:48:void onClick(android.content.DialogInterface,int) -> onClick
 com.elencticsoft.collegeseeker.CollegeHelper -> com.elencticsoft.collegeseeker.m:
     java.util.Map collegeColumnIndexes -> a
     int[] $SWITCH_TABLE$com$elencticsoft$collegeseeker$College$Locale -> b
@@ -7492,37 +7493,42 @@ com.elencticsoft.collegeseeker.CollegeList -> com.elencticsoft.collegeseeker.n:
     android.widget.ListView listView -> a
     android.widget.Spinner stateSpinner -> b
     android.widget.Spinner sortSpinner -> c
-    69:69:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
-    74:82:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
-    85:91:void updateAdapter() -> a
-    94:103:com.elencticsoft.collegeseeker.CollegeAdapter createAdapter(android.database.Cursor) -> a
-    107:109:void filterList(java.lang.String) -> a
+    com.elencticsoft.collegeseeker.CollegeList$DbTask dbTask -> d
+    83:83:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    88:97:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
+    101:103:void onPause() -> onPause
+    106:112:void updateAdapter() -> a
+    115:124:com.elencticsoft.collegeseeker.CollegeAdapter createAdapter(android.database.Cursor) -> a
+    128:130:void filterList(java.lang.String) -> a
     19:19:android.widget.ListView access$0(com.elencticsoft.collegeseeker.CollegeList) -> a
-    93:93:com.elencticsoft.collegeseeker.CollegeAdapter access$1(com.elencticsoft.collegeseeker.CollegeList,android.database.Cursor) -> a
+    114:114:com.elencticsoft.collegeseeker.CollegeAdapter access$1(com.elencticsoft.collegeseeker.CollegeList,android.database.Cursor) -> a
     20:20:android.widget.Spinner access$2(com.elencticsoft.collegeseeker.CollegeList) -> b
-    84:84:void access$3(com.elencticsoft.collegeseeker.CollegeList) -> c
+    105:105:void access$3(com.elencticsoft.collegeseeker.CollegeList) -> c
     20:20:android.widget.Spinner access$4(com.elencticsoft.collegeseeker.CollegeList) -> d
 com.elencticsoft.collegeseeker.CollegeList$1 -> com.elencticsoft.collegeseeker.o:
     com.elencticsoft.collegeseeker.CollegeList this$0 -> a
-    98:99:android.database.Cursor runQuery(java.lang.CharSequence) -> runQuery
+    119:120:android.database.Cursor runQuery(java.lang.CharSequence) -> runQuery
 com.elencticsoft.collegeseeker.CollegeList$DbTask -> com.elencticsoft.collegeseeker.p:
     com.elencticsoft.collegeseeker.CollegeList this$0 -> a
-    25:27:android.database.Cursor doInBackground(java.lang.String[]) -> a
-    31:62:void onPostExecute(android.database.Cursor) -> a
+    26:27:void onPreExecute() -> onPreExecute
+    31:33:android.database.Cursor doInBackground(java.lang.String[]) -> a
+    37:69:void onPostExecute(android.database.Cursor) -> a
+    73:76:void onCancelled(android.database.Cursor) -> b
     1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:void onCancelled(java.lang.Object) -> onCancelled
     1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
-    22:22:com.elencticsoft.collegeseeker.CollegeList access$3(com.elencticsoft.collegeseeker.CollegeList$DbTask) -> a
+    23:23:com.elencticsoft.collegeseeker.CollegeList access$4(com.elencticsoft.collegeseeker.CollegeList$DbTask) -> a
 com.elencticsoft.collegeseeker.CollegeList$DbTask$1 -> com.elencticsoft.collegeseeker.q:
     com.elencticsoft.collegeseeker.CollegeList$DbTask this$1 -> a
-    35:38:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    41:44:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
 com.elencticsoft.collegeseeker.CollegeList$DbTask$2 -> com.elencticsoft.collegeseeker.r:
     com.elencticsoft.collegeseeker.CollegeList$DbTask this$1 -> a
-    45:46:void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
-    49:49:void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+    51:52:void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    55:55:void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
 com.elencticsoft.collegeseeker.CollegeList$DbTask$3 -> com.elencticsoft.collegeseeker.s:
     com.elencticsoft.collegeseeker.CollegeList$DbTask this$1 -> a
-    56:57:void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
-    60:60:void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+    62:63:void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    66:66:void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
 com.elencticsoft.collegeseeker.CollegeMatchAdapter -> com.elencticsoft.collegeseeker.t:
     java.util.List colleges -> a
     java.util.List originalColleges -> b
@@ -7548,13 +7554,25 @@ com.elencticsoft.collegeseeker.CollegeMatchAdapter$ViewHolder -> com.elencticsof
     android.widget.TextView gradView -> i
     android.widget.TextView costView -> j
 com.elencticsoft.collegeseeker.CollegeMatchList -> com.elencticsoft.collegeseeker.w:
-    17:17:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
-    22:31:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
-    34:36:void filterList(java.lang.String) -> a
+    com.elencticsoft.collegeseeker.CollegeMatchList$DbTask dbTask -> a
+    24:45:com.elencticsoft.collegeseeker.CollegeMatchList getInstance(java.lang.String,java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,java.lang.String,int,int,int,int) -> a
+    52:52:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    57:87:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
+    91:93:void onPause() -> onPause
+    96:98:void filterList(java.lang.String) -> a
 com.elencticsoft.collegeseeker.CollegeMatchList$1 -> com.elencticsoft.collegeseeker.x:
     com.elencticsoft.collegeseeker.CollegeMatchList this$0 -> a
-    27:29:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
-com.elencticsoft.collegeseeker.DatabaseHandler -> com.elencticsoft.collegeseeker.y:
+    83:85:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.elencticsoft.collegeseeker.CollegeMatchList$DbTask -> com.elencticsoft.collegeseeker.y:
+    com.elencticsoft.collegeseeker.CollegeMatchList this$0 -> a
+    103:104:void onPreExecute() -> onPreExecute
+    108:121:java.util.List doInBackground(java.lang.Object[]) -> a
+    125:129:void onPostExecute(java.util.List) -> a
+    133:134:void onCancelled(java.util.List) -> b
+    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:void onCancelled(java.lang.Object) -> onCancelled
+    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.elencticsoft.collegeseeker.DatabaseHandler -> com.elencticsoft.collegeseeker.z:
     com.elencticsoft.collegeseeker.DatabaseHandler instance -> a
     android.database.sqlite.SQLiteDatabase db -> b
     android.content.Context context -> c
@@ -7574,91 +7592,79 @@ com.elencticsoft.collegeseeker.DatabaseHandler -> com.elencticsoft.collegeseeker
     279:281:void deleteCollege(int) -> c
     293:297:android.database.Cursor getCollegesByState(java.lang.String,java.lang.String) -> a
     301:310:java.util.List getMajors(int) -> d
-com.elencticsoft.collegeseeker.DetailedView -> com.elencticsoft.collegeseeker.z:
-    17:21:com.elencticsoft.collegeseeker.DetailedView newInstance(int) -> a
-    26:26:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
-    31:109:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
+com.elencticsoft.collegeseeker.DetailedView -> com.elencticsoft.collegeseeker.aa:
+    16:20:com.elencticsoft.collegeseeker.DetailedView newInstance(int) -> a
+    25:25:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    30:107:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
 com.elencticsoft.collegeseeker.MainActivity -> com.elencticsoft.collegeseeker.MainActivity:
-    com.actionbarsherlock.app.ActionBar actionBar -> a
-    21:45:void onCreate(android.os.Bundle) -> onCreate
-    49:52:void onDestroy() -> onDestroy
-    57:67:boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu) -> onCreateOptionsMenu
-    72:77:boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem) -> onOptionsItemSelected
-    83:84:boolean onQueryTextChange(java.lang.String) -> onQueryTextChange
-    89:90:boolean onQueryTextSubmit(java.lang.String) -> onQueryTextSubmit
-    94:105:void updateDetailedView(int) -> a
-    108:111:void updateSavedList() -> a
-    114:121:void updateMatchList() -> b
-    124:131:void filterList(java.lang.String) -> a
-    135:137:void onBackPressed() -> onBackPressed
+    android.app.ProgressDialog pd -> a
+    27:52:void onCreate(android.os.Bundle) -> onCreate
+    56:58:void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    62:64:void onPause() -> onPause
+    68:71:void onDestroy() -> onDestroy
+    76:86:boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu) -> onCreateOptionsMenu
+    91:96:boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem) -> onOptionsItemSelected
+    102:103:boolean onQueryTextChange(java.lang.String) -> onQueryTextChange
+    108:109:boolean onQueryTextSubmit(java.lang.String) -> onQueryTextSubmit
+    113:118:void updateDetailedView(int,java.lang.String) -> a
+    121:124:void updateSavedList() -> a
+    130:136:void updateMatchList(java.lang.String,java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,boolean,java.lang.String,int,int,int,int) -> a
+    139:153:void filterList(java.lang.String) -> a
+    157:159:void onBackPressed() -> onBackPressed
+    162:168:void showProgress() -> b
+    171:172:void dismissProgress() -> c
 com.elencticsoft.collegeseeker.MyApplication -> com.elencticsoft.collegeseeker.MyApplication:
     21:24:void onCreate() -> onCreate
-com.elencticsoft.collegeseeker.Profile -> com.elencticsoft.collegeseeker.aa:
-    android.widget.EditText verView -> d
-    android.widget.EditText matView -> e
-    android.widget.EditText wriView -> f
-    android.widget.EditText actView -> g
-    android.widget.CheckBox college_small -> h
-    android.widget.CheckBox college_medium -> i
-    android.widget.CheckBox college_large -> j
-    android.widget.CheckBox city -> k
-    android.widget.CheckBox suburb -> l
-    android.widget.CheckBox town -> m
-    android.widget.CheckBox rural -> n
-    android.widget.CheckBox public_i -> o
-    android.widget.CheckBox private_fp -> p
-    android.widget.CheckBox private_nfp -> q
-    android.widget.CheckBox private_rel -> r
-    android.widget.Spinner stateSpinner -> a
-    android.widget.Spinner sortSpinner -> b
-    android.widget.Spinner majorSpinner -> c
-    31:42:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
-    47:49:int parseInt(java.lang.String) -> b
-    55:80:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
-    21:21:android.widget.EditText access$0(com.elencticsoft.collegeseeker.Profile) -> a
-    45:45:int access$1(java.lang.String) -> a
-    21:21:android.widget.EditText access$2(com.elencticsoft.collegeseeker.Profile) -> b
-    21:21:android.widget.EditText access$3(com.elencticsoft.collegeseeker.Profile) -> c
-    21:21:android.widget.EditText access$4(com.elencticsoft.collegeseeker.Profile) -> d
-    22:22:android.widget.CheckBox access$5(com.elencticsoft.collegeseeker.Profile) -> e
-    22:22:android.widget.CheckBox access$6(com.elencticsoft.collegeseeker.Profile) -> f
-    22:22:android.widget.CheckBox access$7(com.elencticsoft.collegeseeker.Profile) -> g
-    23:23:android.widget.CheckBox access$8(com.elencticsoft.collegeseeker.Profile) -> h
-    23:23:android.widget.CheckBox access$9(com.elencticsoft.collegeseeker.Profile) -> i
-    23:23:android.widget.CheckBox access$10(com.elencticsoft.collegeseeker.Profile) -> j
-    23:23:android.widget.CheckBox access$11(com.elencticsoft.collegeseeker.Profile) -> k
-    24:24:android.widget.CheckBox access$12(com.elencticsoft.collegeseeker.Profile) -> l
-    24:24:android.widget.CheckBox access$13(com.elencticsoft.collegeseeker.Profile) -> m
-    24:24:android.widget.CheckBox access$14(com.elencticsoft.collegeseeker.Profile) -> n
-    24:24:android.widget.CheckBox access$15(com.elencticsoft.collegeseeker.Profile) -> o
-com.elencticsoft.collegeseeker.Profile$1 -> com.elencticsoft.collegeseeker.ab:
+com.elencticsoft.collegeseeker.Profile -> com.elencticsoft.collegeseeker.ab:
+    21:21:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    26:28:int parseInt(java.lang.String) -> b
+    34:82:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
+    24:24:int access$0(java.lang.String) -> a
+com.elencticsoft.collegeseeker.Profile$1 -> com.elencticsoft.collegeseeker.ac:
     com.elencticsoft.collegeseeker.Profile this$0 -> a
-    36:39:void onClick(android.view.View) -> onClick
-com.elencticsoft.collegeseeker.Profile$DbTask -> com.elencticsoft.collegeseeker.ac:
-    com.elencticsoft.collegeseeker.Profile this$0 -> a
-    85:87:android.database.Cursor doInBackground(java.lang.Object[]) -> a
-    91:109:void onPostExecute(android.database.Cursor) -> a
-    1:1:void onPostExecute(java.lang.Object) -> onPostExecute
-    1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    android.widget.EditText val$verView -> b
+    android.widget.EditText val$matView -> c
+    android.widget.EditText val$wriView -> d
+    android.widget.EditText val$actView -> e
+    android.widget.Spinner val$stateSpinner -> f
+    android.widget.Spinner val$sortSpinner -> g
+    android.widget.CheckBox val$college_small -> h
+    android.widget.CheckBox val$college_medium -> i
+    android.widget.CheckBox val$college_large -> j
+    android.widget.CheckBox val$city -> k
+    android.widget.CheckBox val$suburb -> l
+    android.widget.CheckBox val$town -> m
+    android.widget.CheckBox val$rural -> n
+    android.widget.CheckBox val$public_i -> o
+    android.widget.CheckBox val$private_fp -> p
+    android.widget.CheckBox val$private_nfp -> q
+    android.widget.CheckBox val$private_rel -> r
+    android.widget.Spinner val$majorSpinner -> s
+    65:75:void onClick(android.view.View) -> onClick
 com.elencticsoft.collegeseeker.SavedCollegeList -> com.elencticsoft.collegeseeker.ad:
-    20:20:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
-    25:27:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
-    30:38:com.elencticsoft.collegeseeker.CollegeAdapter createAdapter(android.database.Cursor) -> a
-    42:44:void filterList(java.lang.String) -> a
-    29:29:com.elencticsoft.collegeseeker.CollegeAdapter access$0(com.elencticsoft.collegeseeker.SavedCollegeList,android.database.Cursor) -> a
+    com.elencticsoft.collegeseeker.SavedCollegeList$DbTask dbTask -> a
+    22:22:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    27:30:void onViewCreated(android.view.View,android.os.Bundle) -> onViewCreated
+    34:36:void onPause() -> onPause
+    39:47:com.elencticsoft.collegeseeker.CollegeAdapter createAdapter(android.database.Cursor) -> a
+    51:53:void filterList(java.lang.String) -> a
+    38:38:com.elencticsoft.collegeseeker.CollegeAdapter access$0(com.elencticsoft.collegeseeker.SavedCollegeList,android.database.Cursor) -> a
 com.elencticsoft.collegeseeker.SavedCollegeList$1 -> com.elencticsoft.collegeseeker.ae:
     com.elencticsoft.collegeseeker.SavedCollegeList this$0 -> a
-    34:35:android.database.Cursor runQuery(java.lang.CharSequence) -> runQuery
+    43:44:android.database.Cursor runQuery(java.lang.CharSequence) -> runQuery
 com.elencticsoft.collegeseeker.SavedCollegeList$DbTask -> com.elencticsoft.collegeseeker.af:
     com.elencticsoft.collegeseeker.SavedCollegeList this$0 -> a
-    49:51:android.database.Cursor doInBackground(java.lang.Void[]) -> a
-    55:64:void onPostExecute(android.database.Cursor) -> a
+    58:59:void onPreExecute() -> onPreExecute
+    63:65:android.database.Cursor doInBackground(java.lang.Void[]) -> a
+    69:79:void onPostExecute(android.database.Cursor) -> a
+    83:85:void onCancelled(android.database.Cursor) -> b
     1:1:void onPostExecute(java.lang.Object) -> onPostExecute
+    1:1:void onCancelled(java.lang.Object) -> onCancelled
     1:1:java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
-    46:46:com.elencticsoft.collegeseeker.SavedCollegeList access$3(com.elencticsoft.collegeseeker.SavedCollegeList$DbTask) -> a
+    55:55:com.elencticsoft.collegeseeker.SavedCollegeList access$4(com.elencticsoft.collegeseeker.SavedCollegeList$DbTask) -> a
 com.elencticsoft.collegeseeker.SavedCollegeList$DbTask$1 -> com.elencticsoft.collegeseeker.ag:
     com.elencticsoft.collegeseeker.SavedCollegeList$DbTask this$1 -> a
-    59:62:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    73:76:void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
 com.elencticsoft.collegeseeker.SavedDialogBox -> com.elencticsoft.collegeseeker.ah:
     11:15:com.elencticsoft.collegeseeker.SavedDialogBox newInstance(int) -> a
     20:42:android.app.Dialog onCreateDialog(android.os.Bundle) -> onCreateDialog
@@ -7674,13 +7680,12 @@ com.elencticsoft.collegeseeker.SavedDialogBox$3 -> com.elencticsoft.collegeseeke
     com.elencticsoft.collegeseeker.SavedDialogBox this$0 -> a
     38:39:void onClick(android.content.DialogInterface,int) -> onClick
 com.elencticsoft.collegeseeker.TabListener -> com.elencticsoft.collegeseeker.al:
-    android.support.v4.app.Fragment mFragment -> a
-    android.app.Activity mActivity -> b
-    java.lang.String mTag -> c
-    java.lang.Class mClass -> d
-    32:52:void onTabSelected(com.actionbarsherlock.app.ActionBar$Tab,android.support.v4.app.FragmentTransaction) -> onTabSelected
-    55:59:void onTabUnselected(com.actionbarsherlock.app.ActionBar$Tab,android.support.v4.app.FragmentTransaction) -> onTabUnselected
-    63:63:void onTabReselected(com.actionbarsherlock.app.ActionBar$Tab,android.support.v4.app.FragmentTransaction) -> onTabReselected
+    android.app.Activity mActivity -> a
+    java.lang.String mTag -> b
+    java.lang.Class mClass -> c
+    32:43:void onTabSelected(com.actionbarsherlock.app.ActionBar$Tab,android.support.v4.app.FragmentTransaction) -> onTabSelected
+    46:53:void onTabUnselected(com.actionbarsherlock.app.ActionBar$Tab,android.support.v4.app.FragmentTransaction) -> onTabUnselected
+    57:57:void onTabReselected(com.actionbarsherlock.app.ActionBar$Tab,android.support.v4.app.FragmentTransaction) -> onTabReselected
 com.google.ads.Ad -> com.google.ads.a:
 com.google.ads.AdActivity -> com.google.ads.AdActivity:
     com.google.ads.internal.a a -> a
