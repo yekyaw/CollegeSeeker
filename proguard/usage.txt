@@ -326,13 +326,13 @@ com.elencticsoft.collegeseeker.CollegeContract$SavedCollegeEntry
 com.elencticsoft.collegeseeker.CollegeHelper:
     public static final java.lang.String ALL_STATES
     public static final java.lang.String ALL_MAJORS
-    17:17:public CollegeHelper()
-    23:66:public static java.lang.String getIcon(java.lang.String)
-    71:95:public static com.elencticsoft.collegeseeker.College$Classification getClassification(int)
-    100:128:public static com.elencticsoft.collegeseeker.College$Locale getLocale(int)
-    133:145:public static com.elencticsoft.collegeseeker.College$Type getType(int)
-    353:407:public static android.content.ContentValues createCollegeValues(com.elencticsoft.collegeseeker.College)
-    431:485:public static com.elencticsoft.collegeseeker.College parseCollege(java.lang.String[])
+    14:14:public CollegeHelper()
+    19:62:public static java.lang.String getIcon(java.lang.String)
+    67:91:public static com.elencticsoft.collegeseeker.College$Classification getClassification(int)
+    96:124:public static com.elencticsoft.collegeseeker.College$Locale getLocale(int)
+    129:141:public static com.elencticsoft.collegeseeker.College$Type getType(int)
+    288:342:public static android.content.ContentValues createCollegeValues(com.elencticsoft.collegeseeker.College)
+    366:420:public static com.elencticsoft.collegeseeker.College parseCollege(java.lang.String[])
 com.elencticsoft.collegeseeker.DatabaseHandler:
     private static final int DATABASE_VERSION
     private static final java.lang.String DATABASE_NAME

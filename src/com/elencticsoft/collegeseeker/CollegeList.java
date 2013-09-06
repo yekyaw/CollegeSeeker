@@ -39,8 +39,7 @@ public class CollegeList extends SherlockFragment {
                 public void onItemClick(AdapterView<?> parent, View view,
                         int position, long id) {
                     Cursor cursor = (Cursor) parent.getItemAtPosition(position);
-                    final College college = CollegeHelper.convertToCollege(cursor);
-                    CollegeDialogBox.newInstance(college.getId(), MainActivity.thirdTab).show(getFragmentManager(), "dialog");
+                    CollegeDialogBox.newInstance(CollegeHelper.getCollegeId(cursor), MainActivity.thirdTab).show(getFragmentManager(), "dialog");
                 }
             });
             

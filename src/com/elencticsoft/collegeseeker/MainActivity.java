@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.inputmethod.InputMethodManager;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.ActionBar.Tab;
@@ -21,6 +22,7 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
     public static final String secondTab = "savedList";
     public static final String thirdTab = "collegeList";
     private ProgressDialog pd;
+    private SearchView searchView;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,7 +78,7 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
         getSupportMenuInflater().inflate(R.menu.main, menu);
         // Get the SearchView and set the searchable configuration
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        SearchView searchView = (SearchView) menu.findItem(R.id.action_bar_search).getActionView();
+        searchView = (SearchView) menu.findItem(R.id.action_bar_search).getActionView();
         // Assumes current activity is the searchable activity
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
         searchView.setIconifiedByDefault(false); // Do not iconify the widget; expand it by default
@@ -106,6 +108,8 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
     @Override
     public boolean onQueryTextSubmit(String query) {
         filterList(query);
+        InputMethodManager in = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        in.hideSoftInputFromWindow(searchView.getWindowToken(), 0);
         return true;
     }
 
@@ -159,15 +163,10 @@ public class MainActivity extends SherlockFragmentActivity implements SearchView
     }
     
     public void showProgress() {
-        pd = new ProgressDialog(this);
-        pd.setTitle("Searching...");
-        pd.setMessage("Please wait.");
-        pd.setCancelable(false);
-        pd.setIndeterminate(true);
-        pd.show();
+        pd = ProgressDialog.show(this, "Searching...", "Please wait.", true, false);
     }
     
     public void dismissProgress() {
-        if ((pd != null) && (pd.isShowing())) pd.dismiss();
+        if ((pd != null) && pd.isShowing()) pd.dismiss();
     }
 }

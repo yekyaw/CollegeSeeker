@@ -218,15 +218,15 @@ public class DatabaseHandler extends SQLiteAssetHelper {
     }
     
     public Cursor getSavedColleges() {
-        String query = "SELECT * FROM " + TABLE_COLLEGES + " a INNER JOIN " + TABLE_SAVED_COLLEGES +
-                " b ON a." + CollegeEntry.ID + "=b." + SavedCollegeEntry.COLLEGE_ID;
+        String query = "SELECT * FROM " + TABLE_SAVED_COLLEGES + " b INNER JOIN " + TABLE_COLLEGES +
+                " a ON a." + CollegeEntry.ID + "=b." + SavedCollegeEntry.COLLEGE_ID;
         Cursor cursor = db.rawQuery(query, null);
         return cursor;
     }
     
     public Cursor getSavedColleges(String name) {
-        String query = "SELECT * FROM " + TABLE_COLLEGES + " a INNER JOIN " + TABLE_SAVED_COLLEGES +
-                " b ON a." + CollegeEntry.ID + "=b." + SavedCollegeEntry.COLLEGE_ID + " WHERE a." +
+        String query = "SELECT * FROM " + TABLE_SAVED_COLLEGES + " b INNER JOIN " + TABLE_COLLEGES +
+                " a ON a." + CollegeEntry.ID + "=b." + SavedCollegeEntry.COLLEGE_ID + " WHERE a." +
                 CollegeEntry.NAME + " like ?";
         Cursor cursor = db.rawQuery(query, new String[] { "%" + name + "%"});
         return cursor;
@@ -235,7 +235,7 @@ public class DatabaseHandler extends SQLiteAssetHelper {
     // Getting single college
     public College getCollege(int id) {
         Cursor cursor = db.query(TABLE_COLLEGES, null, CollegeEntry.ID + "=?",
-                new String[] { Integer.toString(id) }, null, null, null, null);
+                new String[] { String.valueOf(id) }, null, null, null, null);
         if (cursor != null)
             cursor.moveToFirst();
         
@@ -275,9 +275,9 @@ public class DatabaseHandler extends SQLiteAssetHelper {
     }
  
     // Deleting single college
-    public void deleteCollege(int id) {
-        db.delete(TABLE_COLLEGES, CollegeEntry.ID + "=?",
-                new String[] { Integer.toString(id) });
+    public int deleteCollege(int id) {
+        return db.delete(TABLE_SAVED_COLLEGES, SavedCollegeEntry.COLLEGE_ID + "=?",
+                new String[] { String.valueOf(id) });
     }
  
     // Getting colleges Count

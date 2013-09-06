@@ -25,6 +25,14 @@ public class SavedCollegeList extends SherlockListFragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getListView().setOnItemClickListener(new OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view,
+                    int position, long id) {
+                Cursor cursor = (Cursor) parent.getItemAtPosition(position);
+                SavedDialogBox.newInstance(CollegeHelper.getCollegeId(cursor)).show(getFragmentManager(), "savedDialog");
+            }
+        });
+        
         dbTask = new DbTask();
         dbTask.execute();
     }
@@ -54,11 +62,6 @@ public class SavedCollegeList extends SherlockListFragment {
     
     private class DbTask extends AsyncTask<Void, Void, Cursor> {
         @Override
-        protected void onPreExecute() {
-            ((MainActivity)getSherlockActivity()).showProgress();
-        }
-        
-        @Override
         protected Cursor doInBackground(Void... params) {
             final DatabaseHandler handler = DatabaseHandler.getInstance(getSherlockActivity());
             Cursor cursor = handler.getSavedColleges();
@@ -67,21 +70,11 @@ public class SavedCollegeList extends SherlockListFragment {
         @Override
         protected void onPostExecute(Cursor cursor) {
             setListAdapter(createAdapter(cursor));
-            getListView().setOnItemClickListener(new OnItemClickListener() {
-                public void onItemClick(AdapterView<?> parent, View view,
-                        int position, long id) {
-                    Cursor cursor = (Cursor) parent.getItemAtPosition(position);
-                    final College college = CollegeHelper.convertToCollege(cursor);
-                    SavedDialogBox.newInstance(college.getId()).show(getFragmentManager(), "savedDialog");
-                }
-            });
-            ((MainActivity)getSherlockActivity()).dismissProgress();
         }
         
         @Override
         protected void onCancelled(Cursor result) {
             if ((result != null) && (!result.isClosed())) result.close();
-            ((MainActivity)getSherlockActivity()).dismissProgress();
         }
     }
 }
